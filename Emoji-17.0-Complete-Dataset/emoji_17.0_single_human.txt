@@ -1,0 +1,7007 @@
+============================================================
+Unicode Emoji 17.0 单码位纯净版
+============================================================
+生成时间: 2026-02-13
+说明: 仅包含单码位Emoji，已过滤所有多码位序列
+============================================================
+
+😀  U+1F600
+      ✅ fully-qualified
+      📌 E1.0
+      📝 grinning face
+
+😃  U+1F603
+      ✅ fully-qualified
+      📌 E0.6
+      📝 grinning face with big eyes
+
+😄  U+1F604
+      ✅ fully-qualified
+      📌 E0.6
+      📝 grinning face with smiling eyes
+
+😁  U+1F601
+      ✅ fully-qualified
+      📌 E0.6
+      📝 beaming face with smiling eyes
+
+😆  U+1F606
+      ✅ fully-qualified
+      📌 E0.6
+      📝 grinning squinting face
+
+😅  U+1F605
+      ✅ fully-qualified
+      📌 E0.6
+      📝 grinning face with sweat
+
+🤣  U+1F923
+      ✅ fully-qualified
+      📌 E3.0
+      📝 rolling on the floor laughing
+
+😂  U+1F602
+      ✅ fully-qualified
+      📌 E0.6
+      📝 face with tears of joy
+
+🙂  U+1F642
+      ✅ fully-qualified
+      📌 E1.0
+      📝 slightly smiling face
+
+🙃  U+1F643
+      ✅ fully-qualified
+      📌 E1.0
+      📝 upside-down face
+
+🫠  U+1FAE0
+      ✅ fully-qualified
+      📌 E14.0
+      📝 melting face
+
+😉  U+1F609
+      ✅ fully-qualified
+      📌 E0.6
+      📝 winking face
+
+😊  U+1F60A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 smiling face with smiling eyes
+
+😇  U+1F607
+      ✅ fully-qualified
+      📌 E1.0
+      📝 smiling face with halo
+
+🥰  U+1F970
+      ✅ fully-qualified
+      📌 E11.0
+      📝 smiling face with hearts
+
+😍  U+1F60D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 smiling face with heart-eyes
+
+🤩  U+1F929
+      ✅ fully-qualified
+      📌 E5.0
+      📝 star-struck
+
+😘  U+1F618
+      ✅ fully-qualified
+      📌 E0.6
+      📝 face blowing a kiss
+
+😗  U+1F617
+      ✅ fully-qualified
+      📌 E1.0
+      📝 kissing face
+
+☺  U+263A
+      ❓ unqualified
+      📌 E0.6
+      📝 smiling face
+
+😚  U+1F61A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 kissing face with closed eyes
+
+😙  U+1F619
+      ✅ fully-qualified
+      📌 E1.0
+      📝 kissing face with smiling eyes
+
+🥲  U+1F972
+      ✅ fully-qualified
+      📌 E13.0
+      📝 smiling face with tear
+
+😋  U+1F60B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 face savoring food
+
+😛  U+1F61B
+      ✅ fully-qualified
+      📌 E1.0
+      📝 face with tongue
+
+😜  U+1F61C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 winking face with tongue
+
+🤪  U+1F92A
+      ✅ fully-qualified
+      📌 E5.0
+      📝 zany face
+
+😝  U+1F61D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 squinting face with tongue
+
+🤑  U+1F911
+      ✅ fully-qualified
+      📌 E1.0
+      📝 money-mouth face
+
+🤗  U+1F917
+      ✅ fully-qualified
+      📌 E1.0
+      📝 smiling face with open hands
+
+🤭  U+1F92D
+      ✅ fully-qualified
+      📌 E5.0
+      📝 face with hand over mouth
+
+🫢  U+1FAE2
+      ✅ fully-qualified
+      📌 E14.0
+      📝 face with open eyes and hand over mouth
+
+🫣  U+1FAE3
+      ✅ fully-qualified
+      📌 E14.0
+      📝 face with peeking eye
+
+🤫  U+1F92B
+      ✅ fully-qualified
+      📌 E5.0
+      📝 shushing face
+
+🤔  U+1F914
+      ✅ fully-qualified
+      📌 E1.0
+      📝 thinking face
+
+🫡  U+1FAE1
+      ✅ fully-qualified
+      📌 E14.0
+      📝 saluting face
+
+🤐  U+1F910
+      ✅ fully-qualified
+      📌 E1.0
+      📝 zipper-mouth face
+
+🤨  U+1F928
+      ✅ fully-qualified
+      📌 E5.0
+      📝 face with raised eyebrow
+
+😐  U+1F610
+      ✅ fully-qualified
+      📌 E0.7
+      📝 neutral face
+
+😑  U+1F611
+      ✅ fully-qualified
+      📌 E1.0
+      📝 expressionless face
+
+😶  U+1F636
+      ✅ fully-qualified
+      📌 E1.0
+      📝 face without mouth
+
+🫥  U+1FAE5
+      ✅ fully-qualified
+      📌 E14.0
+      📝 dotted line face
+
+😏  U+1F60F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 smirking face
+
+😒  U+1F612
+      ✅ fully-qualified
+      📌 E0.6
+      📝 unamused face
+
+🙄  U+1F644
+      ✅ fully-qualified
+      📌 E1.0
+      📝 face with rolling eyes
+
+😬  U+1F62C
+      ✅ fully-qualified
+      📌 E1.0
+      📝 grimacing face
+
+🤥  U+1F925
+      ✅ fully-qualified
+      📌 E3.0
+      📝 lying face
+
+🫨  U+1FAE8
+      ✅ fully-qualified
+      📌 E15.0
+      📝 shaking face
+
+😌  U+1F60C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 relieved face
+
+😔  U+1F614
+      ✅ fully-qualified
+      📌 E0.6
+      📝 pensive face
+
+😪  U+1F62A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 sleepy face
+
+🤤  U+1F924
+      ✅ fully-qualified
+      📌 E3.0
+      📝 drooling face
+
+😴  U+1F634
+      ✅ fully-qualified
+      📌 E1.0
+      📝 sleeping face
+
+🫩  U+1FAE9
+      ✅ fully-qualified
+      📌 E16.0
+      📝 face with bags under eyes
+
+😷  U+1F637
+      ✅ fully-qualified
+      📌 E0.6
+      📝 face with medical mask
+
+🤒  U+1F912
+      ✅ fully-qualified
+      📌 E1.0
+      📝 face with thermometer
+
+🤕  U+1F915
+      ✅ fully-qualified
+      📌 E1.0
+      📝 face with head-bandage
+
+🤢  U+1F922
+      ✅ fully-qualified
+      📌 E3.0
+      📝 nauseated face
+
+🤮  U+1F92E
+      ✅ fully-qualified
+      📌 E5.0
+      📝 face vomiting
+
+🤧  U+1F927
+      ✅ fully-qualified
+      📌 E3.0
+      📝 sneezing face
+
+🥵  U+1F975
+      ✅ fully-qualified
+      📌 E11.0
+      📝 hot face
+
+🥶  U+1F976
+      ✅ fully-qualified
+      📌 E11.0
+      📝 cold face
+
+🥴  U+1F974
+      ✅ fully-qualified
+      📌 E11.0
+      📝 woozy face
+
+😵  U+1F635
+      ✅ fully-qualified
+      📌 E0.6
+      📝 face with crossed-out eyes
+
+🤯  U+1F92F
+      ✅ fully-qualified
+      📌 E5.0
+      📝 exploding head
+
+🤠  U+1F920
+      ✅ fully-qualified
+      📌 E3.0
+      📝 cowboy hat face
+
+🥳  U+1F973
+      ✅ fully-qualified
+      📌 E11.0
+      📝 partying face
+
+🥸  U+1F978
+      ✅ fully-qualified
+      📌 E13.0
+      📝 disguised face
+
+😎  U+1F60E
+      ✅ fully-qualified
+      📌 E1.0
+      📝 smiling face with sunglasses
+
+🤓  U+1F913
+      ✅ fully-qualified
+      📌 E1.0
+      📝 nerd face
+
+🧐  U+1F9D0
+      ✅ fully-qualified
+      📌 E5.0
+      📝 face with monocle
+
+😕  U+1F615
+      ✅ fully-qualified
+      📌 E1.0
+      📝 confused face
+
+🫤  U+1FAE4
+      ✅ fully-qualified
+      📌 E14.0
+      📝 face with diagonal mouth
+
+😟  U+1F61F
+      ✅ fully-qualified
+      📌 E1.0
+      📝 worried face
+
+🙁  U+1F641
+      ✅ fully-qualified
+      📌 E1.0
+      📝 slightly frowning face
+
+☹  U+2639
+      ❓ unqualified
+      📌 E0.7
+      📝 frowning face
+
+😮  U+1F62E
+      ✅ fully-qualified
+      📌 E1.0
+      📝 face with open mouth
+
+😯  U+1F62F
+      ✅ fully-qualified
+      📌 E1.0
+      📝 hushed face
+
+😲  U+1F632
+      ✅ fully-qualified
+      📌 E0.6
+      📝 astonished face
+
+😳  U+1F633
+      ✅ fully-qualified
+      📌 E0.6
+      📝 flushed face
+
+🫪  U+1FAEA
+      ✅ fully-qualified
+      📌 E17.0
+      📝 distorted face
+
+🥺  U+1F97A
+      ✅ fully-qualified
+      📌 E11.0
+      📝 pleading face
+
+🥹  U+1F979
+      ✅ fully-qualified
+      📌 E14.0
+      📝 face holding back tears
+
+😦  U+1F626
+      ✅ fully-qualified
+      📌 E1.0
+      📝 frowning face with open mouth
+
+😧  U+1F627
+      ✅ fully-qualified
+      📌 E1.0
+      📝 anguished face
+
+😨  U+1F628
+      ✅ fully-qualified
+      📌 E0.6
+      📝 fearful face
+
+😰  U+1F630
+      ✅ fully-qualified
+      📌 E0.6
+      📝 anxious face with sweat
+
+😥  U+1F625
+      ✅ fully-qualified
+      📌 E0.6
+      📝 sad but relieved face
+
+😢  U+1F622
+      ✅ fully-qualified
+      📌 E0.6
+      📝 crying face
+
+😭  U+1F62D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 loudly crying face
+
+😱  U+1F631
+      ✅ fully-qualified
+      📌 E0.6
+      📝 face screaming in fear
+
+😖  U+1F616
+      ✅ fully-qualified
+      📌 E0.6
+      📝 confounded face
+
+😣  U+1F623
+      ✅ fully-qualified
+      📌 E0.6
+      📝 persevering face
+
+😞  U+1F61E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 disappointed face
+
+😓  U+1F613
+      ✅ fully-qualified
+      📌 E0.6
+      📝 downcast face with sweat
+
+😩  U+1F629
+      ✅ fully-qualified
+      📌 E0.6
+      📝 weary face
+
+😫  U+1F62B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 tired face
+
+🥱  U+1F971
+      ✅ fully-qualified
+      📌 E12.0
+      📝 yawning face
+
+😤  U+1F624
+      ✅ fully-qualified
+      📌 E0.6
+      📝 face with steam from nose
+
+😡  U+1F621
+      ✅ fully-qualified
+      📌 E0.6
+      📝 enraged face
+
+😠  U+1F620
+      ✅ fully-qualified
+      📌 E0.6
+      📝 angry face
+
+🤬  U+1F92C
+      ✅ fully-qualified
+      📌 E5.0
+      📝 face with symbols on mouth
+
+😈  U+1F608
+      ✅ fully-qualified
+      📌 E1.0
+      📝 smiling face with horns
+
+👿  U+1F47F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 angry face with horns
+
+💀  U+1F480
+      ✅ fully-qualified
+      📌 E0.6
+      📝 skull
+
+☠  U+2620
+      ❓ unqualified
+      📌 E1.0
+      📝 skull and crossbones
+
+💩  U+1F4A9
+      ✅ fully-qualified
+      📌 E0.6
+      📝 pile of poo
+
+🤡  U+1F921
+      ✅ fully-qualified
+      📌 E3.0
+      📝 clown face
+
+👹  U+1F479
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ogre
+
+👺  U+1F47A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 goblin
+
+👻  U+1F47B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ghost
+
+👽  U+1F47D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 alien
+
+👾  U+1F47E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 alien monster
+
+🤖  U+1F916
+      ✅ fully-qualified
+      📌 E1.0
+      📝 robot
+
+😺  U+1F63A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 grinning cat
+
+😸  U+1F638
+      ✅ fully-qualified
+      📌 E0.6
+      📝 grinning cat with smiling eyes
+
+😹  U+1F639
+      ✅ fully-qualified
+      📌 E0.6
+      📝 cat with tears of joy
+
+😻  U+1F63B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 smiling cat with heart-eyes
+
+😼  U+1F63C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 cat with wry smile
+
+😽  U+1F63D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 kissing cat
+
+🙀  U+1F640
+      ✅ fully-qualified
+      📌 E0.6
+      📝 weary cat
+
+😿  U+1F63F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 crying cat
+
+😾  U+1F63E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 pouting cat
+
+🙈  U+1F648
+      ✅ fully-qualified
+      📌 E0.6
+      📝 see-no-evil monkey
+
+🙉  U+1F649
+      ✅ fully-qualified
+      📌 E0.6
+      📝 hear-no-evil monkey
+
+🙊  U+1F64A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 speak-no-evil monkey
+
+💌  U+1F48C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 love letter
+
+💘  U+1F498
+      ✅ fully-qualified
+      📌 E0.6
+      📝 heart with arrow
+
+💝  U+1F49D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 heart with ribbon
+
+💖  U+1F496
+      ✅ fully-qualified
+      📌 E0.6
+      📝 sparkling heart
+
+💗  U+1F497
+      ✅ fully-qualified
+      📌 E0.6
+      📝 growing heart
+
+💓  U+1F493
+      ✅ fully-qualified
+      📌 E0.6
+      📝 beating heart
+
+💞  U+1F49E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 revolving hearts
+
+💕  U+1F495
+      ✅ fully-qualified
+      📌 E0.6
+      📝 two hearts
+
+💟  U+1F49F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 heart decoration
+
+❣  U+2763
+      ❓ unqualified
+      📌 E1.0
+      📝 heart exclamation
+
+💔  U+1F494
+      ✅ fully-qualified
+      📌 E0.6
+      📝 broken heart
+
+❤  U+2764
+      ❓ unqualified
+      📌 E0.6
+      📝 red heart
+
+🩷  U+1FA77
+      ✅ fully-qualified
+      📌 E15.0
+      📝 pink heart
+
+🧡  U+1F9E1
+      ✅ fully-qualified
+      📌 E5.0
+      📝 orange heart
+
+💛  U+1F49B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 yellow heart
+
+💚  U+1F49A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 green heart
+
+💙  U+1F499
+      ✅ fully-qualified
+      📌 E0.6
+      📝 blue heart
+
+🩵  U+1FA75
+      ✅ fully-qualified
+      📌 E15.0
+      📝 light blue heart
+
+💜  U+1F49C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 purple heart
+
+🤎  U+1F90E
+      ✅ fully-qualified
+      📌 E12.0
+      📝 brown heart
+
+🖤  U+1F5A4
+      ✅ fully-qualified
+      📌 E3.0
+      📝 black heart
+
+🩶  U+1FA76
+      ✅ fully-qualified
+      📌 E15.0
+      📝 grey heart
+
+🤍  U+1F90D
+      ✅ fully-qualified
+      📌 E12.0
+      📝 white heart
+
+💋  U+1F48B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 kiss mark
+
+💯  U+1F4AF
+      ✅ fully-qualified
+      📌 E0.6
+      📝 hundred points
+
+💢  U+1F4A2
+      ✅ fully-qualified
+      📌 E0.6
+      📝 anger symbol
+
+🫯  U+1FAEF
+      ✅ fully-qualified
+      📌 E17.0
+      📝 fight cloud
+
+💥  U+1F4A5
+      ✅ fully-qualified
+      📌 E0.6
+      📝 collision
+
+💫  U+1F4AB
+      ✅ fully-qualified
+      📌 E0.6
+      📝 dizzy
+
+💦  U+1F4A6
+      ✅ fully-qualified
+      📌 E0.6
+      📝 sweat droplets
+
+💨  U+1F4A8
+      ✅ fully-qualified
+      📌 E0.6
+      📝 dashing away
+
+🕳  U+1F573
+      ❓ unqualified
+      📌 E0.7
+      📝 hole
+
+💬  U+1F4AC
+      ✅ fully-qualified
+      📌 E0.6
+      📝 speech balloon
+
+🗨  U+1F5E8
+      ❓ unqualified
+      📌 E2.0
+      📝 left speech bubble
+
+🗯  U+1F5EF
+      ❓ unqualified
+      📌 E0.7
+      📝 right anger bubble
+
+💭  U+1F4AD
+      ✅ fully-qualified
+      📌 E1.0
+      📝 thought balloon
+
+💤  U+1F4A4
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ZZZ
+
+👋  U+1F44B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 waving hand
+
+🤚  U+1F91A
+      ✅ fully-qualified
+      📌 E3.0
+      📝 raised back of hand
+
+🖐  U+1F590
+      ❓ unqualified
+      📌 E0.7
+      📝 hand with fingers splayed
+
+✋  U+270B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 raised hand
+
+🖖  U+1F596
+      ✅ fully-qualified
+      📌 E1.0
+      📝 vulcan salute
+
+🫱  U+1FAF1
+      ✅ fully-qualified
+      📌 E14.0
+      📝 rightwards hand
+
+🫲  U+1FAF2
+      ✅ fully-qualified
+      📌 E14.0
+      📝 leftwards hand
+
+🫳  U+1FAF3
+      ✅ fully-qualified
+      📌 E14.0
+      📝 palm down hand
+
+🫴  U+1FAF4
+      ✅ fully-qualified
+      📌 E14.0
+      📝 palm up hand
+
+🫷  U+1FAF7
+      ✅ fully-qualified
+      📌 E15.0
+      📝 leftwards pushing hand
+
+🫸  U+1FAF8
+      ✅ fully-qualified
+      📌 E15.0
+      📝 rightwards pushing hand
+
+👌  U+1F44C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 OK hand
+
+🤌  U+1F90C
+      ✅ fully-qualified
+      📌 E13.0
+      📝 pinched fingers
+
+🤏  U+1F90F
+      ✅ fully-qualified
+      📌 E12.0
+      📝 pinching hand
+
+✌  U+270C
+      ❓ unqualified
+      📌 E0.6
+      📝 victory hand
+
+🤞  U+1F91E
+      ✅ fully-qualified
+      📌 E3.0
+      📝 crossed fingers
+
+🫰  U+1FAF0
+      ✅ fully-qualified
+      📌 E14.0
+      📝 hand with index finger and thumb crossed
+
+🤟  U+1F91F
+      ✅ fully-qualified
+      📌 E5.0
+      📝 love-you gesture
+
+🤘  U+1F918
+      ✅ fully-qualified
+      📌 E1.0
+      📝 sign of the horns
+
+🤙  U+1F919
+      ✅ fully-qualified
+      📌 E3.0
+      📝 call me hand
+
+👈  U+1F448
+      ✅ fully-qualified
+      📌 E0.6
+      📝 backhand index pointing left
+
+👉  U+1F449
+      ✅ fully-qualified
+      📌 E0.6
+      📝 backhand index pointing right
+
+👆  U+1F446
+      ✅ fully-qualified
+      📌 E0.6
+      📝 backhand index pointing up
+
+🖕  U+1F595
+      ✅ fully-qualified
+      📌 E1.0
+      📝 middle finger
+
+👇  U+1F447
+      ✅ fully-qualified
+      📌 E0.6
+      📝 backhand index pointing down
+
+☝  U+261D
+      ❓ unqualified
+      📌 E0.6
+      📝 index pointing up
+
+🫵  U+1FAF5
+      ✅ fully-qualified
+      📌 E14.0
+      📝 index pointing at the viewer
+
+👍  U+1F44D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 thumbs up
+
+👎  U+1F44E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 thumbs down
+
+✊  U+270A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 raised fist
+
+👊  U+1F44A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 oncoming fist
+
+🤛  U+1F91B
+      ✅ fully-qualified
+      📌 E3.0
+      📝 left-facing fist
+
+🤜  U+1F91C
+      ✅ fully-qualified
+      📌 E3.0
+      📝 right-facing fist
+
+👏  U+1F44F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 clapping hands
+
+🙌  U+1F64C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 raising hands
+
+🫶  U+1FAF6
+      ✅ fully-qualified
+      📌 E14.0
+      📝 heart hands
+
+👐  U+1F450
+      ✅ fully-qualified
+      📌 E0.6
+      📝 open hands
+
+🤲  U+1F932
+      ✅ fully-qualified
+      📌 E5.0
+      📝 palms up together
+
+🤝  U+1F91D
+      ✅ fully-qualified
+      📌 E3.0
+      📝 handshake
+
+🙏  U+1F64F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 folded hands
+
+✍  U+270D
+      ❓ unqualified
+      📌 E0.7
+      📝 writing hand
+
+💅  U+1F485
+      ✅ fully-qualified
+      📌 E0.6
+      📝 nail polish
+
+🤳  U+1F933
+      ✅ fully-qualified
+      📌 E3.0
+      📝 selfie
+
+💪  U+1F4AA
+      ✅ fully-qualified
+      📌 E0.6
+      📝 flexed biceps
+
+🦾  U+1F9BE
+      ✅ fully-qualified
+      📌 E12.0
+      📝 mechanical arm
+
+🦿  U+1F9BF
+      ✅ fully-qualified
+      📌 E12.0
+      📝 mechanical leg
+
+🦵  U+1F9B5
+      ✅ fully-qualified
+      📌 E11.0
+      📝 leg
+
+🦶  U+1F9B6
+      ✅ fully-qualified
+      📌 E11.0
+      📝 foot
+
+👂  U+1F442
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ear
+
+🦻  U+1F9BB
+      ✅ fully-qualified
+      📌 E12.0
+      📝 ear with hearing aid
+
+👃  U+1F443
+      ✅ fully-qualified
+      📌 E0.6
+      📝 nose
+
+🧠  U+1F9E0
+      ✅ fully-qualified
+      📌 E5.0
+      📝 brain
+
+🫀  U+1FAC0
+      ✅ fully-qualified
+      📌 E13.0
+      📝 anatomical heart
+
+🫁  U+1FAC1
+      ✅ fully-qualified
+      📌 E13.0
+      📝 lungs
+
+🦷  U+1F9B7
+      ✅ fully-qualified
+      📌 E11.0
+      📝 tooth
+
+🦴  U+1F9B4
+      ✅ fully-qualified
+      📌 E11.0
+      📝 bone
+
+👀  U+1F440
+      ✅ fully-qualified
+      📌 E0.6
+      📝 eyes
+
+👁  U+1F441
+      ❓ unqualified
+      📌 E0.7
+      📝 eye
+
+👅  U+1F445
+      ✅ fully-qualified
+      📌 E0.6
+      📝 tongue
+
+👄  U+1F444
+      ✅ fully-qualified
+      📌 E0.6
+      📝 mouth
+
+🫦  U+1FAE6
+      ✅ fully-qualified
+      📌 E14.0
+      📝 biting lip
+
+👶  U+1F476
+      ✅ fully-qualified
+      📌 E0.6
+      📝 baby
+
+🧒  U+1F9D2
+      ✅ fully-qualified
+      📌 E5.0
+      📝 child
+
+👦  U+1F466
+      ✅ fully-qualified
+      📌 E0.6
+      📝 boy
+
+👧  U+1F467
+      ✅ fully-qualified
+      📌 E0.6
+      📝 girl
+
+🧑  U+1F9D1
+      ✅ fully-qualified
+      📌 E5.0
+      📝 person
+
+👱  U+1F471
+      ✅ fully-qualified
+      📌 E0.6
+      📝 person: blond hair
+
+👨  U+1F468
+      ✅ fully-qualified
+      📌 E0.6
+      📝 man
+
+🧔  U+1F9D4
+      ✅ fully-qualified
+      📌 E5.0
+      📝 person: beard
+
+👩  U+1F469
+      ✅ fully-qualified
+      📌 E0.6
+      📝 woman
+
+🧓  U+1F9D3
+      ✅ fully-qualified
+      📌 E5.0
+      📝 older person
+
+👴  U+1F474
+      ✅ fully-qualified
+      📌 E0.6
+      📝 old man
+
+👵  U+1F475
+      ✅ fully-qualified
+      📌 E0.6
+      📝 old woman
+
+🙍  U+1F64D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 person frowning
+
+🙎  U+1F64E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 person pouting
+
+🙅  U+1F645
+      ✅ fully-qualified
+      📌 E0.6
+      📝 person gesturing NO
+
+🙆  U+1F646
+      ✅ fully-qualified
+      📌 E0.6
+      📝 person gesturing OK
+
+💁  U+1F481
+      ✅ fully-qualified
+      📌 E0.6
+      📝 person tipping hand
+
+🙋  U+1F64B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 person raising hand
+
+🧏  U+1F9CF
+      ✅ fully-qualified
+      📌 E12.0
+      📝 deaf person
+
+🙇  U+1F647
+      ✅ fully-qualified
+      📌 E0.6
+      📝 person bowing
+
+🤦  U+1F926
+      ✅ fully-qualified
+      📌 E3.0
+      📝 person facepalming
+
+🤷  U+1F937
+      ✅ fully-qualified
+      📌 E3.0
+      📝 person shrugging
+
+👮  U+1F46E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 police officer
+
+🕵  U+1F575
+      ❓ unqualified
+      📌 E0.7
+      📝 detective
+
+💂  U+1F482
+      ✅ fully-qualified
+      📌 E0.6
+      📝 guard
+
+🥷  U+1F977
+      ✅ fully-qualified
+      📌 E13.0
+      📝 ninja
+
+👷  U+1F477
+      ✅ fully-qualified
+      📌 E0.6
+      📝 construction worker
+
+🫅  U+1FAC5
+      ✅ fully-qualified
+      📌 E14.0
+      📝 person with crown
+
+🤴  U+1F934
+      ✅ fully-qualified
+      📌 E3.0
+      📝 prince
+
+👸  U+1F478
+      ✅ fully-qualified
+      📌 E0.6
+      📝 princess
+
+👳  U+1F473
+      ✅ fully-qualified
+      📌 E0.6
+      📝 person wearing turban
+
+👲  U+1F472
+      ✅ fully-qualified
+      📌 E0.6
+      📝 person with skullcap
+
+🧕  U+1F9D5
+      ✅ fully-qualified
+      📌 E5.0
+      📝 woman with headscarf
+
+🤵  U+1F935
+      ✅ fully-qualified
+      📌 E3.0
+      📝 person in tuxedo
+
+👰  U+1F470
+      ✅ fully-qualified
+      📌 E0.6
+      📝 person with veil
+
+🤰  U+1F930
+      ✅ fully-qualified
+      📌 E3.0
+      📝 pregnant woman
+
+🫃  U+1FAC3
+      ✅ fully-qualified
+      📌 E14.0
+      📝 pregnant man
+
+🫄  U+1FAC4
+      ✅ fully-qualified
+      📌 E14.0
+      📝 pregnant person
+
+🤱  U+1F931
+      ✅ fully-qualified
+      📌 E5.0
+      📝 breast-feeding
+
+👼  U+1F47C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 baby angel
+
+🎅  U+1F385
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Santa Claus
+
+🤶  U+1F936
+      ✅ fully-qualified
+      📌 E3.0
+      📝 Mrs. Claus
+
+🦸  U+1F9B8
+      ✅ fully-qualified
+      📌 E11.0
+      📝 superhero
+
+🦹  U+1F9B9
+      ✅ fully-qualified
+      📌 E11.0
+      📝 supervillain
+
+🧙  U+1F9D9
+      ✅ fully-qualified
+      📌 E5.0
+      📝 mage
+
+🧚  U+1F9DA
+      ✅ fully-qualified
+      📌 E5.0
+      📝 fairy
+
+🧛  U+1F9DB
+      ✅ fully-qualified
+      📌 E5.0
+      📝 vampire
+
+🧜  U+1F9DC
+      ✅ fully-qualified
+      📌 E5.0
+      📝 merperson
+
+🧝  U+1F9DD
+      ✅ fully-qualified
+      📌 E5.0
+      📝 elf
+
+🧞  U+1F9DE
+      ✅ fully-qualified
+      📌 E5.0
+      📝 genie
+
+🧟  U+1F9DF
+      ✅ fully-qualified
+      📌 E5.0
+      📝 zombie
+
+🧌  U+1F9CC
+      ✅ fully-qualified
+      📌 E14.0
+      📝 troll
+
+🫈  U+1FAC8
+      ✅ fully-qualified
+      📌 E17.0
+      📝 hairy creature
+
+💆  U+1F486
+      ✅ fully-qualified
+      📌 E0.6
+      📝 person getting massage
+
+💇  U+1F487
+      ✅ fully-qualified
+      📌 E0.6
+      📝 person getting haircut
+
+🚶  U+1F6B6
+      ✅ fully-qualified
+      📌 E0.6
+      📝 person walking
+
+🧍  U+1F9CD
+      ✅ fully-qualified
+      📌 E12.0
+      📝 person standing
+
+🧎  U+1F9CE
+      ✅ fully-qualified
+      📌 E12.0
+      📝 person kneeling
+
+🏃  U+1F3C3
+      ✅ fully-qualified
+      📌 E0.6
+      📝 person running
+
+💃  U+1F483
+      ✅ fully-qualified
+      📌 E0.6
+      📝 woman dancing
+
+🕺  U+1F57A
+      ✅ fully-qualified
+      📌 E3.0
+      📝 man dancing
+
+🕴  U+1F574
+      ❓ unqualified
+      📌 E0.7
+      📝 person in suit levitating
+
+👯  U+1F46F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 people with bunny ears
+
+🧖  U+1F9D6
+      ✅ fully-qualified
+      📌 E5.0
+      📝 person in steamy room
+
+🧗  U+1F9D7
+      ✅ fully-qualified
+      📌 E5.0
+      📝 person climbing
+
+🤺  U+1F93A
+      ✅ fully-qualified
+      📌 E3.0
+      📝 person fencing
+
+🏇  U+1F3C7
+      ✅ fully-qualified
+      📌 E1.0
+      📝 horse racing
+
+⛷  U+26F7
+      ❓ unqualified
+      📌 E0.7
+      📝 skier
+
+🏂  U+1F3C2
+      ✅ fully-qualified
+      📌 E0.6
+      📝 snowboarder
+
+🏌  U+1F3CC
+      ❓ unqualified
+      📌 E0.7
+      📝 person golfing
+
+🏄  U+1F3C4
+      ✅ fully-qualified
+      📌 E0.6
+      📝 person surfing
+
+🚣  U+1F6A3
+      ✅ fully-qualified
+      📌 E1.0
+      📝 person rowing boat
+
+🏊  U+1F3CA
+      ✅ fully-qualified
+      📌 E0.6
+      📝 person swimming
+
+⛹  U+26F9
+      ❓ unqualified
+      📌 E0.7
+      📝 person bouncing ball
+
+🏋  U+1F3CB
+      ❓ unqualified
+      📌 E0.7
+      📝 person lifting weights
+
+🚴  U+1F6B4
+      ✅ fully-qualified
+      📌 E1.0
+      📝 person biking
+
+🚵  U+1F6B5
+      ✅ fully-qualified
+      📌 E1.0
+      📝 person mountain biking
+
+🤸  U+1F938
+      ✅ fully-qualified
+      📌 E3.0
+      📝 person cartwheeling
+
+🤼  U+1F93C
+      ✅ fully-qualified
+      📌 E3.0
+      📝 people wrestling
+
+🤽  U+1F93D
+      ✅ fully-qualified
+      📌 E3.0
+      📝 person playing water polo
+
+🤾  U+1F93E
+      ✅ fully-qualified
+      📌 E3.0
+      📝 person playing handball
+
+🤹  U+1F939
+      ✅ fully-qualified
+      📌 E3.0
+      📝 person juggling
+
+🧘  U+1F9D8
+      ✅ fully-qualified
+      📌 E5.0
+      📝 person in lotus position
+
+🛀  U+1F6C0
+      ✅ fully-qualified
+      📌 E0.6
+      📝 person taking bath
+
+🛌  U+1F6CC
+      ✅ fully-qualified
+      📌 E1.0
+      📝 person in bed
+
+👭  U+1F46D
+      ✅ fully-qualified
+      📌 E1.0
+      📝 women holding hands
+
+👫  U+1F46B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 woman and man holding hands
+
+👬  U+1F46C
+      ✅ fully-qualified
+      📌 E1.0
+      📝 men holding hands
+
+💏  U+1F48F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 kiss
+
+💑  U+1F491
+      ✅ fully-qualified
+      📌 E0.6
+      📝 couple with heart
+
+🗣  U+1F5E3
+      ❓ unqualified
+      📌 E0.7
+      📝 speaking head
+
+👤  U+1F464
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bust in silhouette
+
+👥  U+1F465
+      ✅ fully-qualified
+      📌 E1.0
+      📝 busts in silhouette
+
+🫂  U+1FAC2
+      ✅ fully-qualified
+      📌 E13.0
+      📝 people hugging
+
+👪  U+1F46A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 family
+
+👣  U+1F463
+      ✅ fully-qualified
+      📌 E0.6
+      📝 footprints
+
+🫆  U+1FAC6
+      ✅ fully-qualified
+      📌 E16.0
+      📝 fingerprint
+
+🏻  U+1F3FB
+      🧩 component
+      📌 E1.0
+      📝 light skin tone
+
+🏼  U+1F3FC
+      🧩 component
+      📌 E1.0
+      📝 medium-light skin tone
+
+🏽  U+1F3FD
+      🧩 component
+      📌 E1.0
+      📝 medium skin tone
+
+🏾  U+1F3FE
+      🧩 component
+      📌 E1.0
+      📝 medium-dark skin tone
+
+🏿  U+1F3FF
+      🧩 component
+      📌 E1.0
+      📝 dark skin tone
+
+🦰  U+1F9B0
+      🧩 component
+      📌 E11.0
+      📝 red hair
+
+🦱  U+1F9B1
+      🧩 component
+      📌 E11.0
+      📝 curly hair
+
+🦳  U+1F9B3
+      🧩 component
+      📌 E11.0
+      📝 white hair
+
+🦲  U+1F9B2
+      🧩 component
+      📌 E11.0
+      📝 bald
+
+🐵  U+1F435
+      ✅ fully-qualified
+      📌 E0.6
+      📝 monkey face
+
+🐒  U+1F412
+      ✅ fully-qualified
+      📌 E0.6
+      📝 monkey
+
+🦍  U+1F98D
+      ✅ fully-qualified
+      📌 E3.0
+      📝 gorilla
+
+🦧  U+1F9A7
+      ✅ fully-qualified
+      📌 E12.0
+      📝 orangutan
+
+🐶  U+1F436
+      ✅ fully-qualified
+      📌 E0.6
+      📝 dog face
+
+🐕  U+1F415
+      ✅ fully-qualified
+      📌 E0.7
+      📝 dog
+
+🦮  U+1F9AE
+      ✅ fully-qualified
+      📌 E12.0
+      📝 guide dog
+
+🐩  U+1F429
+      ✅ fully-qualified
+      📌 E0.6
+      📝 poodle
+
+🐺  U+1F43A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 wolf
+
+🦊  U+1F98A
+      ✅ fully-qualified
+      📌 E3.0
+      📝 fox
+
+🦝  U+1F99D
+      ✅ fully-qualified
+      📌 E11.0
+      📝 raccoon
+
+🐱  U+1F431
+      ✅ fully-qualified
+      📌 E0.6
+      📝 cat face
+
+🐈  U+1F408
+      ✅ fully-qualified
+      📌 E0.7
+      📝 cat
+
+🦁  U+1F981
+      ✅ fully-qualified
+      📌 E1.0
+      📝 lion
+
+🐯  U+1F42F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 tiger face
+
+🐅  U+1F405
+      ✅ fully-qualified
+      📌 E1.0
+      📝 tiger
+
+🐆  U+1F406
+      ✅ fully-qualified
+      📌 E1.0
+      📝 leopard
+
+🐴  U+1F434
+      ✅ fully-qualified
+      📌 E0.6
+      📝 horse face
+
+🫎  U+1FACE
+      ✅ fully-qualified
+      📌 E15.0
+      📝 moose
+
+🫏  U+1FACF
+      ✅ fully-qualified
+      📌 E15.0
+      📝 donkey
+
+🐎  U+1F40E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 horse
+
+🦄  U+1F984
+      ✅ fully-qualified
+      📌 E1.0
+      📝 unicorn
+
+🦓  U+1F993
+      ✅ fully-qualified
+      📌 E5.0
+      📝 zebra
+
+🦌  U+1F98C
+      ✅ fully-qualified
+      📌 E3.0
+      📝 deer
+
+🦬  U+1F9AC
+      ✅ fully-qualified
+      📌 E13.0
+      📝 bison
+
+🐮  U+1F42E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 cow face
+
+🐂  U+1F402
+      ✅ fully-qualified
+      📌 E1.0
+      📝 ox
+
+🐃  U+1F403
+      ✅ fully-qualified
+      📌 E1.0
+      📝 water buffalo
+
+🐄  U+1F404
+      ✅ fully-qualified
+      📌 E1.0
+      📝 cow
+
+🐷  U+1F437
+      ✅ fully-qualified
+      📌 E0.6
+      📝 pig face
+
+🐖  U+1F416
+      ✅ fully-qualified
+      📌 E1.0
+      📝 pig
+
+🐗  U+1F417
+      ✅ fully-qualified
+      📌 E0.6
+      📝 boar
+
+🐽  U+1F43D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 pig nose
+
+🐏  U+1F40F
+      ✅ fully-qualified
+      📌 E1.0
+      📝 ram
+
+🐑  U+1F411
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ewe
+
+🐐  U+1F410
+      ✅ fully-qualified
+      📌 E1.0
+      📝 goat
+
+🐪  U+1F42A
+      ✅ fully-qualified
+      📌 E1.0
+      📝 camel
+
+🐫  U+1F42B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 two-hump camel
+
+🦙  U+1F999
+      ✅ fully-qualified
+      📌 E11.0
+      📝 llama
+
+🦒  U+1F992
+      ✅ fully-qualified
+      📌 E5.0
+      📝 giraffe
+
+🐘  U+1F418
+      ✅ fully-qualified
+      📌 E0.6
+      📝 elephant
+
+🦣  U+1F9A3
+      ✅ fully-qualified
+      📌 E13.0
+      📝 mammoth
+
+🦏  U+1F98F
+      ✅ fully-qualified
+      📌 E3.0
+      📝 rhinoceros
+
+🦛  U+1F99B
+      ✅ fully-qualified
+      📌 E11.0
+      📝 hippopotamus
+
+🐭  U+1F42D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 mouse face
+
+🐁  U+1F401
+      ✅ fully-qualified
+      📌 E1.0
+      📝 mouse
+
+🐀  U+1F400
+      ✅ fully-qualified
+      📌 E1.0
+      📝 rat
+
+🐹  U+1F439
+      ✅ fully-qualified
+      📌 E0.6
+      📝 hamster
+
+🐰  U+1F430
+      ✅ fully-qualified
+      📌 E0.6
+      📝 rabbit face
+
+🐇  U+1F407
+      ✅ fully-qualified
+      📌 E1.0
+      📝 rabbit
+
+🐿  U+1F43F
+      ❓ unqualified
+      📌 E0.7
+      📝 chipmunk
+
+🦫  U+1F9AB
+      ✅ fully-qualified
+      📌 E13.0
+      📝 beaver
+
+🦔  U+1F994
+      ✅ fully-qualified
+      📌 E5.0
+      📝 hedgehog
+
+🦇  U+1F987
+      ✅ fully-qualified
+      📌 E3.0
+      📝 bat
+
+🐻  U+1F43B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bear
+
+🐨  U+1F428
+      ✅ fully-qualified
+      📌 E0.6
+      📝 koala
+
+🐼  U+1F43C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 panda
+
+🦥  U+1F9A5
+      ✅ fully-qualified
+      📌 E12.0
+      📝 sloth
+
+🦦  U+1F9A6
+      ✅ fully-qualified
+      📌 E12.0
+      📝 otter
+
+🦨  U+1F9A8
+      ✅ fully-qualified
+      📌 E12.0
+      📝 skunk
+
+🦘  U+1F998
+      ✅ fully-qualified
+      📌 E11.0
+      📝 kangaroo
+
+🦡  U+1F9A1
+      ✅ fully-qualified
+      📌 E11.0
+      📝 badger
+
+🐾  U+1F43E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 paw prints
+
+🦃  U+1F983
+      ✅ fully-qualified
+      📌 E1.0
+      📝 turkey
+
+🐔  U+1F414
+      ✅ fully-qualified
+      📌 E0.6
+      📝 chicken
+
+🐓  U+1F413
+      ✅ fully-qualified
+      📌 E1.0
+      📝 rooster
+
+🐣  U+1F423
+      ✅ fully-qualified
+      📌 E0.6
+      📝 hatching chick
+
+🐤  U+1F424
+      ✅ fully-qualified
+      📌 E0.6
+      📝 baby chick
+
+🐥  U+1F425
+      ✅ fully-qualified
+      📌 E0.6
+      📝 front-facing baby chick
+
+🐦  U+1F426
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bird
+
+🐧  U+1F427
+      ✅ fully-qualified
+      📌 E0.6
+      📝 penguin
+
+🕊  U+1F54A
+      ❓ unqualified
+      📌 E0.7
+      📝 dove
+
+🦅  U+1F985
+      ✅ fully-qualified
+      📌 E3.0
+      📝 eagle
+
+🦆  U+1F986
+      ✅ fully-qualified
+      📌 E3.0
+      📝 duck
+
+🦢  U+1F9A2
+      ✅ fully-qualified
+      📌 E11.0
+      📝 swan
+
+🦉  U+1F989
+      ✅ fully-qualified
+      📌 E3.0
+      📝 owl
+
+🦤  U+1F9A4
+      ✅ fully-qualified
+      📌 E13.0
+      📝 dodo
+
+🪶  U+1FAB6
+      ✅ fully-qualified
+      📌 E13.0
+      📝 feather
+
+🦩  U+1F9A9
+      ✅ fully-qualified
+      📌 E12.0
+      📝 flamingo
+
+🦚  U+1F99A
+      ✅ fully-qualified
+      📌 E11.0
+      📝 peacock
+
+🦜  U+1F99C
+      ✅ fully-qualified
+      📌 E11.0
+      📝 parrot
+
+🪽  U+1FABD
+      ✅ fully-qualified
+      📌 E15.0
+      📝 wing
+
+🪿  U+1FABF
+      ✅ fully-qualified
+      📌 E15.0
+      📝 goose
+
+🐸  U+1F438
+      ✅ fully-qualified
+      📌 E0.6
+      📝 frog
+
+🐊  U+1F40A
+      ✅ fully-qualified
+      📌 E1.0
+      📝 crocodile
+
+🐢  U+1F422
+      ✅ fully-qualified
+      📌 E0.6
+      📝 turtle
+
+🦎  U+1F98E
+      ✅ fully-qualified
+      📌 E3.0
+      📝 lizard
+
+🐍  U+1F40D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 snake
+
+🐲  U+1F432
+      ✅ fully-qualified
+      📌 E0.6
+      📝 dragon face
+
+🐉  U+1F409
+      ✅ fully-qualified
+      📌 E1.0
+      📝 dragon
+
+🦕  U+1F995
+      ✅ fully-qualified
+      📌 E5.0
+      📝 sauropod
+
+🦖  U+1F996
+      ✅ fully-qualified
+      📌 E5.0
+      📝 T-Rex
+
+🐳  U+1F433
+      ✅ fully-qualified
+      📌 E0.6
+      📝 spouting whale
+
+🐋  U+1F40B
+      ✅ fully-qualified
+      📌 E1.0
+      📝 whale
+
+🐬  U+1F42C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 dolphin
+
+🫍  U+1FACD
+      ✅ fully-qualified
+      📌 E17.0
+      📝 orca
+
+🦭  U+1F9AD
+      ✅ fully-qualified
+      📌 E13.0
+      📝 seal
+
+🐟  U+1F41F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 fish
+
+🐠  U+1F420
+      ✅ fully-qualified
+      📌 E0.6
+      📝 tropical fish
+
+🐡  U+1F421
+      ✅ fully-qualified
+      📌 E0.6
+      📝 blowfish
+
+🦈  U+1F988
+      ✅ fully-qualified
+      📌 E3.0
+      📝 shark
+
+🐙  U+1F419
+      ✅ fully-qualified
+      📌 E0.6
+      📝 octopus
+
+🐚  U+1F41A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 spiral shell
+
+🪸  U+1FAB8
+      ✅ fully-qualified
+      📌 E14.0
+      📝 coral
+
+🪼  U+1FABC
+      ✅ fully-qualified
+      📌 E15.0
+      📝 jellyfish
+
+🦀  U+1F980
+      ✅ fully-qualified
+      📌 E1.0
+      📝 crab
+
+🦞  U+1F99E
+      ✅ fully-qualified
+      📌 E11.0
+      📝 lobster
+
+🦐  U+1F990
+      ✅ fully-qualified
+      📌 E3.0
+      📝 shrimp
+
+🦑  U+1F991
+      ✅ fully-qualified
+      📌 E3.0
+      📝 squid
+
+🦪  U+1F9AA
+      ✅ fully-qualified
+      📌 E12.0
+      📝 oyster
+
+🐌  U+1F40C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 snail
+
+🦋  U+1F98B
+      ✅ fully-qualified
+      📌 E3.0
+      📝 butterfly
+
+🐛  U+1F41B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bug
+
+🐜  U+1F41C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ant
+
+🐝  U+1F41D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 honeybee
+
+🪲  U+1FAB2
+      ✅ fully-qualified
+      📌 E13.0
+      📝 beetle
+
+🐞  U+1F41E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 lady beetle
+
+🦗  U+1F997
+      ✅ fully-qualified
+      📌 E5.0
+      📝 cricket
+
+🪳  U+1FAB3
+      ✅ fully-qualified
+      📌 E13.0
+      📝 cockroach
+
+🕷  U+1F577
+      ❓ unqualified
+      📌 E0.7
+      📝 spider
+
+🕸  U+1F578
+      ❓ unqualified
+      📌 E0.7
+      📝 spider web
+
+🦂  U+1F982
+      ✅ fully-qualified
+      📌 E1.0
+      📝 scorpion
+
+🦟  U+1F99F
+      ✅ fully-qualified
+      📌 E11.0
+      📝 mosquito
+
+🪰  U+1FAB0
+      ✅ fully-qualified
+      📌 E13.0
+      📝 fly
+
+🪱  U+1FAB1
+      ✅ fully-qualified
+      📌 E13.0
+      📝 worm
+
+🦠  U+1F9A0
+      ✅ fully-qualified
+      📌 E11.0
+      📝 microbe
+
+💐  U+1F490
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bouquet
+
+🌸  U+1F338
+      ✅ fully-qualified
+      📌 E0.6
+      📝 cherry blossom
+
+💮  U+1F4AE
+      ✅ fully-qualified
+      📌 E0.6
+      📝 white flower
+
+🪷  U+1FAB7
+      ✅ fully-qualified
+      📌 E14.0
+      📝 lotus
+
+🏵  U+1F3F5
+      ❓ unqualified
+      📌 E0.7
+      📝 rosette
+
+🌹  U+1F339
+      ✅ fully-qualified
+      📌 E0.6
+      📝 rose
+
+🥀  U+1F940
+      ✅ fully-qualified
+      📌 E3.0
+      📝 wilted flower
+
+🌺  U+1F33A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 hibiscus
+
+🌻  U+1F33B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 sunflower
+
+🌼  U+1F33C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 blossom
+
+🌷  U+1F337
+      ✅ fully-qualified
+      📌 E0.6
+      📝 tulip
+
+🪻  U+1FABB
+      ✅ fully-qualified
+      📌 E15.0
+      📝 hyacinth
+
+🌱  U+1F331
+      ✅ fully-qualified
+      📌 E0.6
+      📝 seedling
+
+🪴  U+1FAB4
+      ✅ fully-qualified
+      📌 E13.0
+      📝 potted plant
+
+🌲  U+1F332
+      ✅ fully-qualified
+      📌 E1.0
+      📝 evergreen tree
+
+🌳  U+1F333
+      ✅ fully-qualified
+      📌 E1.0
+      📝 deciduous tree
+
+🌴  U+1F334
+      ✅ fully-qualified
+      📌 E0.6
+      📝 palm tree
+
+🌵  U+1F335
+      ✅ fully-qualified
+      📌 E0.6
+      📝 cactus
+
+🌾  U+1F33E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 sheaf of rice
+
+🌿  U+1F33F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 herb
+
+☘  U+2618
+      ❓ unqualified
+      📌 E1.0
+      📝 shamrock
+
+🍀  U+1F340
+      ✅ fully-qualified
+      📌 E0.6
+      📝 four leaf clover
+
+🍁  U+1F341
+      ✅ fully-qualified
+      📌 E0.6
+      📝 maple leaf
+
+🍂  U+1F342
+      ✅ fully-qualified
+      📌 E0.6
+      📝 fallen leaf
+
+🍃  U+1F343
+      ✅ fully-qualified
+      📌 E0.6
+      📝 leaf fluttering in wind
+
+🪹  U+1FAB9
+      ✅ fully-qualified
+      📌 E14.0
+      📝 empty nest
+
+🪺  U+1FABA
+      ✅ fully-qualified
+      📌 E14.0
+      📝 nest with eggs
+
+🍄  U+1F344
+      ✅ fully-qualified
+      📌 E0.6
+      📝 mushroom
+
+🪾  U+1FABE
+      ✅ fully-qualified
+      📌 E16.0
+      📝 leafless tree
+
+🍇  U+1F347
+      ✅ fully-qualified
+      📌 E0.6
+      📝 grapes
+
+🍈  U+1F348
+      ✅ fully-qualified
+      📌 E0.6
+      📝 melon
+
+🍉  U+1F349
+      ✅ fully-qualified
+      📌 E0.6
+      📝 watermelon
+
+🍊  U+1F34A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 tangerine
+
+🍋  U+1F34B
+      ✅ fully-qualified
+      📌 E1.0
+      📝 lemon
+
+🍌  U+1F34C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 banana
+
+🍍  U+1F34D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 pineapple
+
+🥭  U+1F96D
+      ✅ fully-qualified
+      📌 E11.0
+      📝 mango
+
+🍎  U+1F34E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 red apple
+
+🍏  U+1F34F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 green apple
+
+🍐  U+1F350
+      ✅ fully-qualified
+      📌 E1.0
+      📝 pear
+
+🍑  U+1F351
+      ✅ fully-qualified
+      📌 E0.6
+      📝 peach
+
+🍒  U+1F352
+      ✅ fully-qualified
+      📌 E0.6
+      📝 cherries
+
+🍓  U+1F353
+      ✅ fully-qualified
+      📌 E0.6
+      📝 strawberry
+
+🫐  U+1FAD0
+      ✅ fully-qualified
+      📌 E13.0
+      📝 blueberries
+
+🥝  U+1F95D
+      ✅ fully-qualified
+      📌 E3.0
+      📝 kiwi fruit
+
+🍅  U+1F345
+      ✅ fully-qualified
+      📌 E0.6
+      📝 tomato
+
+🫒  U+1FAD2
+      ✅ fully-qualified
+      📌 E13.0
+      📝 olive
+
+🥥  U+1F965
+      ✅ fully-qualified
+      📌 E5.0
+      📝 coconut
+
+🥑  U+1F951
+      ✅ fully-qualified
+      📌 E3.0
+      📝 avocado
+
+🍆  U+1F346
+      ✅ fully-qualified
+      📌 E0.6
+      📝 eggplant
+
+🥔  U+1F954
+      ✅ fully-qualified
+      📌 E3.0
+      📝 potato
+
+🥕  U+1F955
+      ✅ fully-qualified
+      📌 E3.0
+      📝 carrot
+
+🌽  U+1F33D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ear of corn
+
+🌶  U+1F336
+      ❓ unqualified
+      📌 E0.7
+      📝 hot pepper
+
+🫑  U+1FAD1
+      ✅ fully-qualified
+      📌 E13.0
+      📝 bell pepper
+
+🥒  U+1F952
+      ✅ fully-qualified
+      📌 E3.0
+      📝 cucumber
+
+🥬  U+1F96C
+      ✅ fully-qualified
+      📌 E11.0
+      📝 leafy green
+
+🥦  U+1F966
+      ✅ fully-qualified
+      📌 E5.0
+      📝 broccoli
+
+🧄  U+1F9C4
+      ✅ fully-qualified
+      📌 E12.0
+      📝 garlic
+
+🧅  U+1F9C5
+      ✅ fully-qualified
+      📌 E12.0
+      📝 onion
+
+🥜  U+1F95C
+      ✅ fully-qualified
+      📌 E3.0
+      📝 peanuts
+
+🫘  U+1FAD8
+      ✅ fully-qualified
+      📌 E14.0
+      📝 beans
+
+🌰  U+1F330
+      ✅ fully-qualified
+      📌 E0.6
+      📝 chestnut
+
+🫚  U+1FADA
+      ✅ fully-qualified
+      📌 E15.0
+      📝 ginger root
+
+🫛  U+1FADB
+      ✅ fully-qualified
+      📌 E15.0
+      📝 pea pod
+
+🫜  U+1FADC
+      ✅ fully-qualified
+      📌 E16.0
+      📝 root vegetable
+
+🍞  U+1F35E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bread
+
+🥐  U+1F950
+      ✅ fully-qualified
+      📌 E3.0
+      📝 croissant
+
+🥖  U+1F956
+      ✅ fully-qualified
+      📌 E3.0
+      📝 baguette bread
+
+🫓  U+1FAD3
+      ✅ fully-qualified
+      📌 E13.0
+      📝 flatbread
+
+🥨  U+1F968
+      ✅ fully-qualified
+      📌 E5.0
+      📝 pretzel
+
+🥯  U+1F96F
+      ✅ fully-qualified
+      📌 E11.0
+      📝 bagel
+
+🥞  U+1F95E
+      ✅ fully-qualified
+      📌 E3.0
+      📝 pancakes
+
+🧇  U+1F9C7
+      ✅ fully-qualified
+      📌 E12.0
+      📝 waffle
+
+🧀  U+1F9C0
+      ✅ fully-qualified
+      📌 E1.0
+      📝 cheese wedge
+
+🍖  U+1F356
+      ✅ fully-qualified
+      📌 E0.6
+      📝 meat on bone
+
+🍗  U+1F357
+      ✅ fully-qualified
+      📌 E0.6
+      📝 poultry leg
+
+🥩  U+1F969
+      ✅ fully-qualified
+      📌 E5.0
+      📝 cut of meat
+
+🥓  U+1F953
+      ✅ fully-qualified
+      📌 E3.0
+      📝 bacon
+
+🍔  U+1F354
+      ✅ fully-qualified
+      📌 E0.6
+      📝 hamburger
+
+🍟  U+1F35F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 french fries
+
+🍕  U+1F355
+      ✅ fully-qualified
+      📌 E0.6
+      📝 pizza
+
+🌭  U+1F32D
+      ✅ fully-qualified
+      📌 E1.0
+      📝 hot dog
+
+🥪  U+1F96A
+      ✅ fully-qualified
+      📌 E5.0
+      📝 sandwich
+
+🌮  U+1F32E
+      ✅ fully-qualified
+      📌 E1.0
+      📝 taco
+
+🌯  U+1F32F
+      ✅ fully-qualified
+      📌 E1.0
+      📝 burrito
+
+🫔  U+1FAD4
+      ✅ fully-qualified
+      📌 E13.0
+      📝 tamale
+
+🥙  U+1F959
+      ✅ fully-qualified
+      📌 E3.0
+      📝 stuffed flatbread
+
+🧆  U+1F9C6
+      ✅ fully-qualified
+      📌 E12.0
+      📝 falafel
+
+🥚  U+1F95A
+      ✅ fully-qualified
+      📌 E3.0
+      📝 egg
+
+🍳  U+1F373
+      ✅ fully-qualified
+      📌 E0.6
+      📝 cooking
+
+🥘  U+1F958
+      ✅ fully-qualified
+      📌 E3.0
+      📝 shallow pan of food
+
+🍲  U+1F372
+      ✅ fully-qualified
+      📌 E0.6
+      📝 pot of food
+
+🫕  U+1FAD5
+      ✅ fully-qualified
+      📌 E13.0
+      📝 fondue
+
+🥣  U+1F963
+      ✅ fully-qualified
+      📌 E5.0
+      📝 bowl with spoon
+
+🥗  U+1F957
+      ✅ fully-qualified
+      📌 E3.0
+      📝 green salad
+
+🍿  U+1F37F
+      ✅ fully-qualified
+      📌 E1.0
+      📝 popcorn
+
+🧈  U+1F9C8
+      ✅ fully-qualified
+      📌 E12.0
+      📝 butter
+
+🧂  U+1F9C2
+      ✅ fully-qualified
+      📌 E11.0
+      📝 salt
+
+🥫  U+1F96B
+      ✅ fully-qualified
+      📌 E5.0
+      📝 canned food
+
+🍱  U+1F371
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bento box
+
+🍘  U+1F358
+      ✅ fully-qualified
+      📌 E0.6
+      📝 rice cracker
+
+🍙  U+1F359
+      ✅ fully-qualified
+      📌 E0.6
+      📝 rice ball
+
+🍚  U+1F35A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 cooked rice
+
+🍛  U+1F35B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 curry rice
+
+🍜  U+1F35C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 steaming bowl
+
+🍝  U+1F35D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 spaghetti
+
+🍠  U+1F360
+      ✅ fully-qualified
+      📌 E0.6
+      📝 roasted sweet potato
+
+🍢  U+1F362
+      ✅ fully-qualified
+      📌 E0.6
+      📝 oden
+
+🍣  U+1F363
+      ✅ fully-qualified
+      📌 E0.6
+      📝 sushi
+
+🍤  U+1F364
+      ✅ fully-qualified
+      📌 E0.6
+      📝 fried shrimp
+
+🍥  U+1F365
+      ✅ fully-qualified
+      📌 E0.6
+      📝 fish cake with swirl
+
+🥮  U+1F96E
+      ✅ fully-qualified
+      📌 E11.0
+      📝 moon cake
+
+🍡  U+1F361
+      ✅ fully-qualified
+      📌 E0.6
+      📝 dango
+
+🥟  U+1F95F
+      ✅ fully-qualified
+      📌 E5.0
+      📝 dumpling
+
+🥠  U+1F960
+      ✅ fully-qualified
+      📌 E5.0
+      📝 fortune cookie
+
+🥡  U+1F961
+      ✅ fully-qualified
+      📌 E5.0
+      📝 takeout box
+
+🍦  U+1F366
+      ✅ fully-qualified
+      📌 E0.6
+      📝 soft ice cream
+
+🍧  U+1F367
+      ✅ fully-qualified
+      📌 E0.6
+      📝 shaved ice
+
+🍨  U+1F368
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ice cream
+
+🍩  U+1F369
+      ✅ fully-qualified
+      📌 E0.6
+      📝 doughnut
+
+🍪  U+1F36A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 cookie
+
+🎂  U+1F382
+      ✅ fully-qualified
+      📌 E0.6
+      📝 birthday cake
+
+🍰  U+1F370
+      ✅ fully-qualified
+      📌 E0.6
+      📝 shortcake
+
+🧁  U+1F9C1
+      ✅ fully-qualified
+      📌 E11.0
+      📝 cupcake
+
+🥧  U+1F967
+      ✅ fully-qualified
+      📌 E5.0
+      📝 pie
+
+🍫  U+1F36B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 chocolate bar
+
+🍬  U+1F36C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 candy
+
+🍭  U+1F36D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 lollipop
+
+🍮  U+1F36E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 custard
+
+🍯  U+1F36F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 honey pot
+
+🍼  U+1F37C
+      ✅ fully-qualified
+      📌 E1.0
+      📝 baby bottle
+
+🥛  U+1F95B
+      ✅ fully-qualified
+      📌 E3.0
+      📝 glass of milk
+
+☕  U+2615
+      ✅ fully-qualified
+      📌 E0.6
+      📝 hot beverage
+
+🫖  U+1FAD6
+      ✅ fully-qualified
+      📌 E13.0
+      📝 teapot
+
+🍵  U+1F375
+      ✅ fully-qualified
+      📌 E0.6
+      📝 teacup without handle
+
+🍶  U+1F376
+      ✅ fully-qualified
+      📌 E0.6
+      📝 sake
+
+🍾  U+1F37E
+      ✅ fully-qualified
+      📌 E1.0
+      📝 bottle with popping cork
+
+🍷  U+1F377
+      ✅ fully-qualified
+      📌 E0.6
+      📝 wine glass
+
+🍸  U+1F378
+      ✅ fully-qualified
+      📌 E0.6
+      📝 cocktail glass
+
+🍹  U+1F379
+      ✅ fully-qualified
+      📌 E0.6
+      📝 tropical drink
+
+🍺  U+1F37A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 beer mug
+
+🍻  U+1F37B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 clinking beer mugs
+
+🥂  U+1F942
+      ✅ fully-qualified
+      📌 E3.0
+      📝 clinking glasses
+
+🥃  U+1F943
+      ✅ fully-qualified
+      📌 E3.0
+      📝 tumbler glass
+
+🫗  U+1FAD7
+      ✅ fully-qualified
+      📌 E14.0
+      📝 pouring liquid
+
+🥤  U+1F964
+      ✅ fully-qualified
+      📌 E5.0
+      📝 cup with straw
+
+🧋  U+1F9CB
+      ✅ fully-qualified
+      📌 E13.0
+      📝 bubble tea
+
+🧃  U+1F9C3
+      ✅ fully-qualified
+      📌 E12.0
+      📝 beverage box
+
+🧉  U+1F9C9
+      ✅ fully-qualified
+      📌 E12.0
+      📝 mate
+
+🧊  U+1F9CA
+      ✅ fully-qualified
+      📌 E12.0
+      📝 ice
+
+🥢  U+1F962
+      ✅ fully-qualified
+      📌 E5.0
+      📝 chopsticks
+
+🍽  U+1F37D
+      ❓ unqualified
+      📌 E0.7
+      📝 fork and knife with plate
+
+🍴  U+1F374
+      ✅ fully-qualified
+      📌 E0.6
+      📝 fork and knife
+
+🥄  U+1F944
+      ✅ fully-qualified
+      📌 E3.0
+      📝 spoon
+
+🔪  U+1F52A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 kitchen knife
+
+🫙  U+1FAD9
+      ✅ fully-qualified
+      📌 E14.0
+      📝 jar
+
+🏺  U+1F3FA
+      ✅ fully-qualified
+      📌 E1.0
+      📝 amphora
+
+🌍  U+1F30D
+      ✅ fully-qualified
+      📌 E0.7
+      📝 globe showing Europe-Africa
+
+🌎  U+1F30E
+      ✅ fully-qualified
+      📌 E0.7
+      📝 globe showing Americas
+
+🌏  U+1F30F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 globe showing Asia-Australia
+
+🌐  U+1F310
+      ✅ fully-qualified
+      📌 E1.0
+      📝 globe with meridians
+
+🗺  U+1F5FA
+      ❓ unqualified
+      📌 E0.7
+      📝 world map
+
+🗾  U+1F5FE
+      ✅ fully-qualified
+      📌 E0.6
+      📝 map of Japan
+
+🧭  U+1F9ED
+      ✅ fully-qualified
+      📌 E11.0
+      📝 compass
+
+🏔  U+1F3D4
+      ❓ unqualified
+      📌 E0.7
+      📝 snow-capped mountain
+
+⛰  U+26F0
+      ❓ unqualified
+      📌 E0.7
+      📝 mountain
+
+🛘  U+1F6D8
+      ✅ fully-qualified
+      📌 E17.0
+      📝 landslide
+
+🌋  U+1F30B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 volcano
+
+🗻  U+1F5FB
+      ✅ fully-qualified
+      📌 E0.6
+      📝 mount fuji
+
+🏕  U+1F3D5
+      ❓ unqualified
+      📌 E0.7
+      📝 camping
+
+🏖  U+1F3D6
+      ❓ unqualified
+      📌 E0.7
+      📝 beach with umbrella
+
+🏜  U+1F3DC
+      ❓ unqualified
+      📌 E0.7
+      📝 desert
+
+🏝  U+1F3DD
+      ❓ unqualified
+      📌 E0.7
+      📝 desert island
+
+🏞  U+1F3DE
+      ❓ unqualified
+      📌 E0.7
+      📝 national park
+
+🏟  U+1F3DF
+      ❓ unqualified
+      📌 E0.7
+      📝 stadium
+
+🏛  U+1F3DB
+      ❓ unqualified
+      📌 E0.7
+      📝 classical building
+
+🏗  U+1F3D7
+      ❓ unqualified
+      📌 E0.7
+      📝 building construction
+
+🧱  U+1F9F1
+      ✅ fully-qualified
+      📌 E11.0
+      📝 brick
+
+🪨  U+1FAA8
+      ✅ fully-qualified
+      📌 E13.0
+      📝 rock
+
+🪵  U+1FAB5
+      ✅ fully-qualified
+      📌 E13.0
+      📝 wood
+
+🛖  U+1F6D6
+      ✅ fully-qualified
+      📌 E13.0
+      📝 hut
+
+🏘  U+1F3D8
+      ❓ unqualified
+      📌 E0.7
+      📝 houses
+
+🏚  U+1F3DA
+      ❓ unqualified
+      📌 E0.7
+      📝 derelict house
+
+🏠  U+1F3E0
+      ✅ fully-qualified
+      📌 E0.6
+      📝 house
+
+🏡  U+1F3E1
+      ✅ fully-qualified
+      📌 E0.6
+      📝 house with garden
+
+🏢  U+1F3E2
+      ✅ fully-qualified
+      📌 E0.6
+      📝 office building
+
+🏣  U+1F3E3
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Japanese post office
+
+🏤  U+1F3E4
+      ✅ fully-qualified
+      📌 E1.0
+      📝 post office
+
+🏥  U+1F3E5
+      ✅ fully-qualified
+      📌 E0.6
+      📝 hospital
+
+🏦  U+1F3E6
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bank
+
+🏨  U+1F3E8
+      ✅ fully-qualified
+      📌 E0.6
+      📝 hotel
+
+🏩  U+1F3E9
+      ✅ fully-qualified
+      📌 E0.6
+      📝 love hotel
+
+🏪  U+1F3EA
+      ✅ fully-qualified
+      📌 E0.6
+      📝 convenience store
+
+🏫  U+1F3EB
+      ✅ fully-qualified
+      📌 E0.6
+      📝 school
+
+🏬  U+1F3EC
+      ✅ fully-qualified
+      📌 E0.6
+      📝 department store
+
+🏭  U+1F3ED
+      ✅ fully-qualified
+      📌 E0.6
+      📝 factory
+
+🏯  U+1F3EF
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Japanese castle
+
+🏰  U+1F3F0
+      ✅ fully-qualified
+      📌 E0.6
+      📝 castle
+
+💒  U+1F492
+      ✅ fully-qualified
+      📌 E0.6
+      📝 wedding
+
+🗼  U+1F5FC
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Tokyo tower
+
+🗽  U+1F5FD
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Statue of Liberty
+
+⛪  U+26EA
+      ✅ fully-qualified
+      📌 E0.6
+      📝 church
+
+🕌  U+1F54C
+      ✅ fully-qualified
+      📌 E1.0
+      📝 mosque
+
+🛕  U+1F6D5
+      ✅ fully-qualified
+      📌 E12.0
+      📝 hindu temple
+
+🕍  U+1F54D
+      ✅ fully-qualified
+      📌 E1.0
+      📝 synagogue
+
+⛩  U+26E9
+      ❓ unqualified
+      📌 E0.7
+      📝 shinto shrine
+
+🕋  U+1F54B
+      ✅ fully-qualified
+      📌 E1.0
+      📝 kaaba
+
+⛲  U+26F2
+      ✅ fully-qualified
+      📌 E0.6
+      📝 fountain
+
+⛺  U+26FA
+      ✅ fully-qualified
+      📌 E0.6
+      📝 tent
+
+🌁  U+1F301
+      ✅ fully-qualified
+      📌 E0.6
+      📝 foggy
+
+🌃  U+1F303
+      ✅ fully-qualified
+      📌 E0.6
+      📝 night with stars
+
+🏙  U+1F3D9
+      ❓ unqualified
+      📌 E0.7
+      📝 cityscape
+
+🌄  U+1F304
+      ✅ fully-qualified
+      📌 E0.6
+      📝 sunrise over mountains
+
+🌅  U+1F305
+      ✅ fully-qualified
+      📌 E0.6
+      📝 sunrise
+
+🌆  U+1F306
+      ✅ fully-qualified
+      📌 E0.6
+      📝 cityscape at dusk
+
+🌇  U+1F307
+      ✅ fully-qualified
+      📌 E0.6
+      📝 sunset
+
+🌉  U+1F309
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bridge at night
+
+♨  U+2668
+      ❓ unqualified
+      📌 E0.6
+      📝 hot springs
+
+🎠  U+1F3A0
+      ✅ fully-qualified
+      📌 E0.6
+      📝 carousel horse
+
+🛝  U+1F6DD
+      ✅ fully-qualified
+      📌 E14.0
+      📝 playground slide
+
+🎡  U+1F3A1
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ferris wheel
+
+🎢  U+1F3A2
+      ✅ fully-qualified
+      📌 E0.6
+      📝 roller coaster
+
+💈  U+1F488
+      ✅ fully-qualified
+      📌 E0.6
+      📝 barber pole
+
+🎪  U+1F3AA
+      ✅ fully-qualified
+      📌 E0.6
+      📝 circus tent
+
+🚂  U+1F682
+      ✅ fully-qualified
+      📌 E1.0
+      📝 locomotive
+
+🚃  U+1F683
+      ✅ fully-qualified
+      📌 E0.6
+      📝 railway car
+
+🚄  U+1F684
+      ✅ fully-qualified
+      📌 E0.6
+      📝 high-speed train
+
+🚅  U+1F685
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bullet train
+
+🚆  U+1F686
+      ✅ fully-qualified
+      📌 E1.0
+      📝 train
+
+🚇  U+1F687
+      ✅ fully-qualified
+      📌 E0.6
+      📝 metro
+
+🚈  U+1F688
+      ✅ fully-qualified
+      📌 E1.0
+      📝 light rail
+
+🚉  U+1F689
+      ✅ fully-qualified
+      📌 E0.6
+      📝 station
+
+🚊  U+1F68A
+      ✅ fully-qualified
+      📌 E1.0
+      📝 tram
+
+🚝  U+1F69D
+      ✅ fully-qualified
+      📌 E1.0
+      📝 monorail
+
+🚞  U+1F69E
+      ✅ fully-qualified
+      📌 E1.0
+      📝 mountain railway
+
+🚋  U+1F68B
+      ✅ fully-qualified
+      📌 E1.0
+      📝 tram car
+
+🚌  U+1F68C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bus
+
+🚍  U+1F68D
+      ✅ fully-qualified
+      📌 E0.7
+      📝 oncoming bus
+
+🚎  U+1F68E
+      ✅ fully-qualified
+      📌 E1.0
+      📝 trolleybus
+
+🚐  U+1F690
+      ✅ fully-qualified
+      📌 E1.0
+      📝 minibus
+
+🚑  U+1F691
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ambulance
+
+🚒  U+1F692
+      ✅ fully-qualified
+      📌 E0.6
+      📝 fire engine
+
+🚓  U+1F693
+      ✅ fully-qualified
+      📌 E0.6
+      📝 police car
+
+🚔  U+1F694
+      ✅ fully-qualified
+      📌 E0.7
+      📝 oncoming police car
+
+🚕  U+1F695
+      ✅ fully-qualified
+      📌 E0.6
+      📝 taxi
+
+🚖  U+1F696
+      ✅ fully-qualified
+      📌 E1.0
+      📝 oncoming taxi
+
+🚗  U+1F697
+      ✅ fully-qualified
+      📌 E0.6
+      📝 automobile
+
+🚘  U+1F698
+      ✅ fully-qualified
+      📌 E0.7
+      📝 oncoming automobile
+
+🚙  U+1F699
+      ✅ fully-qualified
+      📌 E0.6
+      📝 sport utility vehicle
+
+🛻  U+1F6FB
+      ✅ fully-qualified
+      📌 E13.0
+      📝 pickup truck
+
+🚚  U+1F69A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 delivery truck
+
+🚛  U+1F69B
+      ✅ fully-qualified
+      📌 E1.0
+      📝 articulated lorry
+
+🚜  U+1F69C
+      ✅ fully-qualified
+      📌 E1.0
+      📝 tractor
+
+🏎  U+1F3CE
+      ❓ unqualified
+      📌 E0.7
+      📝 racing car
+
+🏍  U+1F3CD
+      ❓ unqualified
+      📌 E0.7
+      📝 motorcycle
+
+🛵  U+1F6F5
+      ✅ fully-qualified
+      📌 E3.0
+      📝 motor scooter
+
+🦽  U+1F9BD
+      ✅ fully-qualified
+      📌 E12.0
+      📝 manual wheelchair
+
+🦼  U+1F9BC
+      ✅ fully-qualified
+      📌 E12.0
+      📝 motorized wheelchair
+
+🛺  U+1F6FA
+      ✅ fully-qualified
+      📌 E12.0
+      📝 auto rickshaw
+
+🚲  U+1F6B2
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bicycle
+
+🛴  U+1F6F4
+      ✅ fully-qualified
+      📌 E3.0
+      📝 kick scooter
+
+🛹  U+1F6F9
+      ✅ fully-qualified
+      📌 E11.0
+      📝 skateboard
+
+🛼  U+1F6FC
+      ✅ fully-qualified
+      📌 E13.0
+      📝 roller skate
+
+🚏  U+1F68F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bus stop
+
+🛣  U+1F6E3
+      ❓ unqualified
+      📌 E0.7
+      📝 motorway
+
+🛤  U+1F6E4
+      ❓ unqualified
+      📌 E0.7
+      📝 railway track
+
+🛢  U+1F6E2
+      ❓ unqualified
+      📌 E0.7
+      📝 oil drum
+
+⛽  U+26FD
+      ✅ fully-qualified
+      📌 E0.6
+      📝 fuel pump
+
+🛞  U+1F6DE
+      ✅ fully-qualified
+      📌 E14.0
+      📝 wheel
+
+🚨  U+1F6A8
+      ✅ fully-qualified
+      📌 E0.6
+      📝 police car light
+
+🚥  U+1F6A5
+      ✅ fully-qualified
+      📌 E0.6
+      📝 horizontal traffic light
+
+🚦  U+1F6A6
+      ✅ fully-qualified
+      📌 E1.0
+      📝 vertical traffic light
+
+🛑  U+1F6D1
+      ✅ fully-qualified
+      📌 E3.0
+      📝 stop sign
+
+🚧  U+1F6A7
+      ✅ fully-qualified
+      📌 E0.6
+      📝 construction
+
+⚓  U+2693
+      ✅ fully-qualified
+      📌 E0.6
+      📝 anchor
+
+🛟  U+1F6DF
+      ✅ fully-qualified
+      📌 E14.0
+      📝 ring buoy
+
+⛵  U+26F5
+      ✅ fully-qualified
+      📌 E0.6
+      📝 sailboat
+
+🛶  U+1F6F6
+      ✅ fully-qualified
+      📌 E3.0
+      📝 canoe
+
+🚤  U+1F6A4
+      ✅ fully-qualified
+      📌 E0.6
+      📝 speedboat
+
+🛳  U+1F6F3
+      ❓ unqualified
+      📌 E0.7
+      📝 passenger ship
+
+⛴  U+26F4
+      ❓ unqualified
+      📌 E0.7
+      📝 ferry
+
+🛥  U+1F6E5
+      ❓ unqualified
+      📌 E0.7
+      📝 motor boat
+
+🚢  U+1F6A2
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ship
+
+✈  U+2708
+      ❓ unqualified
+      📌 E0.6
+      📝 airplane
+
+🛩  U+1F6E9
+      ❓ unqualified
+      📌 E0.7
+      📝 small airplane
+
+🛫  U+1F6EB
+      ✅ fully-qualified
+      📌 E1.0
+      📝 airplane departure
+
+🛬  U+1F6EC
+      ✅ fully-qualified
+      📌 E1.0
+      📝 airplane arrival
+
+🪂  U+1FA82
+      ✅ fully-qualified
+      📌 E12.0
+      📝 parachute
+
+💺  U+1F4BA
+      ✅ fully-qualified
+      📌 E0.6
+      📝 seat
+
+🚁  U+1F681
+      ✅ fully-qualified
+      📌 E1.0
+      📝 helicopter
+
+🚟  U+1F69F
+      ✅ fully-qualified
+      📌 E1.0
+      📝 suspension railway
+
+🚠  U+1F6A0
+      ✅ fully-qualified
+      📌 E1.0
+      📝 mountain cableway
+
+🚡  U+1F6A1
+      ✅ fully-qualified
+      📌 E1.0
+      📝 aerial tramway
+
+🛰  U+1F6F0
+      ❓ unqualified
+      📌 E0.7
+      📝 satellite
+
+🚀  U+1F680
+      ✅ fully-qualified
+      📌 E0.6
+      📝 rocket
+
+🛸  U+1F6F8
+      ✅ fully-qualified
+      📌 E5.0
+      📝 flying saucer
+
+🛎  U+1F6CE
+      ❓ unqualified
+      📌 E0.7
+      📝 bellhop bell
+
+🧳  U+1F9F3
+      ✅ fully-qualified
+      📌 E11.0
+      📝 luggage
+
+⌛  U+231B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 hourglass done
+
+⏳  U+23F3
+      ✅ fully-qualified
+      📌 E0.6
+      📝 hourglass not done
+
+⌚  U+231A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 watch
+
+⏰  U+23F0
+      ✅ fully-qualified
+      📌 E0.6
+      📝 alarm clock
+
+⏱  U+23F1
+      ❓ unqualified
+      📌 E1.0
+      📝 stopwatch
+
+⏲  U+23F2
+      ❓ unqualified
+      📌 E1.0
+      📝 timer clock
+
+🕰  U+1F570
+      ❓ unqualified
+      📌 E0.7
+      📝 mantelpiece clock
+
+🕛  U+1F55B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 twelve o’clock
+
+🕧  U+1F567
+      ✅ fully-qualified
+      📌 E0.7
+      📝 twelve-thirty
+
+🕐  U+1F550
+      ✅ fully-qualified
+      📌 E0.6
+      📝 one o’clock
+
+🕜  U+1F55C
+      ✅ fully-qualified
+      📌 E0.7
+      📝 one-thirty
+
+🕑  U+1F551
+      ✅ fully-qualified
+      📌 E0.6
+      📝 two o’clock
+
+🕝  U+1F55D
+      ✅ fully-qualified
+      📌 E0.7
+      📝 two-thirty
+
+🕒  U+1F552
+      ✅ fully-qualified
+      📌 E0.6
+      📝 three o’clock
+
+🕞  U+1F55E
+      ✅ fully-qualified
+      📌 E0.7
+      📝 three-thirty
+
+🕓  U+1F553
+      ✅ fully-qualified
+      📌 E0.6
+      📝 four o’clock
+
+🕟  U+1F55F
+      ✅ fully-qualified
+      📌 E0.7
+      📝 four-thirty
+
+🕔  U+1F554
+      ✅ fully-qualified
+      📌 E0.6
+      📝 five o’clock
+
+🕠  U+1F560
+      ✅ fully-qualified
+      📌 E0.7
+      📝 five-thirty
+
+🕕  U+1F555
+      ✅ fully-qualified
+      📌 E0.6
+      📝 six o’clock
+
+🕡  U+1F561
+      ✅ fully-qualified
+      📌 E0.7
+      📝 six-thirty
+
+🕖  U+1F556
+      ✅ fully-qualified
+      📌 E0.6
+      📝 seven o’clock
+
+🕢  U+1F562
+      ✅ fully-qualified
+      📌 E0.7
+      📝 seven-thirty
+
+🕗  U+1F557
+      ✅ fully-qualified
+      📌 E0.6
+      📝 eight o’clock
+
+🕣  U+1F563
+      ✅ fully-qualified
+      📌 E0.7
+      📝 eight-thirty
+
+🕘  U+1F558
+      ✅ fully-qualified
+      📌 E0.6
+      📝 nine o’clock
+
+🕤  U+1F564
+      ✅ fully-qualified
+      📌 E0.7
+      📝 nine-thirty
+
+🕙  U+1F559
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ten o’clock
+
+🕥  U+1F565
+      ✅ fully-qualified
+      📌 E0.7
+      📝 ten-thirty
+
+🕚  U+1F55A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 eleven o’clock
+
+🕦  U+1F566
+      ✅ fully-qualified
+      📌 E0.7
+      📝 eleven-thirty
+
+🌑  U+1F311
+      ✅ fully-qualified
+      📌 E0.6
+      📝 new moon
+
+🌒  U+1F312
+      ✅ fully-qualified
+      📌 E1.0
+      📝 waxing crescent moon
+
+🌓  U+1F313
+      ✅ fully-qualified
+      📌 E0.6
+      📝 first quarter moon
+
+🌔  U+1F314
+      ✅ fully-qualified
+      📌 E0.6
+      📝 waxing gibbous moon
+
+🌕  U+1F315
+      ✅ fully-qualified
+      📌 E0.6
+      📝 full moon
+
+🌖  U+1F316
+      ✅ fully-qualified
+      📌 E1.0
+      📝 waning gibbous moon
+
+🌗  U+1F317
+      ✅ fully-qualified
+      📌 E1.0
+      📝 last quarter moon
+
+🌘  U+1F318
+      ✅ fully-qualified
+      📌 E1.0
+      📝 waning crescent moon
+
+🌙  U+1F319
+      ✅ fully-qualified
+      📌 E0.6
+      📝 crescent moon
+
+🌚  U+1F31A
+      ✅ fully-qualified
+      📌 E1.0
+      📝 new moon face
+
+🌛  U+1F31B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 first quarter moon face
+
+🌜  U+1F31C
+      ✅ fully-qualified
+      📌 E0.7
+      📝 last quarter moon face
+
+🌡  U+1F321
+      ❓ unqualified
+      📌 E0.7
+      📝 thermometer
+
+☀  U+2600
+      ❓ unqualified
+      📌 E0.6
+      📝 sun
+
+🌝  U+1F31D
+      ✅ fully-qualified
+      📌 E1.0
+      📝 full moon face
+
+🌞  U+1F31E
+      ✅ fully-qualified
+      📌 E1.0
+      📝 sun with face
+
+🪐  U+1FA90
+      ✅ fully-qualified
+      📌 E12.0
+      📝 ringed planet
+
+⭐  U+2B50
+      ✅ fully-qualified
+      📌 E0.6
+      📝 star
+
+🌟  U+1F31F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 glowing star
+
+🌠  U+1F320
+      ✅ fully-qualified
+      📌 E0.6
+      📝 shooting star
+
+🌌  U+1F30C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 milky way
+
+☁  U+2601
+      ❓ unqualified
+      📌 E0.6
+      📝 cloud
+
+⛅  U+26C5
+      ✅ fully-qualified
+      📌 E0.6
+      📝 sun behind cloud
+
+⛈  U+26C8
+      ❓ unqualified
+      📌 E0.7
+      📝 cloud with lightning and rain
+
+🌤  U+1F324
+      ❓ unqualified
+      📌 E0.7
+      📝 sun behind small cloud
+
+🌥  U+1F325
+      ❓ unqualified
+      📌 E0.7
+      📝 sun behind large cloud
+
+🌦  U+1F326
+      ❓ unqualified
+      📌 E0.7
+      📝 sun behind rain cloud
+
+🌧  U+1F327
+      ❓ unqualified
+      📌 E0.7
+      📝 cloud with rain
+
+🌨  U+1F328
+      ❓ unqualified
+      📌 E0.7
+      📝 cloud with snow
+
+🌩  U+1F329
+      ❓ unqualified
+      📌 E0.7
+      📝 cloud with lightning
+
+🌪  U+1F32A
+      ❓ unqualified
+      📌 E0.7
+      📝 tornado
+
+🌫  U+1F32B
+      ❓ unqualified
+      📌 E0.7
+      📝 fog
+
+🌬  U+1F32C
+      ❓ unqualified
+      📌 E0.7
+      📝 wind face
+
+🌀  U+1F300
+      ✅ fully-qualified
+      📌 E0.6
+      📝 cyclone
+
+🌈  U+1F308
+      ✅ fully-qualified
+      📌 E0.6
+      📝 rainbow
+
+🌂  U+1F302
+      ✅ fully-qualified
+      📌 E0.6
+      📝 closed umbrella
+
+☂  U+2602
+      ❓ unqualified
+      📌 E0.7
+      📝 umbrella
+
+☔  U+2614
+      ✅ fully-qualified
+      📌 E0.6
+      📝 umbrella with rain drops
+
+⛱  U+26F1
+      ❓ unqualified
+      📌 E0.7
+      📝 umbrella on ground
+
+⚡  U+26A1
+      ✅ fully-qualified
+      📌 E0.6
+      📝 high voltage
+
+❄  U+2744
+      ❓ unqualified
+      📌 E0.6
+      📝 snowflake
+
+☃  U+2603
+      ❓ unqualified
+      📌 E0.7
+      📝 snowman
+
+⛄  U+26C4
+      ✅ fully-qualified
+      📌 E0.6
+      📝 snowman without snow
+
+☄  U+2604
+      ❓ unqualified
+      📌 E1.0
+      📝 comet
+
+🔥  U+1F525
+      ✅ fully-qualified
+      📌 E0.6
+      📝 fire
+
+💧  U+1F4A7
+      ✅ fully-qualified
+      📌 E0.6
+      📝 droplet
+
+🌊  U+1F30A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 water wave
+
+🎃  U+1F383
+      ✅ fully-qualified
+      📌 E0.6
+      📝 jack-o-lantern
+
+🎄  U+1F384
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Christmas tree
+
+🎆  U+1F386
+      ✅ fully-qualified
+      📌 E0.6
+      📝 fireworks
+
+🎇  U+1F387
+      ✅ fully-qualified
+      📌 E0.6
+      📝 sparkler
+
+🧨  U+1F9E8
+      ✅ fully-qualified
+      📌 E11.0
+      📝 firecracker
+
+✨  U+2728
+      ✅ fully-qualified
+      📌 E0.6
+      📝 sparkles
+
+🎈  U+1F388
+      ✅ fully-qualified
+      📌 E0.6
+      📝 balloon
+
+🎉  U+1F389
+      ✅ fully-qualified
+      📌 E0.6
+      📝 party popper
+
+🎊  U+1F38A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 confetti ball
+
+🎋  U+1F38B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 tanabata tree
+
+🎍  U+1F38D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 pine decoration
+
+🎎  U+1F38E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Japanese dolls
+
+🎏  U+1F38F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 carp streamer
+
+🎐  U+1F390
+      ✅ fully-qualified
+      📌 E0.6
+      📝 wind chime
+
+🎑  U+1F391
+      ✅ fully-qualified
+      📌 E0.6
+      📝 moon viewing ceremony
+
+🧧  U+1F9E7
+      ✅ fully-qualified
+      📌 E11.0
+      📝 red envelope
+
+🎀  U+1F380
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ribbon
+
+🎁  U+1F381
+      ✅ fully-qualified
+      📌 E0.6
+      📝 wrapped gift
+
+🎗  U+1F397
+      ❓ unqualified
+      📌 E0.7
+      📝 reminder ribbon
+
+🎟  U+1F39F
+      ❓ unqualified
+      📌 E0.7
+      📝 admission tickets
+
+🎫  U+1F3AB
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ticket
+
+🎖  U+1F396
+      ❓ unqualified
+      📌 E0.7
+      📝 military medal
+
+🏆  U+1F3C6
+      ✅ fully-qualified
+      📌 E0.6
+      📝 trophy
+
+🏅  U+1F3C5
+      ✅ fully-qualified
+      📌 E1.0
+      📝 sports medal
+
+🥇  U+1F947
+      ✅ fully-qualified
+      📌 E3.0
+      📝 1st place medal
+
+🥈  U+1F948
+      ✅ fully-qualified
+      📌 E3.0
+      📝 2nd place medal
+
+🥉  U+1F949
+      ✅ fully-qualified
+      📌 E3.0
+      📝 3rd place medal
+
+⚽  U+26BD
+      ✅ fully-qualified
+      📌 E0.6
+      📝 soccer ball
+
+⚾  U+26BE
+      ✅ fully-qualified
+      📌 E0.6
+      📝 baseball
+
+🥎  U+1F94E
+      ✅ fully-qualified
+      📌 E11.0
+      📝 softball
+
+🏀  U+1F3C0
+      ✅ fully-qualified
+      📌 E0.6
+      📝 basketball
+
+🏐  U+1F3D0
+      ✅ fully-qualified
+      📌 E1.0
+      📝 volleyball
+
+🏈  U+1F3C8
+      ✅ fully-qualified
+      📌 E0.6
+      📝 american football
+
+🏉  U+1F3C9
+      ✅ fully-qualified
+      📌 E1.0
+      📝 rugby football
+
+🎾  U+1F3BE
+      ✅ fully-qualified
+      📌 E0.6
+      📝 tennis
+
+🥏  U+1F94F
+      ✅ fully-qualified
+      📌 E11.0
+      📝 flying disc
+
+🎳  U+1F3B3
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bowling
+
+🏏  U+1F3CF
+      ✅ fully-qualified
+      📌 E1.0
+      📝 cricket game
+
+🏑  U+1F3D1
+      ✅ fully-qualified
+      📌 E1.0
+      📝 field hockey
+
+🏒  U+1F3D2
+      ✅ fully-qualified
+      📌 E1.0
+      📝 ice hockey
+
+🥍  U+1F94D
+      ✅ fully-qualified
+      📌 E11.0
+      📝 lacrosse
+
+🏓  U+1F3D3
+      ✅ fully-qualified
+      📌 E1.0
+      📝 ping pong
+
+🏸  U+1F3F8
+      ✅ fully-qualified
+      📌 E1.0
+      📝 badminton
+
+🥊  U+1F94A
+      ✅ fully-qualified
+      📌 E3.0
+      📝 boxing glove
+
+🥋  U+1F94B
+      ✅ fully-qualified
+      📌 E3.0
+      📝 martial arts uniform
+
+🥅  U+1F945
+      ✅ fully-qualified
+      📌 E3.0
+      📝 goal net
+
+⛳  U+26F3
+      ✅ fully-qualified
+      📌 E0.6
+      📝 flag in hole
+
+⛸  U+26F8
+      ❓ unqualified
+      📌 E0.7
+      📝 ice skate
+
+🎣  U+1F3A3
+      ✅ fully-qualified
+      📌 E0.6
+      📝 fishing pole
+
+🤿  U+1F93F
+      ✅ fully-qualified
+      📌 E12.0
+      📝 diving mask
+
+🎽  U+1F3BD
+      ✅ fully-qualified
+      📌 E0.6
+      📝 running shirt
+
+🎿  U+1F3BF
+      ✅ fully-qualified
+      📌 E0.6
+      📝 skis
+
+🛷  U+1F6F7
+      ✅ fully-qualified
+      📌 E5.0
+      📝 sled
+
+🥌  U+1F94C
+      ✅ fully-qualified
+      📌 E5.0
+      📝 curling stone
+
+🎯  U+1F3AF
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bullseye
+
+🪀  U+1FA80
+      ✅ fully-qualified
+      📌 E12.0
+      📝 yo-yo
+
+🪁  U+1FA81
+      ✅ fully-qualified
+      📌 E12.0
+      📝 kite
+
+🔫  U+1F52B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 water pistol
+
+🎱  U+1F3B1
+      ✅ fully-qualified
+      📌 E0.6
+      📝 pool 8 ball
+
+🔮  U+1F52E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 crystal ball
+
+🪄  U+1FA84
+      ✅ fully-qualified
+      📌 E13.0
+      📝 magic wand
+
+🎮  U+1F3AE
+      ✅ fully-qualified
+      📌 E0.6
+      📝 video game
+
+🕹  U+1F579
+      ❓ unqualified
+      📌 E0.7
+      📝 joystick
+
+🎰  U+1F3B0
+      ✅ fully-qualified
+      📌 E0.6
+      📝 slot machine
+
+🎲  U+1F3B2
+      ✅ fully-qualified
+      📌 E0.6
+      📝 game die
+
+🧩  U+1F9E9
+      ✅ fully-qualified
+      📌 E11.0
+      📝 puzzle piece
+
+🧸  U+1F9F8
+      ✅ fully-qualified
+      📌 E11.0
+      📝 teddy bear
+
+🪅  U+1FA85
+      ✅ fully-qualified
+      📌 E13.0
+      📝 piñata
+
+🪩  U+1FAA9
+      ✅ fully-qualified
+      📌 E14.0
+      📝 mirror ball
+
+🪆  U+1FA86
+      ✅ fully-qualified
+      📌 E13.0
+      📝 nesting dolls
+
+♠  U+2660
+      ❓ unqualified
+      📌 E0.6
+      📝 spade suit
+
+♥  U+2665
+      ❓ unqualified
+      📌 E0.6
+      📝 heart suit
+
+♦  U+2666
+      ❓ unqualified
+      📌 E0.6
+      📝 diamond suit
+
+♣  U+2663
+      ❓ unqualified
+      📌 E0.6
+      📝 club suit
+
+♟  U+265F
+      ❓ unqualified
+      📌 E11.0
+      📝 chess pawn
+
+🃏  U+1F0CF
+      ✅ fully-qualified
+      📌 E0.6
+      📝 joker
+
+🀄  U+1F004
+      ✅ fully-qualified
+      📌 E0.6
+      📝 mahjong red dragon
+
+🎴  U+1F3B4
+      ✅ fully-qualified
+      📌 E0.6
+      📝 flower playing cards
+
+🎭  U+1F3AD
+      ✅ fully-qualified
+      📌 E0.6
+      📝 performing arts
+
+🖼  U+1F5BC
+      ❓ unqualified
+      📌 E0.7
+      📝 framed picture
+
+🎨  U+1F3A8
+      ✅ fully-qualified
+      📌 E0.6
+      📝 artist palette
+
+🧵  U+1F9F5
+      ✅ fully-qualified
+      📌 E11.0
+      📝 thread
+
+🪡  U+1FAA1
+      ✅ fully-qualified
+      📌 E13.0
+      📝 sewing needle
+
+🧶  U+1F9F6
+      ✅ fully-qualified
+      📌 E11.0
+      📝 yarn
+
+🪢  U+1FAA2
+      ✅ fully-qualified
+      📌 E13.0
+      📝 knot
+
+👓  U+1F453
+      ✅ fully-qualified
+      📌 E0.6
+      📝 glasses
+
+🕶  U+1F576
+      ❓ unqualified
+      📌 E0.7
+      📝 sunglasses
+
+🥽  U+1F97D
+      ✅ fully-qualified
+      📌 E11.0
+      📝 goggles
+
+🥼  U+1F97C
+      ✅ fully-qualified
+      📌 E11.0
+      📝 lab coat
+
+🦺  U+1F9BA
+      ✅ fully-qualified
+      📌 E12.0
+      📝 safety vest
+
+👔  U+1F454
+      ✅ fully-qualified
+      📌 E0.6
+      📝 necktie
+
+👕  U+1F455
+      ✅ fully-qualified
+      📌 E0.6
+      📝 t-shirt
+
+👖  U+1F456
+      ✅ fully-qualified
+      📌 E0.6
+      📝 jeans
+
+🧣  U+1F9E3
+      ✅ fully-qualified
+      📌 E5.0
+      📝 scarf
+
+🧤  U+1F9E4
+      ✅ fully-qualified
+      📌 E5.0
+      📝 gloves
+
+🧥  U+1F9E5
+      ✅ fully-qualified
+      📌 E5.0
+      📝 coat
+
+🧦  U+1F9E6
+      ✅ fully-qualified
+      📌 E5.0
+      📝 socks
+
+👗  U+1F457
+      ✅ fully-qualified
+      📌 E0.6
+      📝 dress
+
+👘  U+1F458
+      ✅ fully-qualified
+      📌 E0.6
+      📝 kimono
+
+🥻  U+1F97B
+      ✅ fully-qualified
+      📌 E12.0
+      📝 sari
+
+🩱  U+1FA71
+      ✅ fully-qualified
+      📌 E12.0
+      📝 one-piece swimsuit
+
+🩲  U+1FA72
+      ✅ fully-qualified
+      📌 E12.0
+      📝 briefs
+
+🩳  U+1FA73
+      ✅ fully-qualified
+      📌 E12.0
+      📝 shorts
+
+👙  U+1F459
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bikini
+
+👚  U+1F45A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 woman’s clothes
+
+🪭  U+1FAAD
+      ✅ fully-qualified
+      📌 E15.0
+      📝 folding hand fan
+
+👛  U+1F45B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 purse
+
+👜  U+1F45C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 handbag
+
+👝  U+1F45D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 clutch bag
+
+🛍  U+1F6CD
+      ❓ unqualified
+      📌 E0.7
+      📝 shopping bags
+
+🎒  U+1F392
+      ✅ fully-qualified
+      📌 E0.6
+      📝 backpack
+
+🩴  U+1FA74
+      ✅ fully-qualified
+      📌 E13.0
+      📝 thong sandal
+
+👞  U+1F45E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 man’s shoe
+
+👟  U+1F45F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 running shoe
+
+🥾  U+1F97E
+      ✅ fully-qualified
+      📌 E11.0
+      📝 hiking boot
+
+🥿  U+1F97F
+      ✅ fully-qualified
+      📌 E11.0
+      📝 flat shoe
+
+👠  U+1F460
+      ✅ fully-qualified
+      📌 E0.6
+      📝 high-heeled shoe
+
+👡  U+1F461
+      ✅ fully-qualified
+      📌 E0.6
+      📝 woman’s sandal
+
+🩰  U+1FA70
+      ✅ fully-qualified
+      📌 E12.0
+      📝 ballet shoes
+
+👢  U+1F462
+      ✅ fully-qualified
+      📌 E0.6
+      📝 woman’s boot
+
+🪮  U+1FAAE
+      ✅ fully-qualified
+      📌 E15.0
+      📝 hair pick
+
+👑  U+1F451
+      ✅ fully-qualified
+      📌 E0.6
+      📝 crown
+
+👒  U+1F452
+      ✅ fully-qualified
+      📌 E0.6
+      📝 woman’s hat
+
+🎩  U+1F3A9
+      ✅ fully-qualified
+      📌 E0.6
+      📝 top hat
+
+🎓  U+1F393
+      ✅ fully-qualified
+      📌 E0.6
+      📝 graduation cap
+
+🧢  U+1F9E2
+      ✅ fully-qualified
+      📌 E5.0
+      📝 billed cap
+
+🪖  U+1FA96
+      ✅ fully-qualified
+      📌 E13.0
+      📝 military helmet
+
+⛑  U+26D1
+      ❓ unqualified
+      📌 E0.7
+      📝 rescue worker’s helmet
+
+📿  U+1F4FF
+      ✅ fully-qualified
+      📌 E1.0
+      📝 prayer beads
+
+💄  U+1F484
+      ✅ fully-qualified
+      📌 E0.6
+      📝 lipstick
+
+💍  U+1F48D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ring
+
+💎  U+1F48E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 gem stone
+
+🔇  U+1F507
+      ✅ fully-qualified
+      📌 E1.0
+      📝 muted speaker
+
+🔈  U+1F508
+      ✅ fully-qualified
+      📌 E0.7
+      📝 speaker low volume
+
+🔉  U+1F509
+      ✅ fully-qualified
+      📌 E1.0
+      📝 speaker medium volume
+
+🔊  U+1F50A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 speaker high volume
+
+📢  U+1F4E2
+      ✅ fully-qualified
+      📌 E0.6
+      📝 loudspeaker
+
+📣  U+1F4E3
+      ✅ fully-qualified
+      📌 E0.6
+      📝 megaphone
+
+📯  U+1F4EF
+      ✅ fully-qualified
+      📌 E1.0
+      📝 postal horn
+
+🔔  U+1F514
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bell
+
+🔕  U+1F515
+      ✅ fully-qualified
+      📌 E1.0
+      📝 bell with slash
+
+🎼  U+1F3BC
+      ✅ fully-qualified
+      📌 E0.6
+      📝 musical score
+
+🎵  U+1F3B5
+      ✅ fully-qualified
+      📌 E0.6
+      📝 musical note
+
+🎶  U+1F3B6
+      ✅ fully-qualified
+      📌 E0.6
+      📝 musical notes
+
+🎙  U+1F399
+      ❓ unqualified
+      📌 E0.7
+      📝 studio microphone
+
+🎚  U+1F39A
+      ❓ unqualified
+      📌 E0.7
+      📝 level slider
+
+🎛  U+1F39B
+      ❓ unqualified
+      📌 E0.7
+      📝 control knobs
+
+🎤  U+1F3A4
+      ✅ fully-qualified
+      📌 E0.6
+      📝 microphone
+
+🎧  U+1F3A7
+      ✅ fully-qualified
+      📌 E0.6
+      📝 headphone
+
+📻  U+1F4FB
+      ✅ fully-qualified
+      📌 E0.6
+      📝 radio
+
+🎷  U+1F3B7
+      ✅ fully-qualified
+      📌 E0.6
+      📝 saxophone
+
+🎺  U+1F3BA
+      ✅ fully-qualified
+      📌 E0.6
+      📝 trumpet
+
+🪊  U+1FA8A
+      ✅ fully-qualified
+      📌 E17.0
+      📝 trombone
+
+🪗  U+1FA97
+      ✅ fully-qualified
+      📌 E13.0
+      📝 accordion
+
+🎸  U+1F3B8
+      ✅ fully-qualified
+      📌 E0.6
+      📝 guitar
+
+🎹  U+1F3B9
+      ✅ fully-qualified
+      📌 E0.6
+      📝 musical keyboard
+
+🎻  U+1F3BB
+      ✅ fully-qualified
+      📌 E0.6
+      📝 violin
+
+🪕  U+1FA95
+      ✅ fully-qualified
+      📌 E12.0
+      📝 banjo
+
+🥁  U+1F941
+      ✅ fully-qualified
+      📌 E3.0
+      📝 drum
+
+🪘  U+1FA98
+      ✅ fully-qualified
+      📌 E13.0
+      📝 long drum
+
+🪇  U+1FA87
+      ✅ fully-qualified
+      📌 E15.0
+      📝 maracas
+
+🪈  U+1FA88
+      ✅ fully-qualified
+      📌 E15.0
+      📝 flute
+
+🪉  U+1FA89
+      ✅ fully-qualified
+      📌 E16.0
+      📝 harp
+
+📱  U+1F4F1
+      ✅ fully-qualified
+      📌 E0.6
+      📝 mobile phone
+
+📲  U+1F4F2
+      ✅ fully-qualified
+      📌 E0.6
+      📝 mobile phone with arrow
+
+☎  U+260E
+      ❓ unqualified
+      📌 E0.6
+      📝 telephone
+
+📞  U+1F4DE
+      ✅ fully-qualified
+      📌 E0.6
+      📝 telephone receiver
+
+📟  U+1F4DF
+      ✅ fully-qualified
+      📌 E0.6
+      📝 pager
+
+📠  U+1F4E0
+      ✅ fully-qualified
+      📌 E0.6
+      📝 fax machine
+
+🔋  U+1F50B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 battery
+
+🪫  U+1FAAB
+      ✅ fully-qualified
+      📌 E14.0
+      📝 low battery
+
+🔌  U+1F50C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 electric plug
+
+💻  U+1F4BB
+      ✅ fully-qualified
+      📌 E0.6
+      📝 laptop
+
+🖥  U+1F5A5
+      ❓ unqualified
+      📌 E0.7
+      📝 desktop computer
+
+🖨  U+1F5A8
+      ❓ unqualified
+      📌 E0.7
+      📝 printer
+
+⌨  U+2328
+      ❓ unqualified
+      📌 E1.0
+      📝 keyboard
+
+🖱  U+1F5B1
+      ❓ unqualified
+      📌 E0.7
+      📝 computer mouse
+
+🖲  U+1F5B2
+      ❓ unqualified
+      📌 E0.7
+      📝 trackball
+
+💽  U+1F4BD
+      ✅ fully-qualified
+      📌 E0.6
+      📝 computer disk
+
+💾  U+1F4BE
+      ✅ fully-qualified
+      📌 E0.6
+      📝 floppy disk
+
+💿  U+1F4BF
+      ✅ fully-qualified
+      📌 E0.6
+      📝 optical disk
+
+📀  U+1F4C0
+      ✅ fully-qualified
+      📌 E0.6
+      📝 dvd
+
+🧮  U+1F9EE
+      ✅ fully-qualified
+      📌 E11.0
+      📝 abacus
+
+🎥  U+1F3A5
+      ✅ fully-qualified
+      📌 E0.6
+      📝 movie camera
+
+🎞  U+1F39E
+      ❓ unqualified
+      📌 E0.7
+      📝 film frames
+
+📽  U+1F4FD
+      ❓ unqualified
+      📌 E0.7
+      📝 film projector
+
+🎬  U+1F3AC
+      ✅ fully-qualified
+      📌 E0.6
+      📝 clapper board
+
+📺  U+1F4FA
+      ✅ fully-qualified
+      📌 E0.6
+      📝 television
+
+📷  U+1F4F7
+      ✅ fully-qualified
+      📌 E0.6
+      📝 camera
+
+📸  U+1F4F8
+      ✅ fully-qualified
+      📌 E1.0
+      📝 camera with flash
+
+📹  U+1F4F9
+      ✅ fully-qualified
+      📌 E0.6
+      📝 video camera
+
+📼  U+1F4FC
+      ✅ fully-qualified
+      📌 E0.6
+      📝 videocassette
+
+🔍  U+1F50D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 magnifying glass tilted left
+
+🔎  U+1F50E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 magnifying glass tilted right
+
+🕯  U+1F56F
+      ❓ unqualified
+      📌 E0.7
+      📝 candle
+
+💡  U+1F4A1
+      ✅ fully-qualified
+      📌 E0.6
+      📝 light bulb
+
+🔦  U+1F526
+      ✅ fully-qualified
+      📌 E0.6
+      📝 flashlight
+
+🏮  U+1F3EE
+      ✅ fully-qualified
+      📌 E0.6
+      📝 red paper lantern
+
+🪔  U+1FA94
+      ✅ fully-qualified
+      📌 E12.0
+      📝 diya lamp
+
+📔  U+1F4D4
+      ✅ fully-qualified
+      📌 E0.6
+      📝 notebook with decorative cover
+
+📕  U+1F4D5
+      ✅ fully-qualified
+      📌 E0.6
+      📝 closed book
+
+📖  U+1F4D6
+      ✅ fully-qualified
+      📌 E0.6
+      📝 open book
+
+📗  U+1F4D7
+      ✅ fully-qualified
+      📌 E0.6
+      📝 green book
+
+📘  U+1F4D8
+      ✅ fully-qualified
+      📌 E0.6
+      📝 blue book
+
+📙  U+1F4D9
+      ✅ fully-qualified
+      📌 E0.6
+      📝 orange book
+
+📚  U+1F4DA
+      ✅ fully-qualified
+      📌 E0.6
+      📝 books
+
+📓  U+1F4D3
+      ✅ fully-qualified
+      📌 E0.6
+      📝 notebook
+
+📒  U+1F4D2
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ledger
+
+📃  U+1F4C3
+      ✅ fully-qualified
+      📌 E0.6
+      📝 page with curl
+
+📜  U+1F4DC
+      ✅ fully-qualified
+      📌 E0.6
+      📝 scroll
+
+📄  U+1F4C4
+      ✅ fully-qualified
+      📌 E0.6
+      📝 page facing up
+
+📰  U+1F4F0
+      ✅ fully-qualified
+      📌 E0.6
+      📝 newspaper
+
+🗞  U+1F5DE
+      ❓ unqualified
+      📌 E0.7
+      📝 rolled-up newspaper
+
+📑  U+1F4D1
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bookmark tabs
+
+🔖  U+1F516
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bookmark
+
+🏷  U+1F3F7
+      ❓ unqualified
+      📌 E0.7
+      📝 label
+
+🪙  U+1FA99
+      ✅ fully-qualified
+      📌 E13.0
+      📝 coin
+
+💰  U+1F4B0
+      ✅ fully-qualified
+      📌 E0.6
+      📝 money bag
+
+🪎  U+1FA8E
+      ✅ fully-qualified
+      📌 E17.0
+      📝 treasure chest
+
+💴  U+1F4B4
+      ✅ fully-qualified
+      📌 E0.6
+      📝 yen banknote
+
+💵  U+1F4B5
+      ✅ fully-qualified
+      📌 E0.6
+      📝 dollar banknote
+
+💶  U+1F4B6
+      ✅ fully-qualified
+      📌 E1.0
+      📝 euro banknote
+
+💷  U+1F4B7
+      ✅ fully-qualified
+      📌 E1.0
+      📝 pound banknote
+
+💸  U+1F4B8
+      ✅ fully-qualified
+      📌 E0.6
+      📝 money with wings
+
+💳  U+1F4B3
+      ✅ fully-qualified
+      📌 E0.6
+      📝 credit card
+
+🧾  U+1F9FE
+      ✅ fully-qualified
+      📌 E11.0
+      📝 receipt
+
+💹  U+1F4B9
+      ✅ fully-qualified
+      📌 E0.6
+      📝 chart increasing with yen
+
+✉  U+2709
+      ❓ unqualified
+      📌 E0.6
+      📝 envelope
+
+📧  U+1F4E7
+      ✅ fully-qualified
+      📌 E0.6
+      📝 e-mail
+
+📨  U+1F4E8
+      ✅ fully-qualified
+      📌 E0.6
+      📝 incoming envelope
+
+📩  U+1F4E9
+      ✅ fully-qualified
+      📌 E0.6
+      📝 envelope with arrow
+
+📤  U+1F4E4
+      ✅ fully-qualified
+      📌 E0.6
+      📝 outbox tray
+
+📥  U+1F4E5
+      ✅ fully-qualified
+      📌 E0.6
+      📝 inbox tray
+
+📦  U+1F4E6
+      ✅ fully-qualified
+      📌 E0.6
+      📝 package
+
+📫  U+1F4EB
+      ✅ fully-qualified
+      📌 E0.6
+      📝 closed mailbox with raised flag
+
+📪  U+1F4EA
+      ✅ fully-qualified
+      📌 E0.6
+      📝 closed mailbox with lowered flag
+
+📬  U+1F4EC
+      ✅ fully-qualified
+      📌 E0.7
+      📝 open mailbox with raised flag
+
+📭  U+1F4ED
+      ✅ fully-qualified
+      📌 E0.7
+      📝 open mailbox with lowered flag
+
+📮  U+1F4EE
+      ✅ fully-qualified
+      📌 E0.6
+      📝 postbox
+
+🗳  U+1F5F3
+      ❓ unqualified
+      📌 E0.7
+      📝 ballot box with ballot
+
+✏  U+270F
+      ❓ unqualified
+      📌 E0.6
+      📝 pencil
+
+✒  U+2712
+      ❓ unqualified
+      📌 E0.6
+      📝 black nib
+
+🖋  U+1F58B
+      ❓ unqualified
+      📌 E0.7
+      📝 fountain pen
+
+🖊  U+1F58A
+      ❓ unqualified
+      📌 E0.7
+      📝 pen
+
+🖌  U+1F58C
+      ❓ unqualified
+      📌 E0.7
+      📝 paintbrush
+
+🖍  U+1F58D
+      ❓ unqualified
+      📌 E0.7
+      📝 crayon
+
+📝  U+1F4DD
+      ✅ fully-qualified
+      📌 E0.6
+      📝 memo
+
+💼  U+1F4BC
+      ✅ fully-qualified
+      📌 E0.6
+      📝 briefcase
+
+📁  U+1F4C1
+      ✅ fully-qualified
+      📌 E0.6
+      📝 file folder
+
+📂  U+1F4C2
+      ✅ fully-qualified
+      📌 E0.6
+      📝 open file folder
+
+🗂  U+1F5C2
+      ❓ unqualified
+      📌 E0.7
+      📝 card index dividers
+
+📅  U+1F4C5
+      ✅ fully-qualified
+      📌 E0.6
+      📝 calendar
+
+📆  U+1F4C6
+      ✅ fully-qualified
+      📌 E0.6
+      📝 tear-off calendar
+
+🗒  U+1F5D2
+      ❓ unqualified
+      📌 E0.7
+      📝 spiral notepad
+
+🗓  U+1F5D3
+      ❓ unqualified
+      📌 E0.7
+      📝 spiral calendar
+
+📇  U+1F4C7
+      ✅ fully-qualified
+      📌 E0.6
+      📝 card index
+
+📈  U+1F4C8
+      ✅ fully-qualified
+      📌 E0.6
+      📝 chart increasing
+
+📉  U+1F4C9
+      ✅ fully-qualified
+      📌 E0.6
+      📝 chart decreasing
+
+📊  U+1F4CA
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bar chart
+
+📋  U+1F4CB
+      ✅ fully-qualified
+      📌 E0.6
+      📝 clipboard
+
+📌  U+1F4CC
+      ✅ fully-qualified
+      📌 E0.6
+      📝 pushpin
+
+📍  U+1F4CD
+      ✅ fully-qualified
+      📌 E0.6
+      📝 round pushpin
+
+📎  U+1F4CE
+      ✅ fully-qualified
+      📌 E0.6
+      📝 paperclip
+
+🖇  U+1F587
+      ❓ unqualified
+      📌 E0.7
+      📝 linked paperclips
+
+📏  U+1F4CF
+      ✅ fully-qualified
+      📌 E0.6
+      📝 straight ruler
+
+📐  U+1F4D0
+      ✅ fully-qualified
+      📌 E0.6
+      📝 triangular ruler
+
+✂  U+2702
+      ❓ unqualified
+      📌 E0.6
+      📝 scissors
+
+🗃  U+1F5C3
+      ❓ unqualified
+      📌 E0.7
+      📝 card file box
+
+🗄  U+1F5C4
+      ❓ unqualified
+      📌 E0.7
+      📝 file cabinet
+
+🗑  U+1F5D1
+      ❓ unqualified
+      📌 E0.7
+      📝 wastebasket
+
+🔒  U+1F512
+      ✅ fully-qualified
+      📌 E0.6
+      📝 locked
+
+🔓  U+1F513
+      ✅ fully-qualified
+      📌 E0.6
+      📝 unlocked
+
+🔏  U+1F50F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 locked with pen
+
+🔐  U+1F510
+      ✅ fully-qualified
+      📌 E0.6
+      📝 locked with key
+
+🔑  U+1F511
+      ✅ fully-qualified
+      📌 E0.6
+      📝 key
+
+🗝  U+1F5DD
+      ❓ unqualified
+      📌 E0.7
+      📝 old key
+
+🔨  U+1F528
+      ✅ fully-qualified
+      📌 E0.6
+      📝 hammer
+
+🪓  U+1FA93
+      ✅ fully-qualified
+      📌 E12.0
+      📝 axe
+
+⛏  U+26CF
+      ❓ unqualified
+      📌 E0.7
+      📝 pick
+
+⚒  U+2692
+      ❓ unqualified
+      📌 E1.0
+      📝 hammer and pick
+
+🛠  U+1F6E0
+      ❓ unqualified
+      📌 E0.7
+      📝 hammer and wrench
+
+🗡  U+1F5E1
+      ❓ unqualified
+      📌 E0.7
+      📝 dagger
+
+⚔  U+2694
+      ❓ unqualified
+      📌 E1.0
+      📝 crossed swords
+
+💣  U+1F4A3
+      ✅ fully-qualified
+      📌 E0.6
+      📝 bomb
+
+🪃  U+1FA83
+      ✅ fully-qualified
+      📌 E13.0
+      📝 boomerang
+
+🏹  U+1F3F9
+      ✅ fully-qualified
+      📌 E1.0
+      📝 bow and arrow
+
+🛡  U+1F6E1
+      ❓ unqualified
+      📌 E0.7
+      📝 shield
+
+🪚  U+1FA9A
+      ✅ fully-qualified
+      📌 E13.0
+      📝 carpentry saw
+
+🔧  U+1F527
+      ✅ fully-qualified
+      📌 E0.6
+      📝 wrench
+
+🪛  U+1FA9B
+      ✅ fully-qualified
+      📌 E13.0
+      📝 screwdriver
+
+🔩  U+1F529
+      ✅ fully-qualified
+      📌 E0.6
+      📝 nut and bolt
+
+⚙  U+2699
+      ❓ unqualified
+      📌 E1.0
+      📝 gear
+
+🗜  U+1F5DC
+      ❓ unqualified
+      📌 E0.7
+      📝 clamp
+
+⚖  U+2696
+      ❓ unqualified
+      📌 E1.0
+      📝 balance scale
+
+🦯  U+1F9AF
+      ✅ fully-qualified
+      📌 E12.0
+      📝 white cane
+
+🔗  U+1F517
+      ✅ fully-qualified
+      📌 E0.6
+      📝 link
+
+⛓  U+26D3
+      ❓ unqualified
+      📌 E0.7
+      📝 chains
+
+🪝  U+1FA9D
+      ✅ fully-qualified
+      📌 E13.0
+      📝 hook
+
+🧰  U+1F9F0
+      ✅ fully-qualified
+      📌 E11.0
+      📝 toolbox
+
+🧲  U+1F9F2
+      ✅ fully-qualified
+      📌 E11.0
+      📝 magnet
+
+🪜  U+1FA9C
+      ✅ fully-qualified
+      📌 E13.0
+      📝 ladder
+
+🪏  U+1FA8F
+      ✅ fully-qualified
+      📌 E16.0
+      📝 shovel
+
+⚗  U+2697
+      ❓ unqualified
+      📌 E1.0
+      📝 alembic
+
+🧪  U+1F9EA
+      ✅ fully-qualified
+      📌 E11.0
+      📝 test tube
+
+🧫  U+1F9EB
+      ✅ fully-qualified
+      📌 E11.0
+      📝 petri dish
+
+🧬  U+1F9EC
+      ✅ fully-qualified
+      📌 E11.0
+      📝 dna
+
+🔬  U+1F52C
+      ✅ fully-qualified
+      📌 E1.0
+      📝 microscope
+
+🔭  U+1F52D
+      ✅ fully-qualified
+      📌 E1.0
+      📝 telescope
+
+📡  U+1F4E1
+      ✅ fully-qualified
+      📌 E0.6
+      📝 satellite antenna
+
+💉  U+1F489
+      ✅ fully-qualified
+      📌 E0.6
+      📝 syringe
+
+🩸  U+1FA78
+      ✅ fully-qualified
+      📌 E12.0
+      📝 drop of blood
+
+💊  U+1F48A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 pill
+
+🩹  U+1FA79
+      ✅ fully-qualified
+      📌 E12.0
+      📝 adhesive bandage
+
+🩼  U+1FA7C
+      ✅ fully-qualified
+      📌 E14.0
+      📝 crutch
+
+🩺  U+1FA7A
+      ✅ fully-qualified
+      📌 E12.0
+      📝 stethoscope
+
+🩻  U+1FA7B
+      ✅ fully-qualified
+      📌 E14.0
+      📝 x-ray
+
+🚪  U+1F6AA
+      ✅ fully-qualified
+      📌 E0.6
+      📝 door
+
+🛗  U+1F6D7
+      ✅ fully-qualified
+      📌 E13.0
+      📝 elevator
+
+🪞  U+1FA9E
+      ✅ fully-qualified
+      📌 E13.0
+      📝 mirror
+
+🪟  U+1FA9F
+      ✅ fully-qualified
+      📌 E13.0
+      📝 window
+
+🛏  U+1F6CF
+      ❓ unqualified
+      📌 E0.7
+      📝 bed
+
+🛋  U+1F6CB
+      ❓ unqualified
+      📌 E0.7
+      📝 couch and lamp
+
+🪑  U+1FA91
+      ✅ fully-qualified
+      📌 E12.0
+      📝 chair
+
+🚽  U+1F6BD
+      ✅ fully-qualified
+      📌 E0.6
+      📝 toilet
+
+🪠  U+1FAA0
+      ✅ fully-qualified
+      📌 E13.0
+      📝 plunger
+
+🚿  U+1F6BF
+      ✅ fully-qualified
+      📌 E1.0
+      📝 shower
+
+🛁  U+1F6C1
+      ✅ fully-qualified
+      📌 E1.0
+      📝 bathtub
+
+🪤  U+1FAA4
+      ✅ fully-qualified
+      📌 E13.0
+      📝 mouse trap
+
+🪒  U+1FA92
+      ✅ fully-qualified
+      📌 E12.0
+      📝 razor
+
+🧴  U+1F9F4
+      ✅ fully-qualified
+      📌 E11.0
+      📝 lotion bottle
+
+🧷  U+1F9F7
+      ✅ fully-qualified
+      📌 E11.0
+      📝 safety pin
+
+🧹  U+1F9F9
+      ✅ fully-qualified
+      📌 E11.0
+      📝 broom
+
+🧺  U+1F9FA
+      ✅ fully-qualified
+      📌 E11.0
+      📝 basket
+
+🧻  U+1F9FB
+      ✅ fully-qualified
+      📌 E11.0
+      📝 roll of paper
+
+🪣  U+1FAA3
+      ✅ fully-qualified
+      📌 E13.0
+      📝 bucket
+
+🧼  U+1F9FC
+      ✅ fully-qualified
+      📌 E11.0
+      📝 soap
+
+🫧  U+1FAE7
+      ✅ fully-qualified
+      📌 E14.0
+      📝 bubbles
+
+🪥  U+1FAA5
+      ✅ fully-qualified
+      📌 E13.0
+      📝 toothbrush
+
+🧽  U+1F9FD
+      ✅ fully-qualified
+      📌 E11.0
+      📝 sponge
+
+🧯  U+1F9EF
+      ✅ fully-qualified
+      📌 E11.0
+      📝 fire extinguisher
+
+🛒  U+1F6D2
+      ✅ fully-qualified
+      📌 E3.0
+      📝 shopping cart
+
+🚬  U+1F6AC
+      ✅ fully-qualified
+      📌 E0.6
+      📝 cigarette
+
+⚰  U+26B0
+      ❓ unqualified
+      📌 E1.0
+      📝 coffin
+
+🪦  U+1FAA6
+      ✅ fully-qualified
+      📌 E13.0
+      📝 headstone
+
+⚱  U+26B1
+      ❓ unqualified
+      📌 E1.0
+      📝 funeral urn
+
+🧿  U+1F9FF
+      ✅ fully-qualified
+      📌 E11.0
+      📝 nazar amulet
+
+🪬  U+1FAAC
+      ✅ fully-qualified
+      📌 E14.0
+      📝 hamsa
+
+🗿  U+1F5FF
+      ✅ fully-qualified
+      📌 E0.6
+      📝 moai
+
+🪧  U+1FAA7
+      ✅ fully-qualified
+      📌 E13.0
+      📝 placard
+
+🪪  U+1FAAA
+      ✅ fully-qualified
+      📌 E14.0
+      📝 identification card
+
+🏧  U+1F3E7
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ATM sign
+
+🚮  U+1F6AE
+      ✅ fully-qualified
+      📌 E1.0
+      📝 litter in bin sign
+
+🚰  U+1F6B0
+      ✅ fully-qualified
+      📌 E1.0
+      📝 potable water
+
+♿  U+267F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 wheelchair symbol
+
+🚹  U+1F6B9
+      ✅ fully-qualified
+      📌 E0.6
+      📝 men’s room
+
+🚺  U+1F6BA
+      ✅ fully-qualified
+      📌 E0.6
+      📝 women’s room
+
+🚻  U+1F6BB
+      ✅ fully-qualified
+      📌 E0.6
+      📝 restroom
+
+🚼  U+1F6BC
+      ✅ fully-qualified
+      📌 E0.6
+      📝 baby symbol
+
+🚾  U+1F6BE
+      ✅ fully-qualified
+      📌 E0.6
+      📝 water closet
+
+🛂  U+1F6C2
+      ✅ fully-qualified
+      📌 E1.0
+      📝 passport control
+
+🛃  U+1F6C3
+      ✅ fully-qualified
+      📌 E1.0
+      📝 customs
+
+🛄  U+1F6C4
+      ✅ fully-qualified
+      📌 E1.0
+      📝 baggage claim
+
+🛅  U+1F6C5
+      ✅ fully-qualified
+      📌 E1.0
+      📝 left luggage
+
+⚠  U+26A0
+      ❓ unqualified
+      📌 E0.6
+      📝 warning
+
+🚸  U+1F6B8
+      ✅ fully-qualified
+      📌 E1.0
+      📝 children crossing
+
+⛔  U+26D4
+      ✅ fully-qualified
+      📌 E0.6
+      📝 no entry
+
+🚫  U+1F6AB
+      ✅ fully-qualified
+      📌 E0.6
+      📝 prohibited
+
+🚳  U+1F6B3
+      ✅ fully-qualified
+      📌 E1.0
+      📝 no bicycles
+
+🚭  U+1F6AD
+      ✅ fully-qualified
+      📌 E0.6
+      📝 no smoking
+
+🚯  U+1F6AF
+      ✅ fully-qualified
+      📌 E1.0
+      📝 no littering
+
+🚱  U+1F6B1
+      ✅ fully-qualified
+      📌 E1.0
+      📝 non-potable water
+
+🚷  U+1F6B7
+      ✅ fully-qualified
+      📌 E1.0
+      📝 no pedestrians
+
+📵  U+1F4F5
+      ✅ fully-qualified
+      📌 E1.0
+      📝 no mobile phones
+
+🔞  U+1F51E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 no one under eighteen
+
+☢  U+2622
+      ❓ unqualified
+      📌 E1.0
+      📝 radioactive
+
+☣  U+2623
+      ❓ unqualified
+      📌 E1.0
+      📝 biohazard
+
+⬆  U+2B06
+      ❓ unqualified
+      📌 E0.6
+      📝 up arrow
+
+↗  U+2197
+      ❓ unqualified
+      📌 E0.6
+      📝 up-right arrow
+
+➡  U+27A1
+      ❓ unqualified
+      📌 E0.6
+      📝 right arrow
+
+↘  U+2198
+      ❓ unqualified
+      📌 E0.6
+      📝 down-right arrow
+
+⬇  U+2B07
+      ❓ unqualified
+      📌 E0.6
+      📝 down arrow
+
+↙  U+2199
+      ❓ unqualified
+      📌 E0.6
+      📝 down-left arrow
+
+⬅  U+2B05
+      ❓ unqualified
+      📌 E0.6
+      📝 left arrow
+
+↖  U+2196
+      ❓ unqualified
+      📌 E0.6
+      📝 up-left arrow
+
+↕  U+2195
+      ❓ unqualified
+      📌 E0.6
+      📝 up-down arrow
+
+↔  U+2194
+      ❓ unqualified
+      📌 E0.6
+      📝 left-right arrow
+
+↩  U+21A9
+      ❓ unqualified
+      📌 E0.6
+      📝 right arrow curving left
+
+↪  U+21AA
+      ❓ unqualified
+      📌 E0.6
+      📝 left arrow curving right
+
+⤴  U+2934
+      ❓ unqualified
+      📌 E0.6
+      📝 right arrow curving up
+
+⤵  U+2935
+      ❓ unqualified
+      📌 E0.6
+      📝 right arrow curving down
+
+🔃  U+1F503
+      ✅ fully-qualified
+      📌 E0.6
+      📝 clockwise vertical arrows
+
+🔄  U+1F504
+      ✅ fully-qualified
+      📌 E1.0
+      📝 counterclockwise arrows button
+
+🔙  U+1F519
+      ✅ fully-qualified
+      📌 E0.6
+      📝 BACK arrow
+
+🔚  U+1F51A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 END arrow
+
+🔛  U+1F51B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ON! arrow
+
+🔜  U+1F51C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 SOON arrow
+
+🔝  U+1F51D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 TOP arrow
+
+🛐  U+1F6D0
+      ✅ fully-qualified
+      📌 E1.0
+      📝 place of worship
+
+⚛  U+269B
+      ❓ unqualified
+      📌 E1.0
+      📝 atom symbol
+
+🕉  U+1F549
+      ❓ unqualified
+      📌 E0.7
+      📝 om
+
+✡  U+2721
+      ❓ unqualified
+      📌 E0.7
+      📝 star of David
+
+☸  U+2638
+      ❓ unqualified
+      📌 E0.7
+      📝 wheel of dharma
+
+☯  U+262F
+      ❓ unqualified
+      📌 E0.7
+      📝 yin yang
+
+✝  U+271D
+      ❓ unqualified
+      📌 E0.7
+      📝 latin cross
+
+☦  U+2626
+      ❓ unqualified
+      📌 E1.0
+      📝 orthodox cross
+
+☪  U+262A
+      ❓ unqualified
+      📌 E0.7
+      📝 star and crescent
+
+☮  U+262E
+      ❓ unqualified
+      📌 E1.0
+      📝 peace symbol
+
+🕎  U+1F54E
+      ✅ fully-qualified
+      📌 E1.0
+      📝 menorah
+
+🔯  U+1F52F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 dotted six-pointed star
+
+🪯  U+1FAAF
+      ✅ fully-qualified
+      📌 E15.0
+      📝 khanda
+
+♈  U+2648
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Aries
+
+♉  U+2649
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Taurus
+
+♊  U+264A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Gemini
+
+♋  U+264B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Cancer
+
+♌  U+264C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Leo
+
+♍  U+264D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Virgo
+
+♎  U+264E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Libra
+
+♏  U+264F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Scorpio
+
+♐  U+2650
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Sagittarius
+
+♑  U+2651
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Capricorn
+
+♒  U+2652
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Aquarius
+
+♓  U+2653
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Pisces
+
+⛎  U+26CE
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Ophiuchus
+
+🔀  U+1F500
+      ✅ fully-qualified
+      📌 E1.0
+      📝 shuffle tracks button
+
+🔁  U+1F501
+      ✅ fully-qualified
+      📌 E1.0
+      📝 repeat button
+
+🔂  U+1F502
+      ✅ fully-qualified
+      📌 E1.0
+      📝 repeat single button
+
+▶  U+25B6
+      ❓ unqualified
+      📌 E0.6
+      📝 play button
+
+⏩  U+23E9
+      ✅ fully-qualified
+      📌 E0.6
+      📝 fast-forward button
+
+⏭  U+23ED
+      ❓ unqualified
+      📌 E0.7
+      📝 next track button
+
+⏯  U+23EF
+      ❓ unqualified
+      📌 E1.0
+      📝 play or pause button
+
+◀  U+25C0
+      ❓ unqualified
+      📌 E0.6
+      📝 reverse button
+
+⏪  U+23EA
+      ✅ fully-qualified
+      📌 E0.6
+      📝 fast reverse button
+
+⏮  U+23EE
+      ❓ unqualified
+      📌 E0.7
+      📝 last track button
+
+🔼  U+1F53C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 upwards button
+
+⏫  U+23EB
+      ✅ fully-qualified
+      📌 E0.6
+      📝 fast up button
+
+🔽  U+1F53D
+      ✅ fully-qualified
+      📌 E0.6
+      📝 downwards button
+
+⏬  U+23EC
+      ✅ fully-qualified
+      📌 E0.6
+      📝 fast down button
+
+⏸  U+23F8
+      ❓ unqualified
+      📌 E0.7
+      📝 pause button
+
+⏹  U+23F9
+      ❓ unqualified
+      📌 E0.7
+      📝 stop button
+
+⏺  U+23FA
+      ❓ unqualified
+      📌 E0.7
+      📝 record button
+
+⏏  U+23CF
+      ❓ unqualified
+      📌 E1.0
+      📝 eject button
+
+🎦  U+1F3A6
+      ✅ fully-qualified
+      📌 E0.6
+      📝 cinema
+
+🔅  U+1F505
+      ✅ fully-qualified
+      📌 E1.0
+      📝 dim button
+
+🔆  U+1F506
+      ✅ fully-qualified
+      📌 E1.0
+      📝 bright button
+
+📶  U+1F4F6
+      ✅ fully-qualified
+      📌 E0.6
+      📝 antenna bars
+
+🛜  U+1F6DC
+      ✅ fully-qualified
+      📌 E15.0
+      📝 wireless
+
+📳  U+1F4F3
+      ✅ fully-qualified
+      📌 E0.6
+      📝 vibration mode
+
+📴  U+1F4F4
+      ✅ fully-qualified
+      📌 E0.6
+      📝 mobile phone off
+
+♀  U+2640
+      ❓ unqualified
+      📌 E4.0
+      📝 female sign
+
+♂  U+2642
+      ❓ unqualified
+      📌 E4.0
+      📝 male sign
+
+⚧  U+26A7
+      ❓ unqualified
+      📌 E13.0
+      📝 transgender symbol
+
+✖  U+2716
+      ❓ unqualified
+      📌 E0.6
+      📝 multiply
+
+➕  U+2795
+      ✅ fully-qualified
+      📌 E0.6
+      📝 plus
+
+➖  U+2796
+      ✅ fully-qualified
+      📌 E0.6
+      📝 minus
+
+➗  U+2797
+      ✅ fully-qualified
+      📌 E0.6
+      📝 divide
+
+🟰  U+1F7F0
+      ✅ fully-qualified
+      📌 E14.0
+      📝 heavy equals sign
+
+♾  U+267E
+      ❓ unqualified
+      📌 E11.0
+      📝 infinity
+
+‼  U+203C
+      ❓ unqualified
+      📌 E0.6
+      📝 double exclamation mark
+
+⁉  U+2049
+      ❓ unqualified
+      📌 E0.6
+      📝 exclamation question mark
+
+❓  U+2753
+      ✅ fully-qualified
+      📌 E0.6
+      📝 red question mark
+
+❔  U+2754
+      ✅ fully-qualified
+      📌 E0.6
+      📝 white question mark
+
+❕  U+2755
+      ✅ fully-qualified
+      📌 E0.6
+      📝 white exclamation mark
+
+❗  U+2757
+      ✅ fully-qualified
+      📌 E0.6
+      📝 red exclamation mark
+
+〰  U+3030
+      ❓ unqualified
+      📌 E0.6
+      📝 wavy dash
+
+💱  U+1F4B1
+      ✅ fully-qualified
+      📌 E0.6
+      📝 currency exchange
+
+💲  U+1F4B2
+      ✅ fully-qualified
+      📌 E0.6
+      📝 heavy dollar sign
+
+⚕  U+2695
+      ❓ unqualified
+      📌 E4.0
+      📝 medical symbol
+
+♻  U+267B
+      ❓ unqualified
+      📌 E0.6
+      📝 recycling symbol
+
+⚜  U+269C
+      ❓ unqualified
+      📌 E1.0
+      📝 fleur-de-lis
+
+🔱  U+1F531
+      ✅ fully-qualified
+      📌 E0.6
+      📝 trident emblem
+
+📛  U+1F4DB
+      ✅ fully-qualified
+      📌 E0.6
+      📝 name badge
+
+🔰  U+1F530
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Japanese symbol for beginner
+
+⭕  U+2B55
+      ✅ fully-qualified
+      📌 E0.6
+      📝 hollow red circle
+
+✅  U+2705
+      ✅ fully-qualified
+      📌 E0.6
+      📝 check mark button
+
+☑  U+2611
+      ❓ unqualified
+      📌 E0.6
+      📝 check box with check
+
+✔  U+2714
+      ❓ unqualified
+      📌 E0.6
+      📝 check mark
+
+❌  U+274C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 cross mark
+
+❎  U+274E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 cross mark button
+
+➰  U+27B0
+      ✅ fully-qualified
+      📌 E0.6
+      📝 curly loop
+
+➿  U+27BF
+      ✅ fully-qualified
+      📌 E1.0
+      📝 double curly loop
+
+〽  U+303D
+      ❓ unqualified
+      📌 E0.6
+      📝 part alternation mark
+
+✳  U+2733
+      ❓ unqualified
+      📌 E0.6
+      📝 eight-spoked asterisk
+
+✴  U+2734
+      ❓ unqualified
+      📌 E0.6
+      📝 eight-pointed star
+
+❇  U+2747
+      ❓ unqualified
+      📌 E0.6
+      📝 sparkle
+
+©  U+00A9
+      ❓ unqualified
+      📌 E0.6
+      📝 copyright
+
+®  U+00AE
+      ❓ unqualified
+      📌 E0.6
+      📝 registered
+
+™  U+2122
+      ❓ unqualified
+      📌 E0.6
+      📝 trade mark
+
+🫟  U+1FADF
+      ✅ fully-qualified
+      📌 E16.0
+      📝 splatter
+
+🔟  U+1F51F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 keycap: 10
+
+🔠  U+1F520
+      ✅ fully-qualified
+      📌 E0.6
+      📝 input latin uppercase
+
+🔡  U+1F521
+      ✅ fully-qualified
+      📌 E0.6
+      📝 input latin lowercase
+
+🔢  U+1F522
+      ✅ fully-qualified
+      📌 E0.6
+      📝 input numbers
+
+🔣  U+1F523
+      ✅ fully-qualified
+      📌 E0.6
+      📝 input symbols
+
+🔤  U+1F524
+      ✅ fully-qualified
+      📌 E0.6
+      📝 input latin letters
+
+🅰  U+1F170
+      ❓ unqualified
+      📌 E0.6
+      📝 A button (blood type)
+
+🆎  U+1F18E
+      ✅ fully-qualified
+      📌 E0.6
+      📝 AB button (blood type)
+
+🅱  U+1F171
+      ❓ unqualified
+      📌 E0.6
+      📝 B button (blood type)
+
+🆑  U+1F191
+      ✅ fully-qualified
+      📌 E0.6
+      📝 CL button
+
+🆒  U+1F192
+      ✅ fully-qualified
+      📌 E0.6
+      📝 COOL button
+
+🆓  U+1F193
+      ✅ fully-qualified
+      📌 E0.6
+      📝 FREE button
+
+ℹ  U+2139
+      ❓ unqualified
+      📌 E0.6
+      📝 information
+
+🆔  U+1F194
+      ✅ fully-qualified
+      📌 E0.6
+      📝 ID button
+
+Ⓜ  U+24C2
+      ❓ unqualified
+      📌 E0.6
+      📝 circled M
+
+🆕  U+1F195
+      ✅ fully-qualified
+      📌 E0.6
+      📝 NEW button
+
+🆖  U+1F196
+      ✅ fully-qualified
+      📌 E0.6
+      📝 NG button
+
+🅾  U+1F17E
+      ❓ unqualified
+      📌 E0.6
+      📝 O button (blood type)
+
+🆗  U+1F197
+      ✅ fully-qualified
+      📌 E0.6
+      📝 OK button
+
+🅿  U+1F17F
+      ❓ unqualified
+      📌 E0.6
+      📝 P button
+
+🆘  U+1F198
+      ✅ fully-qualified
+      📌 E0.6
+      📝 SOS button
+
+🆙  U+1F199
+      ✅ fully-qualified
+      📌 E0.6
+      📝 UP! button
+
+🆚  U+1F19A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 VS button
+
+🈁  U+1F201
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Japanese “here” button
+
+🈂  U+1F202
+      ❓ unqualified
+      📌 E0.6
+      📝 Japanese “service charge” button
+
+🈷  U+1F237
+      ❓ unqualified
+      📌 E0.6
+      📝 Japanese “monthly amount” button
+
+🈶  U+1F236
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Japanese “not free of charge” button
+
+🈯  U+1F22F
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Japanese “reserved” button
+
+🉐  U+1F250
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Japanese “bargain” button
+
+🈹  U+1F239
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Japanese “discount” button
+
+🈚  U+1F21A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Japanese “free of charge” button
+
+🈲  U+1F232
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Japanese “prohibited” button
+
+🉑  U+1F251
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Japanese “acceptable” button
+
+🈸  U+1F238
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Japanese “application” button
+
+🈴  U+1F234
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Japanese “passing grade” button
+
+🈳  U+1F233
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Japanese “vacancy” button
+
+㊗  U+3297
+      ❓ unqualified
+      📌 E0.6
+      📝 Japanese “congratulations” button
+
+㊙  U+3299
+      ❓ unqualified
+      📌 E0.6
+      📝 Japanese “secret” button
+
+🈺  U+1F23A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Japanese “open for business” button
+
+🈵  U+1F235
+      ✅ fully-qualified
+      📌 E0.6
+      📝 Japanese “no vacancy” button
+
+🔴  U+1F534
+      ✅ fully-qualified
+      📌 E0.6
+      📝 red circle
+
+🟠  U+1F7E0
+      ✅ fully-qualified
+      📌 E12.0
+      📝 orange circle
+
+🟡  U+1F7E1
+      ✅ fully-qualified
+      📌 E12.0
+      📝 yellow circle
+
+🟢  U+1F7E2
+      ✅ fully-qualified
+      📌 E12.0
+      📝 green circle
+
+🔵  U+1F535
+      ✅ fully-qualified
+      📌 E0.6
+      📝 blue circle
+
+🟣  U+1F7E3
+      ✅ fully-qualified
+      📌 E12.0
+      📝 purple circle
+
+🟤  U+1F7E4
+      ✅ fully-qualified
+      📌 E12.0
+      📝 brown circle
+
+⚫  U+26AB
+      ✅ fully-qualified
+      📌 E0.6
+      📝 black circle
+
+⚪  U+26AA
+      ✅ fully-qualified
+      📌 E0.6
+      📝 white circle
+
+🟥  U+1F7E5
+      ✅ fully-qualified
+      📌 E12.0
+      📝 red square
+
+🟧  U+1F7E7
+      ✅ fully-qualified
+      📌 E12.0
+      📝 orange square
+
+🟨  U+1F7E8
+      ✅ fully-qualified
+      📌 E12.0
+      📝 yellow square
+
+🟩  U+1F7E9
+      ✅ fully-qualified
+      📌 E12.0
+      📝 green square
+
+🟦  U+1F7E6
+      ✅ fully-qualified
+      📌 E12.0
+      📝 blue square
+
+🟪  U+1F7EA
+      ✅ fully-qualified
+      📌 E12.0
+      📝 purple square
+
+🟫  U+1F7EB
+      ✅ fully-qualified
+      📌 E12.0
+      📝 brown square
+
+⬛  U+2B1B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 black large square
+
+⬜  U+2B1C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 white large square
+
+◼  U+25FC
+      ❓ unqualified
+      📌 E0.6
+      📝 black medium square
+
+◻  U+25FB
+      ❓ unqualified
+      📌 E0.6
+      📝 white medium square
+
+◾  U+25FE
+      ✅ fully-qualified
+      📌 E0.6
+      📝 black medium-small square
+
+◽  U+25FD
+      ✅ fully-qualified
+      📌 E0.6
+      📝 white medium-small square
+
+▪  U+25AA
+      ❓ unqualified
+      📌 E0.6
+      📝 black small square
+
+▫  U+25AB
+      ❓ unqualified
+      📌 E0.6
+      📝 white small square
+
+🔶  U+1F536
+      ✅ fully-qualified
+      📌 E0.6
+      📝 large orange diamond
+
+🔷  U+1F537
+      ✅ fully-qualified
+      📌 E0.6
+      📝 large blue diamond
+
+🔸  U+1F538
+      ✅ fully-qualified
+      📌 E0.6
+      📝 small orange diamond
+
+🔹  U+1F539
+      ✅ fully-qualified
+      📌 E0.6
+      📝 small blue diamond
+
+🔺  U+1F53A
+      ✅ fully-qualified
+      📌 E0.6
+      📝 red triangle pointed up
+
+🔻  U+1F53B
+      ✅ fully-qualified
+      📌 E0.6
+      📝 red triangle pointed down
+
+💠  U+1F4A0
+      ✅ fully-qualified
+      📌 E0.6
+      📝 diamond with a dot
+
+🔘  U+1F518
+      ✅ fully-qualified
+      📌 E0.6
+      📝 radio button
+
+🔳  U+1F533
+      ✅ fully-qualified
+      📌 E0.6
+      📝 white square button
+
+🔲  U+1F532
+      ✅ fully-qualified
+      📌 E0.6
+      📝 black square button
+
+🏁  U+1F3C1
+      ✅ fully-qualified
+      📌 E0.6
+      📝 chequered flag
+
+🚩  U+1F6A9
+      ✅ fully-qualified
+      📌 E0.6
+      📝 triangular flag
+
+🎌  U+1F38C
+      ✅ fully-qualified
+      📌 E0.6
+      📝 crossed flags
+
+🏴  U+1F3F4
+      ✅ fully-qualified
+      📌 E1.0
+      📝 black flag
+
+🏳  U+1F3F3
+      ❓ unqualified
+      📌 E0.7
+      📝 white flag
+

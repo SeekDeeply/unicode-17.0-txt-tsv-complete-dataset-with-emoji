@@ -1,0 +1,101 @@
+================================================================
+                    NOTICE
+================================================================
+Project: Unicode 17.0 + Emoji 17.0 Complete Dataset
+Repository: https://github.com/SeekDeeply/unicode-17.0-txt-tsv-complete-dataset-with-emoji
+================================================================
+
+This software is licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+================================================================
+                    COPYRIGHT AND ATTRIBUTION
+================================================================
+
+**Dataset Compilation and Processing**
+Copyright © 2026 SeekDeeply (GitHub User)
+
+This repository contains a curated and processed version of the
+Unicode Character Database (UCD) and Emoji data. The selection,
+coordination, arrangement, and enhancement of this data
+(including but not limited to multi-format conversion,
+block classification, and bilingual documentation) constitute
+original work and are protected under applicable copyright laws.
+
+**Original Data Source**
+The raw data in this repository is derived from:
+
+- Unicode Character Database (UCD), Version 17.0.0
+- Unihan Database, Version 17.0.0
+- Emoji Data, Version 17.0
+
+Copyright © 1991-2025 Unicode, Inc. All rights reserved.
+Distributed under the Terms of Use at https://www.unicode.org/copyright.html
+
+All Unicode data files are used in compliance with the
+"Unicode, Inc. License Agreement - Data Files and Software".
+
+================================================================
+                    TERMS OF USE FOR UNICODE DATA
+================================================================
+
+Unicode Data Files include all data files under the directories:
+https://www.unicode.org/Public/
+https://www.unicode.org/reports/
+https://www.unicode.org/ivd/data/
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Unicode data files and any associated documentation
+(the "Data Files") to deal in the Data Files without restriction,
+including without limitation the rights to use, copy, modify, merge,
+publish, distribute, and/or sell copies of the Data Files, and to
+permit persons to whom the Data Files are furnished to do so,
+provided that:
+(a) the above copyright notice(s) and this permission notice
+    appear with all copies of the Data Files or Software,
+(b) both the above copyright notice(s) and this permission notice
+    appear in associated documentation.
+
+THE DATA FILES ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF THIRD PARTY RIGHTS.
+
+For the complete terms, see:
+https://www.unicode.org/copyright.html
+https://www.unicode.org/license.txt
+
+================================================================
+                    TRADEMARK NOTICE
+================================================================
+
+Unicode® and the Unicode Logo are registered trademarks of
+Unicode, Inc. in the United States and other countries.
+This project is not endorsed by or affiliated with Unicode, Inc.
+
+Apache License, Version 2.0 and the Apache feather logo are
+trademarks of The Apache Software Foundation.
+
+All other trademarks mentioned are the property of their respective owners.
+
+================================================================
+                    ACKNOWLEDGMENTS
+================================================================
+
+Special thanks to:
+- The Unicode Consortium for maintaining and providing the
+  official character database
+- All contributors who helped refine and verify this dataset
+
+================================================================
+Contact: https://github.com/SeekDeeply | i9888888885@163.com
+================================================================
