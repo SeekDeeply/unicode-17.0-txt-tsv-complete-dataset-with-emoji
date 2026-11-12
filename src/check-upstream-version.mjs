@@ -83,7 +83,20 @@ async function emojiVersionOf(uVersion) {
   }
 }
 
+/**
+ * Emit CI outputs.
+ *
+ * Prefer $GITHUB_OUTPUT (the supported mechanism). Writing `key=value` to stdout
+ * looks like it works and does not: the values arrive as step output only when the
+ * file is used, so a conditional step silently never runs. Keep the stdout echo as
+ * a fallback for local runs where $GITHUB_OUTPUT is unset.
+ */
 function emitGithub(kv) {
+  const target = process.env.GITHUB_OUTPUT;
+  if (target) {
+    const lines = Object.entries(kv).map(([k, v]) => `${k}=${v}`).join('\n');
+    fs.appendFileSync(target, lines + '\n');
+  }
   for (const [k, v] of Object.entries(kv)) console.log(`${k}=${v}`);
 }
 
