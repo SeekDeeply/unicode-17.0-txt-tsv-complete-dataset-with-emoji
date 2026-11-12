@@ -78,6 +78,12 @@ hash, starts with hash+space, starts with hash+tab, or contains no tab at all.
 The unit test `isCommentLine does not mistake a rendered keycap for a comment`
 locks this in, and the verifier asserts both keycap rows survive every build.
 
+Being correct in the producer is not enough, though: downstream consumers write
+their own parsers. So the emoji TSV also **reorders its columns** - `code_points`
+first, `sequence` second - which means no data row begins with a hash character and
+the naive filter is safe by construction. The verifier asserts both properties:
+no data row starts with a hash, and a leading-hash filter keeps every row.
+
 ## 5. Output paths derive from one constant
 
 `src/lib/sources.mjs` is the only place a version appears. Directory names and

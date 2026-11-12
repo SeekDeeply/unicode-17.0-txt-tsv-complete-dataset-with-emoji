@@ -206,27 +206,41 @@ export function charsetBlocks(blockRanges, meta) {
 
 /* -------------------------------------------------------------------- emoji */
 
+/**
+ * Emoji TSV.
+ *
+ * Column order is deliberate: code_points comes FIRST, sequence second.
+ *
+ * The keycap sequences render as "#\uFE0F\u20E3" and "#\u20E3", so with the rendered
+ * sequence in column 1 those two data rows begin with '#'. Any consumer that filters
+ * comments with the most common idiom - skip lines starting with '#' - then silently
+ * loses exactly two sequences. That is not hypothetical: it is how the previous
+ * revision of this dataset came to contain 5,223 rows instead of 5,225.
+ *
+ * Putting the hex code points first makes every data row start with a hex digit, so
+ * the naive filter is safe, and the rendered emoji is still available in column 2.
+ * src/verify.mjs asserts that no data row begins with '#' and that a naive filter
+ * keeps every row.
+ */
 export function emojiTSV(records, meta, { title, columnNote }) {
   const out = [];
-  // NOTE: data rows may legitimately begin with '#' (keycap renders as "#️⃣").
-  // Consumers must skip only "# ", "#\t" and bare "#" lines — see isCommentLine().
   out.push(`# ${title}`);
   out.push(`# Emoji version: ${meta.emojiVersion}`);
   out.push(`# Generated: ${meta.generatedAt}`);
   out.push(`# Rows: ${records.length}`);
   out.push('#');
   out.push(`# ${columnNote}`);
-  out.push('#   1 sequence      rendered emoji sequence');
-  out.push('#   2 code_points   space-separated hex code points');
+  out.push('#   1 code_points   space-separated hex code points — the primary key');
+  out.push('#   2 sequence      rendered emoji sequence');
   out.push('#   3 status        fully-qualified | minimally-qualified | unqualified | component');
   out.push('#   4 version       the E-version the sequence was introduced in');
   out.push('#   5 name          CLDR short name');
   out.push('#   6 group         emoji-test group');
   out.push('#   7 subgroup      emoji-test subgroup');
   out.push('#');
-  out.push('#\tsequence\tcode_points\tstatus\tversion\tname\tgroup\tsubgroup');
+  out.push('#\tcode_points\tsequence\tstatus\tversion\tname\tgroup\tsubgroup');
   for (const r of records) {
-    out.push([r.sequence, r.cpString, r.status, `E${r.version}`, r.name, r.group, r.subgroup].join('\t'));
+    out.push([r.cpString, r.sequence, r.status, `E${r.version}`, r.name, r.group, r.subgroup].join('\t'));
   }
   return out.join('\n') + '\n';
 }

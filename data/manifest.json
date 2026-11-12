@@ -108,9 +108,9 @@
     },
     {
       "path": "Emoji-17.0-Complete-Dataset/emoji_17.0_full_machine.tsv",
-      "bytes": 569865,
+      "bytes": 569885,
       "lines": 5240,
-      "sha256": "6c94210a466145a69552c3285fef01cc0fa95170c687a7a1b5168364f41ec021"
+      "sha256": "e80ac2131dcc3d5f0c1c0d6dd85cbbd3ff935b04df1dc67634e666871dd5a8fd"
     },
     {
       "path": "Emoji-17.0-Complete-Dataset/emoji_17.0_single_human.txt",
@@ -120,9 +120,9 @@
     },
     {
       "path": "Emoji-17.0-Complete-Dataset/emoji_17.0_single_machine.tsv",
-      "bytes": 96091,
+      "bytes": 96111,
       "lines": 1415,
-      "sha256": "fcd0b1dff44a737909eb8b4bb9e84581ce0bb64b8a95e642e019f1fadf4332a0"
+      "sha256": "4cc0e2603b42aaf3a103df613d9bc95f3ef214c8e94bc96f327fe9a1d161846e"
     },
     {
       "path": "Emoji-17.0-Complete-Dataset/emoji_17.0_string.txt",

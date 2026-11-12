@@ -90,7 +90,7 @@ awk -F'\t' '!/^#/ {print $1, $4, $9}' Unicode-17.0-Complete-Dataset/unicode_17.0
 |---|---:|---:|---|
 | `emoji_17.0_full_machine.tsv` | 5,240 | 556.5 KB | all 5,225 sequences - programmatic |
 | `emoji_17.0_full_human.txt` | 15,925 | 560.4 KB | all sequences - readable, grouped |
-| `emoji_17.0_single_machine.tsv` | 1,415 | 93.8 KB | the 1,400 single-code-point sequences only |
+| `emoji_17.0_single_machine.tsv` | 1,415 | 93.9 KB | the 1,400 single-code-point sequences only |
 | `emoji_17.0_single_human.txt` | 4,446 | 101.3 KB | single-code-point sequences - readable |
 | `emoji_17.0_string.txt` | 5 | 5.5 KB | single-code-point sequences concatenated into one line |
 | `emoji_17.0_string_annotated.txt` | 319 | 66.0 KB | all sequences in commented chunks of 50, readable line-wise |
@@ -108,16 +108,33 @@ awk -F'\t' '!/^#/ {print $1, $4, $9}' Unicode-17.0-Complete-Dataset/unicode_17.0
 All four statuses are included. `emoji-test.txt` is the sole source, and `npm run verify`
 proves the set is exactly equal to it - no sequence missing, none invented.
 
-```bash
-# the two rows a naive parser silently drops
-grep -P '^#\uFE0F\u20E3|^#\u20E3' Emoji-17.0-Complete-Dataset/emoji_17.0_full_machine.tsv
+### Emoji TSV columns
+
+```text
+code_points   space-separated hex code points, e.g. 0023 FE0F 20E3   <- column 1
+sequence      the rendered emoji
+status        fully-qualified | minimally-qualified | unqualified | component
+version       the E-version the sequence was introduced in
+name          CLDR short name
+group         emoji-test group
+subgroup      emoji-test subgroup
 ```
 
-> **Why that matters.** TSV rows are commonly filtered with a leading-hash check.
-> The keycap sequences render as a hash, a variation selector and a combining keycap - so
-> those **two real rows start with a hash character** and get deleted. This dataset treats a
-> line as a comment only when it is a bare hash, a hash plus space, or a hash plus tab
-> (see `isCommentLine` in `src/lib/parse-ucd.mjs`), and the verifier asserts both rows survive.
+> **Why code_points is column 1 and not the rendered emoji.** The keycap sequences
+> render as a hash, a variation selector and a combining enclosing keycap. With the
+> rendered sequence in column 1, those two data rows would *begin with a hash
+> character*, and the single most common TSV idiom - skip lines starting with a
+> hash - would silently delete them. That is exactly how the previous revision of
+> this dataset ended up with 5,223 rows instead of 5,225.
+>
+> Putting the code points first makes every data row start with a hex digit, so a
+> naive filter loses nothing. The verifier asserts this: no data row begins with a
+> hash, and a leading-hash filter keeps all 5,225 rows.
+
+```bash
+# both keycap rows are present, in column 2
+grep -c 'keycap: #' Emoji-17.0-Complete-Dataset/emoji_17.0_full_machine.tsv
+```
 
 ---
 

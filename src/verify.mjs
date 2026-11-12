@@ -349,7 +349,7 @@ async function main() {
     .map((l) => {
       const f = l.split('\t');
       if (f.length !== 7) throw new Error(`emoji TSV row has ${f.length} fields (expected 7): ${JSON.stringify(l.slice(0, 80))}`);
-      return { sequence: f[0], cps: f[1], status: f[2], version: f[3], name: f[4], group: f[5], subgroup: f[6] };
+      return { cps: f[0], sequence: f[1], status: f[2], version: f[3], name: f[4], group: f[5], subgroup: f[6] };
     });
 
   check(
@@ -389,6 +389,27 @@ async function main() {
   const renderBad = fullTsv.filter((r) => String.fromCodePoint(...r.cps.split(' ').map((h) => parseInt(h, 16))) !== r.sequence);
   check('rendered sequence matches its code points', renderBad.length === 0, `${renderBad.length} mismatched`);
 
+  // Structural guarantee: no data row may begin with '#', so the extremely common
+  // `line.startsWith('#')` comment filter cannot drop real data. The keycap rows
+  // render as hash-leading sequences and would otherwise start with '#'.
+  // Only column 1 matters: a line starts with '#' when the first field does. The
+  // sequence in column 2 legitimately is "#\uFE0F\u20E3" and that is fine, because a
+  // leading-hash filter reads the start of the line, not the middle.
+  const hashLeading = fullTsv.filter((r) => r.cps.startsWith('#'));
+  check(
+    'no emoji data row begins with a hash character (naive comment filters stay safe)',
+    hashLeading.length === 0,
+    `${hashLeading.length} row(s) do`,
+  );
+  const naiveKept = read(`${ED}/emoji_${EV}_full_machine.tsv`)
+    .split('\n')
+    .filter((l) => l && !l.startsWith('#') && l.includes('\t')).length;
+  check(
+    'a naive leading-hash filter keeps every emoji row',
+    naiveKept === fullTsv.length,
+    `naive keeps ${naiveKept}, correct keeps ${fullTsv.length}`,
+  );
+
   // Cross-check against emoji-data.txt (Emoji property). This is the reason that
   // source is in the pipeline: if a single-code-point sequence from emoji-test is
   // not marked Emoji=Yes in emoji-data.txt, one of the two upstream files is
@@ -410,13 +431,14 @@ async function main() {
     .map((l) => l.split('\t'));
   const officialSingle = official.filter((r) => r.codePoints.length === 1);
   check('single-codepoint TSV has one row per single-codepoint sequence', singleTsv.length === officialSingle.length, `${singleTsv.length} vs ${officialSingle.length}`);
-  check('single-codepoint TSV contains only single code points', singleTsv.every((f) => !f[1].includes(' ')));
+  check('single-codepoint TSV contains only single code points', singleTsv.every((f) => !f[0].includes(' ')));
 
   // emoji string files
   const emojiStringRaw = await fsp.readFile(path.join(ROOT, `${ED}/emoji_${EV}_string.txt`), 'utf8');
   const emojiStringData = emojiStringRaw.split('\n').filter((l) => l && !l.startsWith('# '));
   check('emoji string file has exactly one data line', emojiStringData.length === 1, `got ${emojiStringData.length}`);
-  const emojiConcat = singleTsv.map((f) => String.fromCodePoint(...f[1].split(' ').map((h) => parseInt(h, 16)))).join('');
+  // column 1 is code_points, column 2 is the rendered sequence
+  const emojiConcat = singleTsv.map((f) => String.fromCodePoint(...f[0].split(' ').map((h) => parseInt(h, 16)))).join('');
   check('emoji string equals the concatenated single-code-point sequences', emojiStringData[0] === emojiConcat, 'content differs');
 
   const annotated = read(`${ED}/emoji_${EV}_string_annotated.txt`)

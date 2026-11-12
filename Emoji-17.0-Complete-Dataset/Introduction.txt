@@ -25,8 +25,9 @@ Files / 文件说明
    (556.5 KB, 5,240 lines)
    All 5,225 sequences, 7 tab-separated columns:
 
-     sequence      the rendered emoji
      code_points   space-separated hex code points, e.g. "0023 FE0F 20E3"
+                   (this is column 1 so that no data row starts with a hash character)
+     sequence      the rendered emoji
      status        fully-qualified | minimally-qualified | unqualified | component
      version       the E-version the sequence was introduced in
      name          CLDR short name
@@ -38,7 +39,7 @@ Files / 文件说明
    All sequences, grouped by group and subgroup, each with status, version and name.
 
 3. emoji_17.0_single_machine.tsv
-   (93.8 KB, 1,415 lines)
+   (93.9 KB, 1,415 lines)
    The 1,400 sequences that are a single code point (no ZWJ, no variation
    selector, no modifier). Same 7 columns.
 
