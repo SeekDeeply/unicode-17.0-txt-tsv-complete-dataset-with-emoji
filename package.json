@@ -1,0 +1,21 @@
+{
+  "name": "unicode-dataset-builder",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Automated collector and builder for the Unicode + Emoji complete dataset (TXT/TSV), regenerated from official UCD sources.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node src/build.mjs",
+    "build:force": "node src/build.mjs --force",
+    "test": "node --test 'src/lib/*.test.mjs'",
+    "verify": "node src/verify.mjs",
+    "check": "node src/check-upstream-version.mjs",
+    "docs": "node src/render-docs.mjs",
+    "release-notes": "node src/release-notes.mjs",
+    "check:strict": "node src/verify.mjs --strict"
+  },
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,65 @@
+name: publish release
+
+# Builds from the pinned sources in a clean checkout, verifies, then attaches the
+# dataset as release assets. Triggered by a version tag so every release maps to
+# a reviewable commit.
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag to publish (e.g. v1.3.0)'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Build from official sources
+        run: node src/build.mjs
+
+      - name: Verify
+        run: node src/verify.mjs --strict
+
+      - name: Confirm the build matches the committed data
+        run: |
+          if [ -n "$(git status --porcelain -- '*.txt' '*.tsv' 'data/')" ]; then
+            echo "::error::Rebuild does not match the committed dataset; refusing to publish."
+            git --no-pager diff --stat
+            exit 1
+          fi
+
+      - name: Render docs and assemble bundle
+        run: |
+          set -euo pipefail
+          node src/render-docs.mjs
+          node src/release-notes.mjs > release-notes.md
+          VER=$(node -pe 'require("./data/manifest.json").unicodeVersion')
+          zip -9 -r "unicode-${VER}-dataset.zip" \
+            README.md CHANGELOG.md LICENSE LICENSE_UNICODE NOTICE.txt \
+            checksum_sha256.txt data \
+            Unicode-*-Complete-Dataset Emoji-*-Complete-Dataset
+
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          TAG="${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}"
+          gh release create "$TAG" \
+            --title "$TAG" \
+            --notes-file release-notes.md \
+            unicode-*-dataset.zip checksum_sha256.txt

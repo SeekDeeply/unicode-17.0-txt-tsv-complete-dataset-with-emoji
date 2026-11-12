@@ -1,0 +1,15 @@
+# Download cache for upstream Unicode sources. Never commit: build.mjs
+# re-fetches anything missing and validates each file against data/sources.lock.json.
+.cache/
+
+# Local credentials (e.g. a GitHub token for the publish helper). Nothing in the
+# build, verify or docs pipeline reads these.
+.secrets/
+
+# Tooling state (memory/session stores), not part of the dataset.
+.mnemon/
+
+node_modules/
+*.log
+.DS_Store
+.part-*

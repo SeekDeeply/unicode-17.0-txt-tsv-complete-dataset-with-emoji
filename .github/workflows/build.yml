@@ -1,0 +1,74 @@
+name: build & verify
+
+# Guards the invariant that makes this repository trustworthy: every committed
+# byte must be reproducible from the official Unicode sources. If a source
+# changes, or the build stops being deterministic, this job fails.
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['**/*.md', 'README.md']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: rebuild and verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Show toolchain
+        run: node --version && npm --version
+
+      - name: Unit tests
+        run: node --test 'src/lib/*.test.mjs'
+
+      # A fresh clone has no source cache, so this downloads every upstream file
+      # and checks it against data/sources.lock.json. A hash mismatch fails here.
+      - name: Fetch sources (lock-verified) and build
+        run: node src/build.mjs
+
+      - name: Assert the rebuild changed nothing
+        run: |
+          if [ -n "$(git status --porcelain -- '*.txt' '*.tsv' 'data/' 'checksum_sha256.txt')" ]; then
+            echo "::error::The committed dataset is not reproducible from the pinned sources."
+            git --no-pager diff --stat
+            git status --porcelain
+            exit 1
+          fi
+          echo "Dataset reproduces byte-identically."
+
+      - name: Strict verification
+        run: node src/verify.mjs --strict
+
+      - name: Summary
+        run: |
+          node -e '
+            const m = require("./data/manifest.json");
+            const out = [];
+            out.push("### Dataset verified");
+            out.push("");
+            out.push("| file | lines | size |");
+            out.push("|---|---:|---:|");
+            for (const f of m.files) {
+              const size = f.bytes > 1048576 ? (f.bytes / 1048576).toFixed(2) + " MB" : (f.bytes / 1024).toFixed(1) + " KB";
+              out.push("| " + f.path + " | " + f.lines.toLocaleString("en-US") + " | " + size + " |");
+            }
+            out.push("");
+            out.push("Code points: **" + m.symbols.codePoints.toLocaleString("en-US") + "**");
+            out.push("");
+            out.push("Emoji sequences: **" + m.symbols.emojiSequences.toLocaleString("en-US") + "**");
+            require("fs").appendFileSync(process.env.GITHUB_STEP_SUMMARY, out.join("\n") + "\n");
+          '

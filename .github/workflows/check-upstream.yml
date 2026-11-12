@@ -1,0 +1,95 @@
+name: check for new Unicode release
+
+# The automated-collection heartbeat: poll the Unicode Consortium on a schedule,
+# and when a newer *final* release appears, open (or update) one tracking issue
+# carrying the exact commands to adopt it. It never rewrites data on its own —
+# a human reviews the diff before a version bump lands.
+on:
+  schedule:
+    # Mondays 06:17 UTC. Unicode ships once a year in September; weekly is cheap.
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: check-upstream
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Query unicode.org
+        id: upstream
+        run: node src/check-upstream-version.mjs --github | tee upstream.txt
+
+      - name: Summarize
+        run: |
+          {
+            echo '### Unicode release check'
+            echo
+            grep -E '^(update|latest_ucd|latest_emoji|pinned_ucd|pinned_emoji)=' upstream.txt | sed 's/^/- /'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open or update the tracking issue
+        if: steps.upstream.outputs.update == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LATEST_UCD: ${{ steps.upstream.outputs.latest_ucd }}
+          LATEST_EMOJI: ${{ steps.upstream.outputs.latest_emoji }}
+          PINNED_UCD: ${{ steps.upstream.outputs.pinned_ucd }}
+          PINNED_EMOJI: ${{ steps.upstream.outputs.pinned_emoji }}
+        run: |
+          set -euo pipefail
+          TITLE="Unicode ${LATEST_UCD} / Emoji ${LATEST_EMOJI} is available (pinned: ${PINNED_UCD} / ${PINNED_EMOJI})"
+          NEW_UNICODE="${LATEST_UCD%.*}"
+          OLD_UNICODE="${PINNED_UCD%.*}"
+          BODY=$(cat <<EOF
+          A newer **released** version of the Unicode Character Database was detected.
+
+          | | pinned | available |
+          |---|---|---|
+          | UCD | ${PINNED_UCD} | **${LATEST_UCD}** |
+          | Emoji | ${PINNED_EMOJI} | **${LATEST_EMOJI}** |
+
+          ### Adopt it
+
+          ```bash
+          # 1. bump the pin: src/lib/sources.mjs -> UCD_VERSION / EMOJI_VERSION
+          # 2. rename the output directories to match the new version
+          git mv Unicode-${OLD_UNICODE}-Complete-Dataset Unicode-${NEW_UNICODE}-Complete-Dataset || true
+          git mv Emoji-${PINNED_EMOJI}-Complete-Dataset Emoji-${LATEST_EMOJI}-Complete-Dataset || true
+          # 3. rebuild from the new sources and accept the new upstream hashes
+          node src/build.mjs --force --update-lock
+          # 4. verify, then read the diff
+          node src/verify.mjs --strict
+          git diff --stat
+          ```
+
+          ```bash
+          # 5. regenerate the docs from the new manifest and commit
+          node src/render-docs.mjs
+          git add -A && git commit -m "data: adopt Unicode ${LATEST_UCD} / Emoji ${LATEST_EMOJI}"
+          git push
+          ```
+
+          _Opened automatically by the weekly upstream check._
+          EOF
+          )
+          EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "Re-checked on $(date -u +%Y-%m-%d): UCD ${LATEST_UCD} / Emoji ${LATEST_EMOJI} is still the latest available release."
+            echo "Updated existing issue #$EXISTING"
+          else
+            gh issue create --title "$TITLE" --body "$BODY"
+            echo "Created tracking issue"
+          fi

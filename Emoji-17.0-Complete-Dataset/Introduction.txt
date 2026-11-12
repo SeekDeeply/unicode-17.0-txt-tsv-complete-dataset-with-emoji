@@ -1,201 +1,79 @@
-================================================================================
-                  Emoji 17.0 Complete Dataset Introduction
-                  Emoji 17.0 全数据文件介绍
-================================================================================
-Generated: 2026-03-07 18:40:50
-生成日期: 2026-03-07 18:40:50
-Data Source: emoji-test.txt (Official 17.0, 2025-08-04)
-数据来源: emoji-test.txt (官方17.0, 2025-08-04)
-Content: All fully-qualified + minimally-qualified + unqualified + component
-包含内容: 所有 fully-qualified + minimally-qualified + unqualified + component
-================================================================================
+==============================================================================
+                 Emoji 17.0 Complete Dataset
+                 Emoji 17.0 全量数据
+==============================================================================
 
-────────────────────────────────────────────────────────────────────────────────
-1. Full Dataset (with all sequences) | 全量数据版 (含所有序列)
-────────────────────────────────────────────────────────────────────────────────
+Generated    : 2026-11-12 14:21:36 UTC
+Emoji ver    : 17.0
+Source       : emoji-test.txt (official, all four qualification statuses)
+Sequences    : 5,225
+  fully-qualified      3,944
+  minimally-qualified  1,029
+  unqualified          243
+  component            9
+Groups       : 10
+Subgroups    : 100
 
-Filename: emoji_17.0_full_machine.tsv
-文件名: emoji_17.0_full_machine.tsv
-Size: 428 KB
-文件大小: 428 KB
-Lines: 5,228 rows
-总行数: 5,228 行
-Format: Char <TAB> Codepoint <TAB> Status <TAB> Version <TAB> Name
-格 式: 字符 <TAB> 码位 <TAB> 状态 <TAB> 版本 <TAB> 名称
-Usage: Program import / Data analysis
-用 途: 程序导入 / 数据分析
+This file is produced by src/build.mjs and rendered by src/render-docs.mjs.
+Do not edit it by hand. 本文件由流水线自动生成，请勿手工编辑。
 
-【Sample / 文件样例】
-😀      1F600          fully-qualified    E1.0    grinning face
-#️⃣    0023 FE0F 20E3  fully-qualified    E2.0    keycap: #
-🇨🇳    1F1E8 1F1F3     fully-qualified    E2.0    flag: China
-🧩      1F3FB          component          E1.0    light skin tone
+------------------------------------------------------------------------------
+Files / 文件说明
+------------------------------------------------------------------------------
 
-【Status Explanation / 状态说明】
-✅ fully-qualified      – Official RGI Emoji (3,953)          | ✅ 官方推荐Emoji (3,953个)
-⚠️ minimally-qualified  – Incomplete sequences (174)          | ⚠️ 残缺序列 (174个)
-❓ unqualified          – Text symbols (71)                   | ❓ 文本符号 (71个)
-🧩 component            – Modifier components (25)            | 🧩 修饰符组件 (25个)
+1. emoji_17.0_full_machine.tsv
+   (556.5 KB, 5,240 lines)
+   All 5,225 sequences, 7 tab-separated columns:
 
-────────────────────────────────────────────────────────────────────────────────
+     sequence      the rendered emoji
+     code_points   space-separated hex code points, e.g. "0023 FE0F 20E3"
+     status        fully-qualified | minimally-qualified | unqualified | component
+     version       the E-version the sequence was introduced in
+     name          CLDR short name
+     group         emoji-test group (10)
+     subgroup      emoji-test subgroup (100)
 
-Filename: emoji_17.0_full_human.txt
-文件名: emoji_17.0_full_human.txt
-Size: 621 KB
-文件大小: 621 KB
-Lines: 26,358 rows (with grouping)
-总行数: 26,358 行 (含分组排版)
-Format: Human-readable with groups and icons
-格 式: 带分组 / 图标的人类可读排版
-Usage: Reading / Reference / Sharing
-用 途: 阅读 / 查证 / 分享
+2. emoji_17.0_full_human.txt
+   (560.4 KB, 15,925 lines)
+   All sequences, grouped by group and subgroup, each with status, version and name.
 
-【Sample / 文件样例】
-📁 Smileys & Emotion         📁 笑脸与情感
-─────────────────────────────────────────────────────
-  📂 face-smiling            📂 笑脸
-  😀  U+1F600
-      ✅ fully-qualified
-      📌 E1.0
-      📝 grinning face
+3. emoji_17.0_single_machine.tsv
+   (93.8 KB, 1,415 lines)
+   The 1,400 sequences that are a single code point (no ZWJ, no variation
+   selector, no modifier). Same 7 columns.
 
-📁 People & Body             📁 人物与身体
-─────────────────────────────────────────────────────
-  📂 person-fantasy          📂 奇幻人物
-  🧙🏼‍♀️  1F9D9 1F3FC 200D 2640 FE0F
-      ✅ fully-qualified
-      📌 E5.0
-      📝 woman mage: medium-light skin tone
+4. emoji_17.0_single_human.txt
+   (101.3 KB, 4,446 lines)
+   The same single-code-point subset, readable.
 
-────────────────────────────────────────────────────────────────────────────────
-2. Single-Codepoint Only (Pure single codepoints) | 单码位纯净版 (仅单码位)
-────────────────────────────────────────────────────────────────────────────────
+5. emoji_17.0_string.txt
+   (5.5 KB)
+   The 1,400 single-code-point sequences concatenated into one line.
 
-Filename: emoji_17.0_single_machine.tsv
-文件名: emoji_17.0_single_machine.tsv
-Size: 61 KB
-文件大小: 61 KB
-Lines: 1,400 rows
-总行数: 1,400 行
-Format: Char <TAB> Codepoint <TAB> Status <TAB> Version <TAB> Name
-格 式: 字符 <TAB> 码位 <TAB> 状态 <TAB> 版本 <TAB> 名称
-Usage: Program processing / Single-codepoint analysis
-用 途: 程序处理 / 单码位分析
+6. emoji_17.0_string_annotated.txt
+   (66.0 KB, 319 lines)
+   All 5,225 sequences in chunks of 50, one chunk per line, each preceded
+   by a "# chunk N" comment - so the data can be read line-wise without loss.
 
-【Sample / 文件样例】
-😀      1F600    fully-qualified    E1.0    grinning face
-©       00A9     unqualified        E0.6    copyright sign
-®       00AE     unqualified        E0.6    registered sign
+------------------------------------------------------------------------------
+Parsing note / 解析注意
+------------------------------------------------------------------------------
 
-【Statistics / 统计】
-✅ fully-qualified: 1,184   | ✅ fully-qualified: 1,184 个
-❓ unqualified:     207     | ❓ unqualified:     207 个
-🧩 component:       9       | 🧩 component:       9 个 (保留但标注)
-⚠️ minimally:       0       | ⚠️ minimally:       0 个 (已过滤)
+  Two legitimate rows begin with a hash character, because the keycap sequences
+  render as hash + variation selector + combining enclosing keycap:
 
-────────────────────────────────────────────────────────────────────────────────
+     0023 FE0F 20E3   fully-qualified   keycap: #
+     0023 20E3        unqualified       keycap: #
 
-Filename: emoji_17.0_single_human.txt
-文件名: emoji_17.0_single_human.txt
-Size: 111 KB
-文件大小: 111 KB
-Lines: ~5,600 rows (with formatting)
-总行数: 约 5,600 行 (含排版)
-Format: Human-readable for single codepoints
-格 式: 单码位人类可读排版
-Usage: Reading / Verifying single Emoji
-用 途: 阅读 / 查证单码位Emoji
+  A parser that skips every line starting with the hash character loses both.
+  Skip only a bare hash line, a line starting with hash+space, or hash+tab.
+  The verifier asserts these two rows survive every build.
 
-【Sample / 文件样例】
-😀  U+1F600
-      ✅ fully-qualified
-      📌 E1.0
-      📝 grinning face
+------------------------------------------------------------------------------
+Verification / 校验
+------------------------------------------------------------------------------
 
-©  U+00A9
-      ❓ unqualified
-      📌 E0.6
-      📝 copyright sign
-
-────────────────────────────────────────────────────────────────────────────────
-3. Single-Line Continuous String (Single codepoints only) | 单行连续字符串版 (仅单码位)
-────────────────────────────────────────────────────────────────────────────────
-
-Filename: emoji_17.0_string.txt
-文件名: emoji_17.0_string.txt
-Size: 5.4 KB
-文件大小: 5.4 KB
-Lines: 1 row
-总行数: 1 行
-Characters: 1,400
-字符数: 1,400 个
-Format: All single-codepoint Emoji concatenated continuously
-格 式: 所有单码位字符连续拼接
-Usage: Quick copy / String testing
-用 途: 快速复制 / 字符串测试
-
-【Content / 文件内容】
-😀😃😄😁😆😅😂🤣🥲☺️😊😇🙂🙃😉😌😍🥰😘😗😙😚😋😛😝😜🤪🤨🧐🤓😎🥸🤩🥳😏😒😞😔😟😕🙁☹️😣😖😫😩🥺😢😭😤😠😡🤬🤯😳🥵🥶😱😨😰😥😓🤗🤔🤭🤫🤥😶😐😑😬🙄😯😦…
-
-【Bytes / 字节数】5,428 bytes
-【Characters / 字符数】1,400 characters (editor may show more due to combining sequences)
-1,400 字符 (编辑器可能显示更多，因组合序列)
-
-────────────────────────────────────────────────────────────────────────────────
-
-Filename: emoji_17.0_string_annotated.txt
-文件名: emoji_17.0_string_annotated.txt
-Size: 5.6 KB
-文件大小: 5.6 KB
-Lines: ~20 rows (with comments)
-总行数: 约 20 行 (带注释)
-Format: Single-line string with header comments
-格 式: 带头部说明的单行字符串
-Usage: Archiving / Sharing with documentation
-用 途: 存档 / 分享带说明的版本
-
-【Content / 文件内容】
-# Emoji 17.0 Single-Codepoint Continuous String
-# Emoji 17.0 单码位连续字符串
-# Generated: 2026-03-07 18:40:50
-# 生成日期: 2026-03-07 18:40:50
-# Character count: 1400
-# 字符数量: 1400
-# Description: All single-codepoint Emoji concatenated continuously, no spaces, no line breaks
-# 说明: 所有单码位Emoji字符连续拼接，无空格无换行
-#
-String / 字符串: 😀😃😄😁😆😅😂🤣🥲☺️😊😇🙂🙃😉😌😍🥰😘😗😙😚😋😛😝😜🤪🤨🧐🤓😎🥸🤩🥳😏😒😞😔😟😕🙁☹️😣😖😫😩🥺😢😭😤😠😡🤬🤯😳🥵🥶😱😨😰😥😓🤗🤔🤭🤫🤥😶😐😑😬🙄😯😦…
-
-# First 50 characters preview / 前50个字符预览:
-😀😃😄😁😆😅😂🤣🥲☺️😊😇🙂🙃😉😌😍🥰😘😗😙
-
-────────────────────────────────────────────────────────────────────────────────
-                            File Family Overview
-                            文件家族一览
-────────────────────────────────────────────────────────────────────────────────
-File / 文件                                   Size / 大小    Lines / 行数    Usage / 用途
-────────────────────────────────────────────────────────────────────────────────
-emoji_17.0_full_machine.tsv                     428 KB      5,228    Full dataset (machine) / 全量数据(机器)
-emoji_17.0_full_human.txt                        621 KB     26,358    Full dataset (human) / 全量数据(人类)
-emoji_17.0_single_machine.tsv                     61 KB      1,400    Single codepoint (machine) / 单码位(机器)
-emoji_17.0_single_human.txt                       111 KB     ~5,600    Single codepoint (human) / 单码位(人类)
-emoji_17.0_string.txt                              5.4 KB          1    Single-line string / 单行字符串
-emoji_17.0_string_annotated.txt                    5.6 KB        ~20    Annotated string / 带注释字符串
-────────────────────────────────────────────────────────────────────────────────
-
-All files are UTF-8 encoded, containing complete official Emoji 17.0 data.
-所有文件均为 UTF-8 编码，包含完整的 Emoji 17.0 官方数据。
-
-════════════════════════════════════════════════════════════════════════════════
-⚠️ IMPORTANT NOTE / 重要说明
-════════════════════════════════════════════════════════════════════════════════
-The file sizes and row counts listed above are based on the actual files in this
-repository. Due to the complex nature of Unicode data and possible environmental
-factors during file generation, there may be slight discrepancies compared to the
-official Unicode release or theoretical counts. Users are strongly advised to
-verify the data against official sources if absolute precision is required.
-
-以上列出的文件大小和行数基于本仓库中的实际文件。由于 Unicode 数据的复杂性
-以及文件生成过程中可能的环境因素，与官方发布或理论制作数量可能存在细微差异。
-如果需要绝对精确的数据，建议使用者仔细与官方源核对。
-════════════════════════════════════════════════════════════════════════════════
+  sha256sum -c ../checksum_sha256.txt
+  npm run verify   # asserts the sequence set equals emoji-test.txt exactly:
+                   # nothing missing, nothing invented, names and versions identical
+==============================================================================

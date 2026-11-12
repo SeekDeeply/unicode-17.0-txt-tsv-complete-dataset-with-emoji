@@ -1,212 +1,184 @@
-# Unicode 17.0 + Emoji 17.0 Complete Dataset
-# Unicode 17.0 + Emoji 17.0 完整数据集
+# Unicode 17.0 + Emoji 17.0 - Complete Dataset (TXT / TSV)
 
-<p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License"></a>
-  <a href="LICENSE_UNICODE"><img src="https://img.shields.io/badge/Unicode%20License-v3-lightgrey" alt="Unicode License"></a>
-  <a href="https://github.com/SeekDeeply/unicode-17.0-txt-tsv-complete-dataset-with-emoji/releases"><img src="https://img.shields.io/github/v/release/SeekDeeply/unicode-17.0-txt-tsv-complete-dataset-with-emoji" alt="Release"></a>
-  <a href="https://github.com/SeekDeeply/unicode-17.0-txt-tsv-complete-dataset-with-emoji/stargazers"><img src="https://img.shields.io/github/stars/SeekDeeply/unicode-17.0-txt-tsv-complete-dataset-with-emoji?style=social" alt="Stars"></a>
-  <img src="https://img.shields.io/badge/Unicode-17.0-green" alt="Unicode 17.0">
-  <img src="https://img.shields.io/badge/Emoji-17.0-orange" alt="Emoji 17.0">
-  <img src="https://img.shields.io/badge/Data%20Size-16MB-lightgrey" alt="Data Size">
-</p>
+[![build & verify](https://github.com/SeekDeeply/unicode-17.0-txt-tsv-complete-dataset-with-emoji/actions/workflows/build.yml/badge.svg)](https://github.com/SeekDeeply/unicode-17.0-txt-tsv-complete-dataset-with-emoji/actions/workflows/build.yml)
+[![code points](https://img.shields.io/badge/code%20points-159,944-blue)](#unicode-17.0-dataset)
+[![emoji](https://img.shields.io/badge/emoji%20sequences-5,225-orange)](#emoji-17.0-dataset)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
-<p align="center">
-  <b>🚀 The most complete, professionally curated dataset for Unicode 17.0 and Emoji 17.0</b><br>
-  <b>🚀 最完整、专业整理的 Unicode 17.0 和 Emoji 17.0 数据集</b>
-</p>
-
----
-
-📖 Overview | 概述
-
-This repository provides the absolute most complete and professionally processed dataset for Unicode 17.0 and Emoji 17.0, directly derived from official UCD and Unihan sources.
-It includes every allocated character, all control codes, 66 noncharacters, surrogate/private use boundaries, and the full Emoji 17.0 data (fully‑qualified, minimally‑qualified, unqualified, component).
-Perfect for font developers, linguists, text processing researchers, and anyone who needs the ultimate Unicode reference.
-
-本仓库提供 绝对最完整、专业处理 的 Unicode 17.0 和 Emoji 17.0 数据集，直接源自官方 UCD 和 Unihan 源文件。
-包含 每一个已分配字符、所有控制符、66个非字符、代理区/私用区边界 以及 完整的 Emoji 17.0 数据（全限定、最小限定、未限定、组件）。
-适用于字体开发者、语言学家、文本处理研究人员以及任何需要终极 Unicode 参考的人。
-
----
-
-✨ Core Features | 核心特性
-
-| 🇬🇧 English | 🇨🇳 中文 |
-|------------|---------|
-| ✅ **Absolute Completeness** – All allocated characters, control chars, 66 noncharacters, surrogate/private use boundaries | ✅ **绝对完整** – 所有已分配字符、控制字符、66个非字符、代理区/私用区边界 |
-| ✅ **Latest Version** – Based on Unicode 17.0 (September 2025) | ✅ **最新版本** – 基于 Unicode 17.0（2025年9月发布） |
-| ✅ **Multiple Formats** – Machine‑readable TSV, human‑readable text, single‑line continuous string, block‑separated versions | ✅ **多格式可用** – 机器可读 TSV、人类可读排版、单行连续字符串、按区块分行版 |
-| ✅ **Exact Classification** – Every character labeled with official block names (Chinese/English) | ✅ **精确分类** – 每个字符按官方区块名标注（中英双语） |
-| ✅ **Full Emoji Coverage** – All statuses: fully‑qualified, minimally‑qualified, unqualified, component | ✅ **Emoji 全覆盖** – 所有状态：fully‑qualified、minimally‑qualified、unqualified、component |
-| ✅ **Pure Original** – Control characters preserved as‑is, no filtering, no modification | ✅ **原汁原味** – 控制字符原样保留，无过滤，无修改 |
-
----
-
-📁 Repository Contents | 仓库内容
-
-```
-
-unicode-17.0-txt-tsv-complete-dataset-with-emoji/
-├── 📂 Emoji-17.0-Complete-Dataset/
-│   ├── Introduction.txt
-│   ├── emoji_17.0_full_human.txt
-│   ├── emoji_17.0_full_machine.tsv
-│   ├── emoji_17.0_single_human.txt
-│   ├── emoji_17.0_single_machine.tsv
-│   ├── emoji_17.0_string.txt
-│   └── emoji_17.0_string_annotated.txt
-├── 📂 Screenshots/
-│   ├── emoji_17.0_full_human.jpg
-│   ├── emoji_17.0_string.jpg
-│   ├── unicode_17.0_human.jpg
-│   └── unicode_17.0_string_blocked.jpg
-├── 📂 Unicode-17.0-Complete-Dataset/
-│   ├── Introduction.txt
-│   ├── unicode_17.0_blocks.txt
-│   ├── unicode_17.0_human.txt
-│   ├── unicode_17.0_machine.tsv
-│   ├── unicode_17.0_string.txt
-│   └── unicode_17.0_string_blocked.txt
-├── LICENSE
-├── LICENSE_UNICODE
-├── NOTICE.txt
-├── README.md
-└── checksum_sha256.txt
-
-```
-
----
-
-🚀 Quick Start | 快速开始
-
-You can clone the repository or download the latest release:
-
-你可以 克隆仓库 或 下载最新发布版本：
+Every byte in this repository is **generated from the official Unicode Character Database**
+by the pipeline in `src/`, and every build is reproducible. Nothing is hand-edited, and no
+statistic in this file was typed by a human.
 
 ```bash
-# Clone with HTTPS
-git clone https://github.com/SeekDeeply/unicode-17.0-txt-tsv-complete-dataset-with-emoji.git
-
-# Or download the latest release from:
-https://github.com/SeekDeeply/unicode-17.0-txt-tsv-complete-dataset-with-emoji/releases
+npm run build      # fetch official sources, regenerate all data files
+npm run verify     # independent checks against those sources
+npm test           # unit tests for the parsers
 ```
 
-After obtaining the files, you can immediately start exploring the data using any text editor or programming language.
+---
 
-获取文件后，你可以立即使用任何文本编辑器或编程语言开始探索数据。
+## What is in here
+
+| | |
+|---|---|
+| **Code points** | 159,944 - every assigned character, every control, all 66 noncharacters, plus surrogate and private-use boundaries |
+| **Blocks** | 346 |
+| **Emoji sequences** | 5,225 - every qualification status, not only the recommended ones |
+| **Source** | UCD 17.0.0, Emoji 17.0 |
+| **Reproducible** | yes - same sources in, byte-identical files out |
 
 ---
 
-📊 Unicode 17.0 Dataset | Unicode 17.0 数据集
+## Unicode 17.0 dataset
 
-Located in /Unicode-17.0-Complete-Dataset/ | 位于 /Unicode-17.0-Complete-Dataset/
+`Unicode-17.0-Complete-Dataset/`
 
-Three Versions for Different Needs | 三种版本满足不同需求
+| file | lines | size | use it for |
+|---|---:|---:|---|
+| `unicode_17.0_machine.tsv` | 159,961 | 18.10 MB | programmatic import - one row per code point, 9 tab-separated columns |
+| `unicode_17.0_human.txt` | 641,535 | 13.47 MB | reading and printing - grouped by block, one paragraph per character |
+| `unicode_17.0_string.txt` | 6 | 568.7 KB | string processing - all 159,944 characters concatenated into one line |
+| `unicode_17.0_string_blocked.txt` | 1,408 | 596.5 KB | per-block strings - one section per block |
+| `unicode_17.0_blocks.txt` | 354 | 18.0 KB | the block table, with English and Chinese names |
 
-File Format Size Lines Best For
-unicode_17.0_machine.tsv TSV 5.2 MB 142,610 Program import / Database
-unicode_17.0_human.txt Text 10 MB ~570,000 Reading / Reference / Sharing
-unicode_17.0_string.txt Raw 512 KB 1 String processing / Testing
-unicode_17.0_string_blocked.txt Text ~512 KB ~330 Block‑separated exploration
+### Coverage rule
 
-📸 Screenshot Preview | 截图预览
+A code point is in the dataset when it is one of:
 
-Human‑Readable Version Block‑Separated Version
-<img src="https://github.com/SeekDeeply/unicode-17.0-txt-tsv-complete-dataset-with-emoji/raw/main/Screenshots/unicode_17.0_human.jpg" width="300"> <img src="https://github.com/SeekDeeply/unicode-17.0-txt-tsv-complete-dataset-with-emoji/raw/main/Screenshots/unicode_17.0_string_blocked.jpg" width="300">
+1. **assigned** - it has a General_Category in `UnicodeData.txt`. This includes the ranges that
+   `UnicodeData.txt` only brackets with `<X, First>` / `<X, Last>` - all 11,172 Hangul
+   syllables, 6,144 Tangut ideographs and every CJK ideograph from Extension A through J.
+   Those are expanded, one row each, with their algorithmic names.
+2. **a boundary** - the first and last code point of each surrogate and private-use range.
+   The interior of those ranges is by definition *not* an assigned character, so listing it
+   would add 131,068 meaningless rows to a "complete character set".
+3. **a noncharacter** - all 66, from `U+FDD0` to `U+10FFFF`. They are not assigned,
+   but they are a finite, officially enumerated set that anyone auditing text needs to identify.
 
----
+### TSV columns
 
-😊 Emoji 17.0 Dataset | Emoji 17.0 数据集
-
-Located in /Emoji-17.0-Complete-Dataset/ | 位于 /Emoji-17.0-Complete-Dataset/
-
-File Family | 文件家族
-
-File Size Lines Purpose
-emoji_17.0_full_machine.tsv 428 KB 5,228 Full dataset (machine)
-emoji_17.0_full_human.txt 621 KB 26,358 Full dataset (human)
-emoji_17.0_single_machine.tsv 61 KB 1,400 Single‑codepoint (machine)
-emoji_17.0_single_human.txt 111 KB ~5,600 Single‑codepoint (human)
-emoji_17.0_string.txt 5.4 KB 1 Single‑line string
-emoji_17.0_string_annotated.txt 5.6 KB ~20 Annotated string
-
-Status Breakdown | 状态分布
-
-Status Count Description
-✅ fully-qualified 3,953 Official RGI Emoji
-⚠️ minimally-qualified 174 Incomplete sequences
-❓ unqualified 71 Text symbols
-🧩 component 25 Modifier components
-Total 5,223 All statuses included
-
-📸 Screenshot Preview | 截图预览
-
-Full Human‑Readable Version Single‑Line String Version
-<img src="https://github.com/SeekDeeply/unicode-17.0-txt-tsv-complete-dataset-with-emoji/raw/main/Screenshots/emoji_17.0_full_human.jpg" width="300"> <img src="https://github.com/SeekDeeply/unicode-17.0-txt-tsv-complete-dataset-with-emoji/raw/main/Screenshots/emoji_17.0_string.jpg" width="300">
-
----
-
-🔧 Data Integrity | 数据完整性验证
-
-All files include SHA-256 checksums for verification. You can verify with:
-
-所有文件均附带 SHA-256 校验值，可用以下命令验证：
+```text
+code_point   U+XXXX / U+XXXXXX
+char         the literal character; control characters appear as a midline dot placeholder here
+escaped      lossless escaped form: backslash-t, backslash-n, backslash-r, or \u{XXXX}
+name         the Name property, with algorithmic names expanded
+category     General_Category
+block        Unicode block, English
+block_zh     Unicode block, Chinese
+script       Script property
+type         assigned | control | noncharacter | surrogate | private-use
+```
 
 ```bash
-# Linux / macOS
+# every data row has exactly 9 columns and occupies exactly one line
+awk -F'\t' '!/^#/ {print $1, $4, $9}' Unicode-17.0-Complete-Dataset/unicode_17.0_machine.tsv | head
+```
+
+> **Why a separate escaped column.** TAB and LINE FEED cannot appear literally in a TSV cell:
+> TAB would create a 10th column, LF would split the row in two. The previous revision wrote
+> them literally, so 142,610 "rows" could not be read as 142,610 rows by any TSV parser.
+> Here the code point is the key, `escaped` is the lossless value, and `char` is only a
+> display aid.
+
+---
+
+## Emoji 17.0 dataset
+
+`Emoji-17.0-Complete-Dataset/`
+
+| file | lines | size | use it for |
+|---|---:|---:|---|
+| `emoji_17.0_full_machine.tsv` | 5,240 | 556.5 KB | all 5,225 sequences - programmatic |
+| `emoji_17.0_full_human.txt` | 15,925 | 560.4 KB | all sequences - readable, grouped |
+| `emoji_17.0_single_machine.tsv` | 1,415 | 93.8 KB | the 1,400 single-code-point sequences only |
+| `emoji_17.0_single_human.txt` | 4,446 | 101.3 KB | single-code-point sequences - readable |
+| `emoji_17.0_string.txt` | 5 | 5.5 KB | single-code-point sequences concatenated into one line |
+| `emoji_17.0_string_annotated.txt` | 319 | 66.0 KB | all sequences in commented chunks of 50, readable line-wise |
+
+### Status breakdown
+
+| status | count | meaning |
+|---|---:|---|
+| fully-qualified | 3,944 | the recommended RGI emoji - what keyboards should offer |
+| minimally-qualified | 1,029 | missing a variation selector; renderable but not recommended |
+| unqualified | 243 | bare text symbols that have an emoji presentation |
+| component | 9 | skin tones and hair components - building blocks, not standalone emoji |
+| **total** | **5,225** | |
+
+All four statuses are included. `emoji-test.txt` is the sole source, and `npm run verify`
+proves the set is exactly equal to it - no sequence missing, none invented.
+
+```bash
+# the two rows a naive parser silently drops
+grep -P '^#\uFE0F\u20E3|^#\u20E3' Emoji-17.0-Complete-Dataset/emoji_17.0_full_machine.tsv
+```
+
+> **Why that matters.** TSV rows are commonly filtered with a leading-hash check.
+> The keycap sequences render as a hash, a variation selector and a combining keycap - so
+> those **two real rows start with a hash character** and get deleted. This dataset treats a
+> line as a comment only when it is a bare hash, a hash plus space, or a hash plus tab
+> (see `isCommentLine` in `src/lib/parse-ucd.mjs`), and the verifier asserts both rows survive.
+
+---
+
+## Data integrity
+
+`checksum_sha256.txt` covers every data file:
+
+```bash
 sha256sum -c checksum_sha256.txt
+```
 
-# Windows (PowerShell)
-Get-Content checksum_sha256.txt | ForEach-Object {
-    $hash, $file = $_ -split '\s+',2
-    if ((Get-FileHash $file -Algorithm SHA256).Hash -eq $hash.ToUpper()) {
-        Write-Host "$file OK" -ForegroundColor Green
-    } else {
-        Write-Host "$file FAILED" -ForegroundColor Red
-    }
-}
+`data/manifest.json` records the size, line count and SHA-256 of each file plus every headline
+count, and `data/sources.lock.json` pins the SHA-256 of each **upstream** file. If unicode.org ever
+serves different bytes for a fixed version, the build fails instead of silently regenerating
+something new.
+
+---
+
+## How it stays current
+
+```text
+src/lib/sources.mjs              the only place a version number lives
+src/build.mjs                    fetch -> parse -> expand -> write -> checksum -> manifest
+src/verify.mjs                   re-derives expectations from the sources, checks the files
+src/check-upstream-version.mjs   polls unicode.org for a newer final release
+src/render-docs.mjs              regenerates this README from the manifest
+```
+
+Three GitHub Actions workflows:
+
+- **build & verify** (push / pull request) - fetches the official sources in a clean checkout,
+  rebuilds, and fails if the rebuild differs by a single byte from what is committed. That is
+  the guarantee that the data is not hand-edited.
+- **check for new Unicode release** (weekly) - polls unicode.org and, when a newer *final*
+  release ships, opens one tracking issue with the exact commands. It deliberately ignores
+  draft versions: `/Public/19.0.0/` currently redirects to `/Public/draft/` and is not a release.
+- **publish release** (tag) - rebuilds, verifies, confirms the rebuild matches the commit,
+  then attaches the bundle to a GitHub release.
+
+To adopt a new Unicode version:
+
+```bash
+# 1. edit src/lib/sources.mjs: UCD_VERSION / EMOJI_VERSION
+# 2. rename the output directories to the new version
+node src/build.mjs --force --update-lock   # download, rebuild, accept new upstream hashes
+node src/verify.mjs --strict
+node src/render-docs.mjs                   # docs follow the manifest automatically
 ```
 
 ---
 
-📜 License | 许可证
+## Licensing
 
-This project is licensed under the Apache License 2.0 – see the LICENSE file for details.
-The raw data derived from the Unicode Character Database is licensed under the Unicode License v3 – see the LICENSE_UNICODE file for details.
-For the complete terms of use of Unicode data, please refer to the Unicode Terms of Use.
+- The **code** in `src/` is Apache-2.0 - see [LICENSE](LICENSE).
+- The **data**, derived from the UCD, is under the Unicode License v3 - see [LICENSE_UNICODE](LICENSE_UNICODE).
+- Attribution notes are in [NOTICE.txt](NOTICE.txt).
 
-本项目采用 Apache License 2.0 许可证 – 详见 LICENSE 文件。
-源自 Unicode 字符数据库的原始数据采用 Unicode License v3 许可 – 详见 LICENSE_UNICODE 文件。
-关于 Unicode 数据的完整使用条款，请参考 Unicode 使用条款。
-
----
-
-🙏 Acknowledgments | 致谢
-
-· Unicode Consortium for the official UCD and Unihan data.
-· All contributors who helped refine and verify this dataset.
-· You, for your interest in high‑quality Unicode data!
-· Unicode 联盟 提供的官方 UCD 和 Unihan 数据。
-· 所有帮助完善和验证本数据集的贡献者。
-· 你，对高质量 Unicode 数据感兴趣的你！
+Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other
+countries.
 
 ---
 
-📬 Contact & Contribution | 联系方式与贡献
-
-· GitHub: SeekDeeply
-· Email: i9888888885@163.com
-· Issues: Open an issue
-· Discussions: GitHub Discussions
-· GitHub: SeekDeeply
-· 邮箱: i9888888885@163.com
-· 问题反馈: 提交 Issue
-· 讨论区: GitHub Discussions
-
----
-
-<p align="center">
-  <b>⭐ If you find this dataset valuable, please give it a star — it helps others discover it!</b><br>
-  <b>⭐ 如果你觉得这个数据集有价值，欢迎给个星标 — 这能帮助更多人发现它！</b>
-</p>
+Generated from UCD 17.0.0 / Emoji 17.0 at 2026-11-12 14:21:36 UTC. Every number above comes
+from [data/manifest.json](data/manifest.json); run `npm run docs` to refresh it.
