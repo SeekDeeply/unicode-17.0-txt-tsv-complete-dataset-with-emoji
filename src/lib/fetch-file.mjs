@@ -37,12 +37,12 @@ export async function fetchFile({
     const bytes = (await fsp.stat(destPath)).size;
     if (!sha256) {
       log(`cache hit   ${path.basename(destPath)} (${bytes} bytes)`);
-      return { path: destPath, bytes, sha256: await sha256File(destPath), fromCache: true };
+      return { path: destPath, bytes, sha256: await sha256File(destPath), fromCache: true, url };
     }
     const got = await sha256File(destPath);
     if (got === sha256.toLowerCase()) {
       log(`cache hit   ${path.basename(destPath)} (${bytes} bytes, sha256 ok)`);
-      return { path: destPath, bytes, sha256: got, fromCache: true };
+      return { path: destPath, bytes, sha256: got, fromCache: true, url };
     }
     log(`cache stale ${path.basename(destPath)} (sha256 mismatch, redownloading)`);
   }
@@ -72,7 +72,7 @@ export async function fetchFile({
       await fsp.writeFile(tmp, buf);
       await fsp.rename(tmp, destPath);
       log(`downloaded  ${path.basename(destPath)} (${buf.length} bytes)`);
-      return { path: destPath, bytes: buf.length, sha256: got, fromCache: false };
+      return { path: destPath, bytes: buf.length, sha256: got, fromCache: false, url };
     } catch (err) {
       lastErr = err;
       if (attempt < retries) {

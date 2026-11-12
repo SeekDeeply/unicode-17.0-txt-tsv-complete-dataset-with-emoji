@@ -193,8 +193,13 @@ export function charsetBlocks(blockRanges, meta) {
     lines: [`Generated: ${meta.generatedAt}`, `Blocks: ${blockRanges.length}`],
   }));
   for (const b of blockRanges) {
-    const zh = meta.zh[b.value];
-    out.push(`${b.rangeText}; ${b.value} | ${zh ?? ''}`.trimEnd());
+    // Never emit a dangling " | " with no name. If a block has no Chinese
+    // translation yet, fall back to the English name — which is what the row table
+    // (blockZh) already does — so the column is always populated and a missing
+    // translation cannot produce a malformed line. build.mjs warns about it, and
+    // tools/sync-block-names-zh.mjs lists exactly which blocks still need a human.
+    const zh = meta.zh[b.value] ?? b.value;
+    out.push(`${b.rangeText}; ${b.value} | ${zh}`);
   }
   return out.join('\n') + '\n';
 }

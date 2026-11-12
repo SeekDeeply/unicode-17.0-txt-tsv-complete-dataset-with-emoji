@@ -18,7 +18,23 @@ const UCD = `https://www.unicode.org/Public/${UCD_VERSION}/ucd`;
 const UCDROOT = `https://www.unicode.org/Public/${UCD_VERSION}`;
 
 /**
- * @typedef {{ key: string, url: string, file: string, required: boolean, note: string }} Source
+ * Emoji data does not live at one stable path across releases.
+ *
+ *   17.0.0  ->  /Public/17.0.0/emoji/emoji-test.txt   (UCD-rooted)
+ *   16.0.0  ->  /Public/emoji/16.0/emoji-test.txt     (Emoji-rooted)
+ *
+ * Both layouts have been used, and which one applies depends on the release, so a
+ * single hard-coded URL silently breaks the moment the pin moves. Each emoji
+ * source therefore lists candidate URLs in preference order; the first one that
+ * serves the file wins, and the lock file records which one was actually used.
+ */
+const emojiCandidates = (name) => [
+  `${UCDROOT}/emoji/${name}`,
+  `https://www.unicode.org/Public/emoji/${EMOJI_VERSION}/${name}`,
+];
+
+/**
+ * @typedef {{ key: string, url: string, urls?: string[], file: string, required: boolean, note: string }} Source
  * @type {Source[]}
  */
 export const SOURCES = [
@@ -73,10 +89,11 @@ export const SOURCES = [
   },
   {
     key: 'emoji-test',
-    url: `${UCDROOT}/emoji/emoji-test.txt`,
+    url: emojiCandidates('emoji-test.txt')[0],
+    urls: emojiCandidates('emoji-test.txt'),
     file: 'emoji-test.txt',
     required: true,
-    note: 'Emoji 17.0 keyboard/display test data (all four qualification statuses)',
+    note: 'Emoji keyboard/display test data (all four qualification statuses)',
   },
   {
     key: 'emoji-data',
@@ -87,14 +104,16 @@ export const SOURCES = [
   },
   {
     key: 'emoji-sequences',
-    url: `${UCDROOT}/emoji/emoji-sequences.txt`,
+    url: emojiCandidates('emoji-sequences.txt')[0],
+    urls: emojiCandidates('emoji-sequences.txt'),
     file: 'emoji-sequences.txt',
     required: false,
     note: 'Basic emoji sequences (used for cross-checking emoji-test)',
   },
   {
     key: 'emoji-zwj-sequences',
-    url: `${UCDROOT}/emoji/emoji-zwj-sequences.txt`,
+    url: emojiCandidates('emoji-zwj-sequences.txt')[0],
+    urls: emojiCandidates('emoji-zwj-sequences.txt'),
     file: 'emoji-zwj-sequences.txt',
     required: false,
     note: 'ZWJ emoji sequences (used for cross-checking emoji-test)',

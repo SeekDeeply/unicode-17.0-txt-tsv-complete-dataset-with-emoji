@@ -35,34 +35,60 @@ export async function syncSources({ root, force = false, updateLock = false, off
   for (const src of SOURCES) {
     const dest = path.join(cacheDir, src.file);
     const locked = lock.files?.[src.key]?.sha256;
+    // Emoji sources can live at more than one published path; try each candidate in
+    // order and keep the first that serves a file. See emojiCandidates() in sources.mjs.
+    const candidates = src.urls ?? [src.url];
     let res;
-    try {
-      res = await fetchFile({
-        url: src.url,
-        destPath: dest,
-        sha256: !force && !offline ? locked : undefined,
-        force: force && !offline,
-        log: (m) => log(m),
-      });
-    } catch (err) {
-      if (!src.required && !fs.existsSync(dest)) {
-        warn(`optional source ${src.key} unavailable (${err.message.split('\n')[0]}) — continuing`);
+    let lastErr;
+    for (const url of candidates) {
+      try {
+        // Fetch WITHOUT hash enforcement, then compare against the lock ourselves.
+        //
+        // Passing the expected hash into fetchFile would make a changed upstream look
+        // like a transient network fault: it retries three times and dies with
+        // "sha256 mismatch", which tells the user nothing about what to do. Comparing
+        // here instead produces the actionable message (see drift handling below), and
+        // a merely corrupted cache still heals itself, because a re-download that
+        // matches the lock is simply a cache hit.
+        res = await fetchFile({
+          url,
+          destPath: dest,
+          sha256: undefined,
+          force: force && !offline,
+          log: (m) => log(m),
+        });
+        break;
+      } catch (err) {
+        lastErr = err;
+        if (url !== candidates[candidates.length - 1]) {
+          log(`${src.key}: ${url} unavailable, trying next published location`);
+        }
+      }
+    }
+    if (!res) {
+      if (!src.required) {
+        warn(`optional source ${src.key} unavailable (${lastErr?.message.split('\n')[0]}) — continuing`);
         continue;
       }
-      throw err;
+      throw lastErr;
     }
     if (locked && res.sha256 !== locked) drift.push({ key: src.key, url: src.url, locked, live: res.sha256 });
-    next.files[src.key] = { url: src.url, file: src.file, sha256: res.sha256, bytes: res.bytes };
+    // Record the URL that actually served the file, not the first candidate: the lock
+    // is the record of where this exact byte sequence came from.
+    next.files[src.key] = { url: res.url ?? src.url, file: src.file, sha256: res.sha256, bytes: res.bytes };
     results.push({ ...src, ...res });
   }
 
   if (drift.length && !updateLock) {
-    const lines = drift.map((d) => `  ${d.key}: locked ${d.locked.slice(0, 12)}… != live ${d.live.slice(0, 12)}…`).join('\n');
+    const lines = drift
+      .map((d) => `  ${d.key}\n    ${d.url}\n    locked ${d.locked}\n    live   ${d.live}`)
+      .join('\n');
     throw new Error(
-      `upstream content changed for ${drift.length} source(s) while the version pin (${UCD_VERSION}) stayed the same:\n` +
+      `upstream content changed for ${drift.length} source(s) while the version pin (${UCD_VERSION}) stayed the same:\n\n` +
         lines +
-        '\nUpstream changed content under a fixed version, which should not happen.\n' +
-        'Re-run with --update-lock only after confirming the change is legitimate.',
+        '\n\nUnicode does not normally re-cut a released version, so treat this as suspicious:\n' +
+        '  - if it is a legitimate re-cut, re-run with --update-lock and review the data diff\n' +
+        '  - otherwise do not build: the pinned bytes are what every published checksum describes',
     );
   }
 

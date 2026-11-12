@@ -326,7 +326,15 @@ async function main() {
     .filter((l) => /^[0-9A-F]{4,6}\.\.[0-9A-F]{4,6}; /.test(l));
   const officialBlocks = parseRangeFile(fs.readFileSync(path.join(CACHE, 'Blocks.txt'), 'utf8'));
   check('blocks file lists every official block', blockLines.length === officialBlocks.length, `${blockLines.length} vs ${officialBlocks.length}`);
-  check('every block line carries a Chinese name', blockLines.every((l) => l.includes(' | ') && l.split(' | ')[1].trim().length > 0));
+  // Every block line must carry a non-empty name in the second field. A block with no
+  // Chinese translation falls back to its English name, so this catches malformed
+  // lines (a dangling separator or an empty field) rather than modelling the
+  // translation gap, which the build warns about and the zh tool enumerates.
+  const badBlockLines = blockLines.filter((l) => {
+    const parts = l.split(' | ');
+    return parts.length !== 2 || parts[0].trim() === '' || parts[1].trim() === '';
+  });
+  check('every block line has a name in both fields', badBlockLines.length === 0, `${badBlockLines.length} malformed, e.g. ${badBlockLines[0] ?? ''}`);
 
   /* --- emoji --------------------------------------------------------- */
   head('Emoji tables');
