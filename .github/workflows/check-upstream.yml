@@ -146,6 +146,14 @@ jobs:
           set -euo pipefail
           node -e '
             const fs = require("fs");
+            // Defensive on purpose. This step only renders a summary, and crashing here
+            // once turned a successful adoption into a red run with an unhelpful ENOENT.
+            // The integrator now always writes the file, but a report step should never
+            // be the thing that fails a job whose actual work already succeeded.
+            if (!fs.existsSync("data/bump-summary.json")) {
+              fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, "### Adopted (no summary written)\n");
+              process.exit(0);
+            }
             const s = JSON.parse(fs.readFileSync("data/bump-summary.json", "utf8"));
             const out = [];
             const row = (label, k) => {
@@ -154,7 +162,7 @@ jobs:
               const sign = c.change > 0 ? "+" : "";
               out.push("| " + label + " | " + c.before.toLocaleString("en-US") + " | " + c.after.toLocaleString("en-US") + " | " + sign + c.change.toLocaleString("en-US") + " |");
             };
-            out.push("### Adopting Unicode " + s.to.ucd + " / Emoji " + s.to.emoji);
+            out.push(s.noop ? "### Already pinned to Unicode " + s.to.ucd + " / Emoji " + s.to.emoji + " - nothing to do" : "### Adopting Unicode " + s.to.ucd + " / Emoji " + s.to.emoji);
             out.push("");
             out.push("| | before | after | change |");
             out.push("|---|---:|---:|---:|");
@@ -174,6 +182,10 @@ jobs:
           mkdir -p .work
           node -e '
             const fs = require("fs");
+            if (!fs.existsSync("data/bump-summary.json")) {
+              fs.writeFileSync(".work/pr-body.md", "Adoption reported no summary; see the run log.\n");
+              process.exit(0);
+            }
             const s = JSON.parse(fs.readFileSync("data/bump-summary.json", "utf8"));
             const n = (v) => v.toLocaleString("en-US");
             const delta = (c) => c ? ((c.change > 0 ? "+" : "") + n(c.change)) : "n/a";

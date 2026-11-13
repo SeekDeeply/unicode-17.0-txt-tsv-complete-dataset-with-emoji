@@ -115,6 +115,37 @@ async function main() {
 
   if (compareVersions(target, pin.ucd) === 0) {
     ok(`already pinned to UCD ${target} - nothing to do`);
+    // Still write the summary. The auto-adopt workflow reads this file to build its
+    // report, and "already pinned" is a legitimate outcome of a re-run (the tool is
+    // idempotent, the weekly job may race a manual dispatch). Exiting here without it
+    // made the workflow fail on a missing file, which looked like a broken adoption
+    // when in fact nothing needed doing.
+    const unchanged = JSON.parse(await fsp.readFile(path.join(ROOT, 'data', 'manifest.json'), 'utf8'));
+    const s = unchanged.symbols;
+    await fsp.writeFile(
+      path.join(ROOT, 'data', 'bump-summary.json'),
+      JSON.stringify(
+        {
+          from: { ucd: pin.ucd, unicode: pin.unicode, emoji: pin.emoji },
+          to: { ucd: pin.ucd, unicode: pin.unicode, emoji: pin.emoji },
+          generatedAt: unchanged.generatedAt,
+          verification: 'not needed (already pinned)',
+          noop: true,
+          counts: {
+            codePoints: { before: s.codePoints, after: s.codePoints, change: 0 },
+            blocks: { before: s.blocks, after: s.blocks, change: 0 },
+            emojiSequences: { before: s.emojiSequences, after: s.emojiSequences, change: 0 },
+            fullyQualified: {
+              before: s.emojiByStatus['fully-qualified'],
+              after: s.emojiByStatus['fully-qualified'],
+              change: 0,
+            },
+          },
+        },
+        null,
+        2
+      ) + '\n'
+    );
     process.exit(0);
   }
   if (compareVersions(target, pin.ucd) < 0) {
