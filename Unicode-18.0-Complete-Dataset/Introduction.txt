@@ -1,12 +1,12 @@
 ==============================================================================
-                 Unicode 17.0 Complete Character Set
-                 Unicode 17.0 全字符总表
+                 Unicode 18.0 Complete Character Set
+                 Unicode 18.0 全字符总表
 ==============================================================================
 
-Generated    : 2026-11-13 09:55:40 UTC
-Unicode ver  : 17.0 (UCD 17.0.0)
-Code points  : 159,944
-Blocks       : 346
+Generated    : 2026-11-13 10:04:39 UTC
+Unicode ver  : 18.0 (UCD 18.0.0)
+Code points  : 172,951
+Blocks       : 353
 Nonchars     : 66
 Sources      : UnicodeData.txt, DerivedName.txt, DerivedGeneralCategory.txt,
                Blocks.txt, Scripts.txt, NameAliases.txt, PropList.txt
@@ -32,14 +32,14 @@ Coverage / 收录范围
                         range. The interior is not an assigned character, so it is
                         deliberately not enumerated.
 
-  Total: 159,944 code points, ascending, no duplicates.
+  Total: 172,951 code points, ascending, no duplicates.
 
 ------------------------------------------------------------------------------
 Files / 文件说明
 ------------------------------------------------------------------------------
 
-1. unicode_17.0_machine.tsv
-   (18.10 MB, 159,961 lines)
+1. unicode_18.0_machine.tsv
+   (19.04 MB, 172,968 lines)
    Machine readable: 9 tab-separated columns, exactly one line per code point.
 
      code_point   U+XXXX or U+XXXXXX
@@ -57,26 +57,26 @@ Files / 文件说明
    them raw, as an earlier revision of this dataset did, makes the file
    unparseable even though it looks fine in an editor.
 
-2. unicode_17.0_human.txt
-   (13.47 MB, 641,535 lines)
+2. unicode_18.0_human.txt
+   (14.56 MB, 693,598 lines)
    Human readable: one paragraph per code point, grouped under its block, with a
    category icon (control, noncharacter, surrogate, private use, CJK, other).
 
-3. unicode_17.0_string.txt
-   (568.7 KB)
+3. unicode_18.0_string.txt
+   (619.4 KB)
    Every code point concatenated into ONE line, ascending. Three substitutions
    keep the file a single line of valid UTF-8, and each is reversible:
        U+000A -> <LF>      U+000D -> <CR>      surrogate -> <U+XXXX>
 
-4. unicode_17.0_string_blocked.txt
-   (596.5 KB, 1,408 lines)
+4. unicode_18.0_string_blocked.txt
+   (647.9 KB, 1,436 lines)
    The same strings, one section per block, headed "## <block> | <中文名>".
    A block can appear in two sections where a code point outside any block (an
    end-of-plane noncharacter) interrupts it.
 
-5. unicode_17.0_blocks.txt
-   (18.0 KB)
-   The block table, e.g. "0000..007F; Basic Latin | 基本拉丁文字" - all 346 blocks.
+5. unicode_18.0_blocks.txt
+   (18.4 KB)
+   The block table, e.g. "0000..007F; Basic Latin | 基本拉丁文字" - all 353 blocks.
 
 ------------------------------------------------------------------------------
 Verification / 校验

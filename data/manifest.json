@@ -1,97 +1,97 @@
 {
-  "unicodeVersion": "17.0",
-  "ucdVersion": "17.0.0",
-  "emojiVersion": "17.0",
-  "generatedAt": "2026-11-13 09:55:40 UTC",
+  "unicodeVersion": "18.0",
+  "ucdVersion": "18.0.0",
+  "emojiVersion": "18.0",
+  "generatedAt": "2026-11-13 10:04:39 UTC",
   "sources": {
     "UnicodeData": {
-      "url": "https://www.unicode.org/Public/17.0.0/ucd/UnicodeData.txt",
+      "url": "https://www.unicode.org/Public/18.0.0/ucd/UnicodeData.txt",
       "file": "UnicodeData.txt",
-      "sha256": "2e1efc1dcb59c575eedf5ccae60f95229f706ee6d031835247d843c11d96470c",
-      "bytes": 2198209
+      "sha256": "0736451de439ae7baf1425136617da495e09ee5afbe6e394374db7009ea08950",
+      "bytes": 2243593
     },
     "DerivedName": {
-      "url": "https://www.unicode.org/Public/17.0.0/ucd/extracted/DerivedName.txt",
+      "url": "https://www.unicode.org/Public/18.0.0/ucd/extracted/DerivedName.txt",
       "file": "DerivedName.txt",
-      "sha256": "019758bbe6c756c40fca6d505187ea660c5e195533e2ff2c841963a212c9d369",
-      "bytes": 1894051
+      "sha256": "ac6cf808ea4ee29323031d5ba9449de13da51398a3f5ce401546d8fceb976df7",
+      "bytes": 1931286
     },
     "DerivedGeneralCategory": {
-      "url": "https://www.unicode.org/Public/17.0.0/ucd/extracted/DerivedGeneralCategory.txt",
+      "url": "https://www.unicode.org/Public/18.0.0/ucd/extracted/DerivedGeneralCategory.txt",
       "file": "DerivedGeneralCategory.txt",
-      "sha256": "d62e5bab70ca74f099343f71224fa051cb1fdd61a1ab45c0488c44cfc0b6102e",
-      "bytes": 277514
+      "sha256": "d6b151d2d40ee9b1876d26f417980f45ffae47b6055ccf7203cb31f07a030f94",
+      "bytes": 282143
     },
     "Blocks": {
-      "url": "https://www.unicode.org/Public/17.0.0/ucd/Blocks.txt",
+      "url": "https://www.unicode.org/Public/18.0.0/ucd/Blocks.txt",
       "file": "Blocks.txt",
-      "sha256": "c0edefaf1a19771e830a82735472716af6bf3c3975f6c2a23ffbe2580fbbcb15",
-      "bytes": 11663
+      "sha256": "a58f8d322f3c5e254f9f97b1cbf76a454a7e02de6ac35619a5e4f27aaabfd553",
+      "bytes": 11906
     },
     "Scripts": {
-      "url": "https://www.unicode.org/Public/17.0.0/ucd/Scripts.txt",
+      "url": "https://www.unicode.org/Public/18.0.0/ucd/Scripts.txt",
       "file": "Scripts.txt",
-      "sha256": "9f5e50d3abaee7d6ce09480f325c706f485ae3240912527e651954d2d6b035bf",
-      "bytes": 192460
+      "sha256": "0071fd81b6aeae25f6e8bce8efec3066a6476a91b49bdb2f52dc76e817862a6a",
+      "bytes": 196089
     },
     "NameAliases": {
-      "url": "https://www.unicode.org/Public/17.0.0/ucd/NameAliases.txt",
+      "url": "https://www.unicode.org/Public/18.0.0/ucd/NameAliases.txt",
       "file": "NameAliases.txt",
-      "sha256": "793f6f1e4d15fd90f05ae66460191dc4d75d1fea90136a25f30dd6a4cb950eac",
+      "sha256": "3d5cf5e468901b080cd99adf2230061b748083705fe633db43ac8b73ec7a13da",
       "bytes": 16714
     },
     "PropList": {
-      "url": "https://www.unicode.org/Public/17.0.0/ucd/PropList.txt",
+      "url": "https://www.unicode.org/Public/18.0.0/ucd/PropList.txt",
       "file": "PropList.txt",
-      "sha256": "130dcddcaadaf071008bdfce1e7743e04fdfbc910886f017d9f9ac931d8c64dd",
-      "bytes": 145465
+      "sha256": "f438f532e8737bb8a2702126cdf9c4af5e357c58c7acf9d9eb2fc7c1a1d955d6",
+      "bytes": 149040
     },
     "emoji-test": {
-      "url": "https://www.unicode.org/Public/17.0.0/emoji/emoji-test.txt",
+      "url": "https://www.unicode.org/Public/18.0.0/emoji/emoji-test.txt",
       "file": "emoji-test.txt",
-      "sha256": "1d8a944f88d7952f7ef7c5167fef3c67995bcae24543949710231b03a201acda",
-      "bytes": 669326
+      "sha256": "8f3735cda1f92a779d78af67cf86066bb1f07143dc22f2ac29394d9bc57ab21a",
+      "bytes": 671655
     },
     "emoji-data": {
-      "url": "https://www.unicode.org/Public/17.0.0/ucd/emoji/emoji-data.txt",
+      "url": "https://www.unicode.org/Public/18.0.0/ucd/emoji/emoji-data.txt",
       "file": "emoji-data.txt",
-      "sha256": "2cb2bb9455cda83e8481541ecf5b6dfda66a3bb89efa3fa7c5297eccf607b72b",
-      "bytes": 107324
+      "sha256": "80d00f8e616a0ef27fd6b8de3b758c06383b5d917e2977709578e68baf733bf1",
+      "bytes": 108719
     },
     "emoji-sequences": {
-      "url": "https://www.unicode.org/Public/17.0.0/emoji/emoji-sequences.txt",
+      "url": "https://www.unicode.org/Public/18.0.0/emoji/emoji-sequences.txt",
       "file": "emoji-sequences.txt",
-      "sha256": "12cc8267dc33cbd11ed32bcf6fc5dc2ad9c7a77bae1bdfba2f41b1b9b3ead8dd",
-      "bytes": 194868
+      "sha256": "1823dce71f3dd9cb0ad1976797baee4ffbdc1909756f43af8ce4c57f732843a4",
+      "bytes": 197000
     },
     "emoji-zwj-sequences": {
-      "url": "https://www.unicode.org/Public/17.0.0/emoji/emoji-zwj-sequences.txt",
+      "url": "https://www.unicode.org/Public/18.0.0/emoji/emoji-zwj-sequences.txt",
       "file": "emoji-zwj-sequences.txt",
-      "sha256": "5b25441daed2322b068c5e70cda522946a4f0274df864445a1965a92e5fc5cad",
+      "sha256": "f61b5213bdf85a57741a9f903cb38d0f39a3d13be6ff4aca3b39857e859a9191",
       "bytes": 277215
     }
   },
   "symbols": {
-    "codePoints": 159944,
+    "codePoints": 172951,
     "byType": {
       "control": 235,
-      "assigned": 159631,
+      "assigned": 172638,
       "surrogate": 6,
       "private-use": 6,
       "noncharacter": 66
     },
-    "blocks": 346,
+    "blocks": 353,
     "noncharacters": 66,
-    "emojiSequences": 5225,
+    "emojiSequences": 5244,
     "emojiByStatus": {
-      "fully-qualified": 3944,
+      "fully-qualified": 3963,
       "minimally-qualified": 1029,
       "unqualified": 243,
       "component": 9
     },
-    "emojiSingleCodePoint": 1400,
+    "emojiSingleCodePoint": 1409,
     "emojiSingleByStatus": {
-      "fully-qualified": 1184,
+      "fully-qualified": 1193,
       "minimally-qualified": 0,
       "unqualified": 207,
       "component": 9
@@ -101,70 +101,70 @@
   },
   "files": [
     {
-      "path": "Emoji-17.0-Complete-Dataset/emoji_17.0_full_human.txt",
-      "bytes": 573836,
-      "lines": 15925,
-      "sha256": "c6887f92827b81f4ea50724a8acd1a076f52262f910a3efe22bf9f3000563f5c"
+      "path": "Emoji-18.0-Complete-Dataset/emoji_18.0_full_human.txt",
+      "bytes": 575598,
+      "lines": 15982,
+      "sha256": "7778e7789fa1f80a353563309f1f5c56457f8338b68fa6b2f1b2e20faea0b924"
     },
     {
-      "path": "Emoji-17.0-Complete-Dataset/emoji_17.0_full_machine.tsv",
-      "bytes": 569885,
-      "lines": 5240,
-      "sha256": "6bf73926713d4a1d6dcbf34ccb9bdbcaf770aa0062001bc06a572f6112706b3f"
+      "path": "Emoji-18.0-Complete-Dataset/emoji_18.0_full_machine.tsv",
+      "bytes": 571777,
+      "lines": 5259,
+      "sha256": "1e7c3212f0aeae43a1e50ab540eed6e49f2e5044649d48bbde17df9f0662cbb1"
     },
     {
-      "path": "Emoji-17.0-Complete-Dataset/emoji_17.0_single_human.txt",
-      "bytes": 103753,
-      "lines": 4446,
-      "sha256": "96d4dc63f7080c19adc11972ca0ea2aace4316a68465a2214a33b2ef7a3730a6"
+      "path": "Emoji-18.0-Complete-Dataset/emoji_18.0_single_human.txt",
+      "bytes": 104389,
+      "lines": 4473,
+      "sha256": "39e16e6b5d077dd60a48513a8e5d85694b1ad7d83024991d11cbd73df3669332"
     },
     {
-      "path": "Emoji-17.0-Complete-Dataset/emoji_17.0_single_machine.tsv",
-      "bytes": 96111,
-      "lines": 1415,
-      "sha256": "e4fe6a63672fbf2e866f1bd2ee1f5fe367872fbd948c3a3ba8f572454fb4cb82"
+      "path": "Emoji-18.0-Complete-Dataset/emoji_18.0_single_machine.tsv",
+      "bytes": 96777,
+      "lines": 1424,
+      "sha256": "379ed6756e074371cd7c1054591218debd725981c281a1ed28fe2f02273dbc74"
     },
     {
-      "path": "Emoji-17.0-Complete-Dataset/emoji_17.0_string.txt",
-      "bytes": 5627,
+      "path": "Emoji-18.0-Complete-Dataset/emoji_18.0_string.txt",
+      "bytes": 5663,
       "lines": 5,
-      "sha256": "46be0987df99828c0ad0d6af23cf8099654192c97fc9bfab865b0654f55485dc"
+      "sha256": "2ed241eed890fbd1d4415add0614360d2be953df77f0d3143250922d85970038"
     },
     {
-      "path": "Emoji-17.0-Complete-Dataset/emoji_17.0_string_annotated.txt",
-      "bytes": 67549,
+      "path": "Emoji-18.0-Complete-Dataset/emoji_18.0_string_annotated.txt",
+      "bytes": 67665,
       "lines": 319,
-      "sha256": "574e417c3961d0aed310800d2ce1d23d4f5f666564c08a66b3242925e4eb888e"
+      "sha256": "5cf889518d741f213c828facbdd6b583de39e041fa7a50aa652e6305df91553f"
     },
     {
-      "path": "Unicode-17.0-Complete-Dataset/unicode_17.0_blocks.txt",
-      "bytes": 18391,
-      "lines": 354,
-      "sha256": "5a3a306f9c38f10288a4c4249970b1bf5b7262a26b06815a4e06c99c8653515c"
+      "path": "Unicode-18.0-Complete-Dataset/unicode_18.0_blocks.txt",
+      "bytes": 18793,
+      "lines": 361,
+      "sha256": "3f5d1702653900b75971b19e2b68392ca84c1f8052183ba4b9f6c4f634d92cb4"
     },
     {
-      "path": "Unicode-17.0-Complete-Dataset/unicode_17.0_human.txt",
-      "bytes": 14120707,
-      "lines": 641535,
-      "sha256": "92799b07afbc1f4ff0d4724db46c5be998b4fead6197c35d9b5d28966526a437"
+      "path": "Unicode-18.0-Complete-Dataset/unicode_18.0_human.txt",
+      "bytes": 15264571,
+      "lines": 693598,
+      "sha256": "dadd482845ab2e3544e5218c2f07b052ccc9f414c39abbe9f83494173de5a5fa"
     },
     {
-      "path": "Unicode-17.0-Complete-Dataset/unicode_17.0_machine.tsv",
-      "bytes": 18981342,
-      "lines": 159961,
-      "sha256": "c03c06ec69ab75513f3ddb6fc0922ed2c64770623f6a3b75e4b7d04456923808"
+      "path": "Unicode-18.0-Complete-Dataset/unicode_18.0_machine.tsv",
+      "bytes": 19960658,
+      "lines": 172968,
+      "sha256": "a8a3c1d1533024ada7f477aff9d0e8e7f56c425a4386fce9f51e5fa45ce72131"
     },
     {
-      "path": "Unicode-17.0-Complete-Dataset/unicode_17.0_string.txt",
-      "bytes": 582316,
+      "path": "Unicode-18.0-Complete-Dataset/unicode_18.0_string.txt",
+      "bytes": 634310,
       "lines": 6,
-      "sha256": "21c00cc87ec5b6c991ccf362cbb92f8fa87d1fddfc9b249576baca12d1f13bd6"
+      "sha256": "553ec78f6ef01becf96f13aa244ba77a3fb21091da6912c9a3d9923ac6fbe0ee"
     },
     {
-      "path": "Unicode-17.0-Complete-Dataset/unicode_17.0_string_blocked.txt",
-      "bytes": 610803,
-      "lines": 1408,
-      "sha256": "58108ad17e6e84d2c6777222c4731cc650050591096a43a85b5cc9b9d9e19080"
+      "path": "Unicode-18.0-Complete-Dataset/unicode_18.0_string_blocked.txt",
+      "bytes": 663408,
+      "lines": 1436,
+      "sha256": "cb7db42dae72acc472c7f98395a413408d4dd90a33798a9808a36f73660b868e"
     }
   ]
 }
