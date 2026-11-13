@@ -264,3 +264,47 @@ jobs:
       - name: Nothing to do
         if: steps.decide.outputs.go != 'true'
         run: echo 'No newer released version was found; the pin is current.'
+
+      - name: Report a failed adoption
+        # Runs only when something above failed. Without this a broken adoption is
+        # completely silent: the scheduled run goes red in the Actions tab, which
+        # nobody watches. An issue is the channel that actually reaches a person, and
+        # it needs `issues: write`, which the default GITHUB_TOKEN does not have -
+        # hence the scope in `permissions:` above.
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET: ${{ steps.decide.outputs.target }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          mkdir -p .work
+          TITLE="adoption of Unicode ${TARGET:-?} failed"
+          PINNED=$(grep -oP "UCD_VERSION = '\K[^']+" src/lib/sources.mjs || echo unknown)
+          {
+            echo "The automated adoption run failed. Nothing was committed."
+            echo ""
+            echo "- run: $RUN_URL"
+            echo "- target version: \`${TARGET:-unknown}\`"
+            echo "- pinned now: \`${PINNED}\`"
+            echo ""
+            echo "### What to check"
+            echo ""
+            echo "1. Read the failing step in the run log above."
+            echo "2. Reproduce locally: \`node src/bump-version.mjs --to ${TARGET:-<version>} --dry-run\`"
+            echo "3. If \`src/verify.mjs --strict\` was the failure, the upstream data contains"
+            echo "   something this pipeline has never seen. That is the case worth a human,"
+            echo "   not a retry."
+            echo ""
+            echo "_Opened automatically when a run fails._"
+          } > .work/failure.md
+          # Deduplicate by title, so a persistent failure comments instead of opening
+          # one more issue every week.
+          EXISTING=$(gh issue list --state open --search "in:title \"$TITLE\"" --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "Failed again on $(date -u +%Y-%m-%d). Run: $RUN_URL"
+            echo "Commented on existing issue #$EXISTING"
+          else
+            gh issue create --title "$TITLE" --body-file .work/failure.md
+            echo "Opened a failure issue"
+          fi
