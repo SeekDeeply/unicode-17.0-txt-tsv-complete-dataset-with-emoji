@@ -335,15 +335,20 @@ jobs:
           gh api --method POST "repos/${GITHUB_REPOSITORY}/actions/workflows/build.yml/dispatches" \
             -f ref="$BRANCH" >/dev/null
 
+          # Poll only workflow_dispatch runs. The pull_request-triggered run for this branch
+          # also exists and is the newest one at first, but it is parked in action_required
+          # forever - picking it up would report a verification that never ran. Filtering on
+          # the event is what makes this reliable, and it is exactly the bug the first
+          # attempt had.
           verify_ok=""
           for attempt in $(seq 1 40); do
             sleep 15
-            STATE=$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs?branch=$BRANCH&per_page=10" \
-              --jq '.workflow_runs[] | select(.name == "build & verify") | (.status + " " + (.conclusion // "-"))' \
-              2>/dev/null | head -1)
+            STATE=$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs?branch=$BRANCH&event=workflow_dispatch&per_page=20" \
+              --jq '[.workflow_runs[] | select(.name == "build & verify")][0] | (.status + " " + (.conclusion // "-"))' \
+              2>/dev/null || echo "")
             STATUS="${STATE%% *}"
             CONCLUSION="${STATE##* }"
-            echo "verify: ${STATUS:-unknown} ${CONCLUSION}"
+            echo "verify: ${STATUS:-pending} ${CONCLUSION:--}"
             if [ "${STATUS}" = "completed" ]; then
               if [ "${CONCLUSION}" = "success" ]; then verify_ok="yes"; fi
               break
