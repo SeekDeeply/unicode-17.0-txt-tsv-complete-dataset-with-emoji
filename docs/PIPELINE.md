@@ -207,11 +207,21 @@ What the guard does **not** cover: `workflow_dispatch` and `repository_dispatch`
 explicit exceptions. So there are two honest ways to keep CI on bot commits, and this
 repository uses the first as the default:
 
-1. **Land via a pull request.** A `pull_request` event is not subject to the guard,
-   so CI runs on the adoption before it reaches `main`. This is why `mode: pr` is the
-   default — not tidiness, but verification.
-2. **Dispatch CI yourself.** After pushing, call the build workflow through the API.
-   `mode: push` does this, which needs `actions: write` in `permissions:`.
+1. **Land via a pull request.** This is the default (`mode: pr`). There is a second
+   trap on top of the first one, though: a `pull_request` run caused by
+   `github-actions[bot]` is parked in `action_required` waiting for a human approval
+   that never comes. Relaxing the "first-time contributors" setting does not help — the
+   gate concerns the bot as a PR author.
+   So the workflow dispatches `build & verify` against the adoption branch itself,
+   polls that specific run (filtered to `event=workflow_dispatch`, because the parked
+   `pull_request` run also exists and would otherwise be read as the result), and
+   merges only when it succeeds. A failed verification leaves the PR open for a human.
+2. **Dispatch CI yourself.** `mode: push` commits to `main` and dispatches the same
+   check afterwards, which needs `actions: write` in `permissions:`.
+
+The steady state is therefore: PR opened, verified by an independent rebuild on a
+fresh runner, squashed into `main`, branch deleted — with no human in the loop, and
+with a real verification rather than an assumed one.
 
 Either way the lesson generalises: *a green check on an adjacent commit is not
 evidence about your commit.* Verify which SHA actually ran.
