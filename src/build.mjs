@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
- * Build the entire Unicode 17.0 + Emoji 17.0 dataset from official UCD sources.
+ * Build the entire Unicode + Emoji dataset from official UCD sources. The version
+ * is whatever src/lib/sources.mjs pins; nothing below hard-codes it.
  *
  *   node src/build.mjs                 # build, verifying the source lock
  *   node src/build.mjs --force         # re-download every source first
@@ -203,7 +204,10 @@ async function main() {
 
   /* 3. build emoji tables ------------------------------------------------- */
   head('3/5  Building emoji tables');
-  const emojiRecords = parseEmojiTest(read('emoji-test.txt'), { sourceUrl: 'https://www.unicode.org/Public/17.0.0/emoji/emoji-test.txt' });
+  // The URL is taken from the lock so the record always names the location that
+  // actually served the bytes (Emoji data has shipped from two different paths).
+  const emojiTestUrl = lock?.files?.['emoji-test']?.url ?? `https://www.unicode.org/Public/${UCD_VERSION}/emoji/emoji-test.txt`;
+  const emojiRecords = parseEmojiTest(read('emoji-test.txt'), { sourceUrl: emojiTestUrl });
   const counts = countByStatus(emojiRecords);
   info(`sequences: ${emojiRecords.length}  ${EMOJI_STATUSES.map((s) => `${s}=${counts[s]}`).join('  ')}`);
 

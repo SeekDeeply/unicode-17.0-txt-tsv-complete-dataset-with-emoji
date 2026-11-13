@@ -153,7 +153,7 @@ async function main() {
   /* --- character table ----------------------------------------------- */
   head('Character table');
   const tsv = parseCharsetTSV(read(`${UD}/unicode_${V}_machine.tsv`));
-  info(`parsed ${tsv.length} rows from unicode_17.0_machine.tsv`);
+  info(`parsed ${tsv.length} rows from unicode_${V}_machine.tsv`);
 
   // strictly increasing, no duplicates
   let sorted = true;

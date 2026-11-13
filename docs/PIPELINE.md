@@ -139,7 +139,42 @@ What it proves, among 155 checks:
 | encoding is clean | valid UTF-8, no BOM, LF-only |
 | checksums and manifest are honest | every SHA-256 and byte count re-checked |
 
-## 9. What is deliberately not done
+
+## 9. Adopting a new release is a command, not a checklist
+
+`src/bump-version.mjs` exists because a version bump used to be six manual steps
+with a chance of error in each: edit the pin, rename two directories, delete the
+lock, rebuild, verify, re-render the docs. Every one of those was documented and
+every one was skippable.
+
+It now runs the whole sequence and refuses to do it wrongly:
+
+| step | why it is a step and not a side effect |
+|---|---|
+| verify the target is released | a directory that redirects to `/Public/draft/` is a draft; adopting it would publish unreleased data |
+| repin `sources.mjs` | it is the single source of truth; every path, filename and URL derives from it |
+| `git mv` the directories | so history follows the files instead of showing a delete plus an add |
+| delete the lock and cache | `--update-lock` alone would compare against the old hashes; a fresh pin must start from nothing |
+| rebuild with `--force` | re-downloads every source rather than reusing a cache keyed by the old version |
+| run the strict verifier | the gate: a rebuild that does not verify is not adopted |
+| re-render the docs | no number in any document is typed by a human |
+
+The workflow wraps that command and opens a pull request rather than pushing. A
+version bump rewrites every data file, which is the change most worth a human's
+eyes even when everything verifies. The PR body carries the before/after counts
+and the fact that verification passed; `build & verify` runs on the PR and
+independently rebuilds from the pinned sources, so a green PR also proves the
+committed bytes are reproducible.
+
+### Why one shared module for "latest"
+
+`src/lib/upstream-release.mjs` is imported by both the reporter and the upgrader.
+Two copies of that logic would eventually disagree, and the failure mode is nasty:
+the report says "current" while the upgrader tries to move, or vice versa. The
+module also carries the two non-obvious rules — reject redirecting directories, and
+read the Emoji version out of the served file rather than inferring it from a
+directory name.
+## 10. What is deliberately not done
 
 - **No IMEI/Unihan field ingestion.** `Unihan.zip` is 8 MB of readings, radical
   and stroke data. It is a different dataset with a different audience, and
@@ -150,6 +185,8 @@ What it proves, among 155 checks:
   block name list in the UCD, so `data/block-names-zh.json` is curated. It is
   kept outside the generated files, and `tools/sync-block-names-zh.mjs` reports
   any block that has no translation instead of quietly emitting English.
-- **No automatic version bumps.** The weekly job opens an issue; a human reviews
-  the diff. A silent major-version data change is not something to automate.
+- **No automatic *merge* of a version bump.** The weekly job performs the whole
+  migration and opens a PR; a human merges. Automating the work is a labour saving,
+  automating the decision is not — a release can legitimately need a new block name
+  translated, and that is a judgement call, not a build step.
 

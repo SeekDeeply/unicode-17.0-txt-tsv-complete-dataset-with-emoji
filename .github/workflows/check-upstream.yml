@@ -1,97 +1,192 @@
-name: check for new Unicode release
+name: auto-adopt new Unicode release
 
-# The automated-collection heartbeat: poll the Unicode Consortium on a schedule,
-# and when a newer *final* release appears, open (or update) one tracking issue
-# carrying the exact commands to adopt it. It never rewrites data on its own —
-# a human reviews the diff before a version bump lands.
+# The automated-collection heartbeat, end to end.
+#
+# Weekly (and on demand) it asks unicode.org whether a newer *released* version
+# exists. If so it adopts it fully - repin, rename directories, re-download every
+# source, rebuild, run the strict verifier, re-render the docs - and then opens a
+# pull request with the result. Nothing is merged automatically: the PR is the
+# review gate, and `build & verify` must pass on it before a human merges.
+#
+# Two deliberate choices:
+#
+#   * It opens a PR, not a push. A version bump rewrites every data file in the
+#     repository. That is precisely the change a human should look at before it
+#     lands, even when everything verifies.
+#   * It refuses draft versions. /Public/19.0.0/ redirects to /Public/draft/ and is
+#     not released; src/bump-version.mjs treats any redirect as "not released".
 on:
   schedule:
-    # Mondays 06:17 UTC. Unicode ships once a year in September; weekly is cheap.
+    # Mondays 06:17 UTC. Unicode ships once a year in September; weekly is cheap
+    # and means a fresh release is adopted within days without polling pressure.
     - cron: '17 6 * * 1'
   workflow_dispatch:
+    inputs:
+      version:
+        description: 'Specific UCD version to adopt (e.g. 18.0.0). Empty = latest released.'
+        required: false
+      dry_run:
+        description: 'Only report what would change; do not open a PR.'
+        type: boolean
+        default: false
 
 permissions:
-  contents: read
-  issues: write
+  contents: write
+  pull-requests: write
 
+# Never run two adoptions at once: both would try to rename the same directories.
 concurrency:
-  group: check-upstream
-  cancel-in-progress: true
+  group: auto-adopt
+  cancel-in-progress: false
 
 jobs:
-  check:
+  adopt:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
 
-      - name: Query unicode.org
-        id: upstream
-        # Outputs go through $GITHUB_OUTPUT (see emitGithub). stdout is captured to
-        # upstream.txt only for the job summary; it is not the output channel.
-        run: node src/check-upstream-version.mjs --github | tee upstream.txt
+      - name: Check for a newer release
+        id: check
+        run: node src/check-upstream-version.mjs --github | tee check.txt
 
-      - name: Summarize
+      - name: Summarize the check
         run: |
           {
             echo '### Unicode release check'
             echo
-            grep -E '^(update|latest_ucd|latest_emoji|pinned_ucd|pinned_emoji)=' upstream.txt | sed 's/^/- /'
+            grep -E '^(update|latest_ucd|latest_emoji|pinned_ucd|pinned_emoji)=' check.txt | sed 's/^/- /'
           } >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Open or update the tracking issue
-        if: steps.upstream.outputs.update == 'true'
+      - name: Decide whether to adopt
+        id: decide
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          LATEST_UCD: ${{ steps.upstream.outputs.latest_ucd }}
-          LATEST_EMOJI: ${{ steps.upstream.outputs.latest_emoji }}
-          PINNED_UCD: ${{ steps.upstream.outputs.pinned_ucd }}
-          PINNED_EMOJI: ${{ steps.upstream.outputs.pinned_emoji }}
+          UPDATE: ${{ steps.check.outputs.update }}
+          LATEST: ${{ steps.check.outputs.latest_ucd }}
+          REQUESTED: ${{ inputs.version }}
+          DRY: ${{ inputs.dry_run }}
         run: |
           set -euo pipefail
-          TITLE="Unicode ${LATEST_UCD} / Emoji ${LATEST_EMOJI} is available (pinned: ${PINNED_UCD} / ${PINNED_EMOJI})"
-          NEW_UNICODE="${LATEST_UCD%.*}"
-          OLD_UNICODE="${PINNED_UCD%.*}"
-          BODY=$(cat <<EOF
-          A newer **released** version of the Unicode Character Database was detected.
-
-          | | pinned | available |
-          |---|---|---|
-          | UCD | ${PINNED_UCD} | **${LATEST_UCD}** |
-          | Emoji | ${PINNED_EMOJI} | **${LATEST_EMOJI}** |
-
-          ### Adopt it
-
-          ```bash
-          # 1. bump the pin: src/lib/sources.mjs -> UCD_VERSION / EMOJI_VERSION
-          # 2. rename the output directories to match the new version
-          git mv Unicode-${OLD_UNICODE}-Complete-Dataset Unicode-${NEW_UNICODE}-Complete-Dataset || true
-          git mv Emoji-${PINNED_EMOJI}-Complete-Dataset Emoji-${LATEST_EMOJI}-Complete-Dataset || true
-          # 3. rebuild from the new sources and accept the new upstream hashes
-          node src/build.mjs --force --update-lock
-          # 4. verify, then read the diff
-          node src/verify.mjs --strict
-          git diff --stat
-          ```
-
-          ```bash
-          # 5. regenerate the docs from the new manifest and commit
-          node src/render-docs.mjs
-          git add -A && git commit -m "data: adopt Unicode ${LATEST_UCD} / Emoji ${LATEST_EMOJI}"
-          git push
-          ```
-
-          _Opened automatically by the weekly upstream check._
-          EOF
-          )
-          EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number // empty')
-          if [ -n "$EXISTING" ]; then
-            gh issue comment "$EXISTING" --body "Re-checked on $(date -u +%Y-%m-%d): UCD ${LATEST_UCD} / Emoji ${LATEST_EMOJI} is still the latest available release."
-            echo "Updated existing issue #$EXISTING"
+          TARGET=""
+          if [ -n "${REQUESTED:-}" ]; then
+            TARGET="$REQUESTED"
+            echo "Adopting the explicitly requested version: $TARGET"
+          elif [ "${UPDATE:-false}" = "true" ]; then
+            TARGET="$LATEST"
+            echo "A newer release was detected: $TARGET"
           else
-            gh issue create --title "$TITLE" --body "$BODY"
-            echo "Created tracking issue"
+            echo "Pinned version is current; nothing to do."
           fi
+          echo "target=$TARGET" >> "$GITHUB_OUTPUT"
+          if [ -n "$TARGET" ]; then echo "go=true" >> "$GITHUB_OUTPUT"; else echo "go=false" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Adopt the new version
+        if: steps.decide.outputs.go == 'true'
+        env:
+          TARGET: ${{ steps.decide.outputs.target }}
+          DRY: ${{ inputs.dry_run }}
+        run: |
+          set -euo pipefail
+          if [ "${DRY:-false}" = "true" ]; then
+            node src/bump-version.mjs --to "$TARGET" --dry-run
+          else
+            node src/bump-version.mjs --to "$TARGET"
+          fi
+
+      - name: Report what changed
+        if: steps.decide.outputs.go == 'true' && inputs.dry_run != 'true'
+        run: |
+          set -euo pipefail
+          node -e '
+            const fs = require("fs");
+            const s = JSON.parse(fs.readFileSync("data/bump-summary.json", "utf8"));
+            const out = [];
+            const row = (label, k) => {
+              const c = s.counts[k];
+              if (!c) return;
+              const sign = c.change > 0 ? "+" : "";
+              out.push("| " + label + " | " + c.before.toLocaleString("en-US") + " | " + c.after.toLocaleString("en-US") + " | " + sign + c.change.toLocaleString("en-US") + " |");
+            };
+            out.push("### Adopting Unicode " + s.to.ucd + " / Emoji " + s.to.emoji);
+            out.push("");
+            out.push("| | before | after | change |");
+            out.push("|---|---:|---:|---:|");
+            row("code points", "codePoints");
+            row("blocks", "blocks");
+            row("emoji sequences", "emojiSequences");
+            row("fully-qualified", "fullyQualified");
+            out.push("");
+            out.push("Verification: **" + s.verification + "**");
+            fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, out.join("\n") + "\n");
+          '
+
+      - name: Build the pull request body
+        if: steps.decide.outputs.go == 'true' && inputs.dry_run != 'true'
+        run: |
+          set -euo pipefail
+          node -e '
+            const fs = require("fs");
+            const s = JSON.parse(fs.readFileSync("data/bump-summary.json", "utf8"));
+            const n = (v) => v.toLocaleString("en-US");
+            const delta = (c) => c ? ((c.change > 0 ? "+" : "") + n(c.change)) : "n/a";
+            const lines = [];
+            lines.push("Adopts **Unicode " + s.to.ucd + "** (Emoji " + s.to.emoji + "), replacing " + s.from.ucd + " / " + s.from.emoji + ".");
+            lines.push("");
+            lines.push("Everything below was produced by `src/bump-version.mjs`; no data file was edited by hand.");
+            lines.push("");
+            lines.push("| | before | after | change |");
+            lines.push("|---|---:|---:|---:|");
+            if (s.counts.codePoints) lines.push("| code points | " + n(s.counts.codePoints.before) + " | " + n(s.counts.codePoints.after) + " | " + delta(s.counts.codePoints) + " |");
+            if (s.counts.blocks) lines.push("| blocks | " + n(s.counts.blocks.before) + " | " + n(s.counts.blocks.after) + " | " + delta(s.counts.blocks) + " |");
+            if (s.counts.emojiSequences) lines.push("| emoji sequences | " + n(s.counts.emojiSequences.before) + " | " + n(s.counts.emojiSequences.after) + " | " + delta(s.counts.emojiSequences) + " |");
+            if (s.counts.fullyQualified) lines.push("| fully-qualified | " + n(s.counts.fullyQualified.before) + " | " + n(s.counts.fullyQualified.after) + " | " + delta(s.counts.fullyQualified) + " |");
+            lines.push("");
+            lines.push("## What the pipeline did");
+            lines.push("");
+            lines.push("1. Verified " + s.to.ucd + " is a **released** version (a redirect to `/Public/draft/` is rejected).");
+            lines.push("2. Repinned `src/lib/sources.mjs`.");
+            lines.push("3. `git mv` the output directories so history follows the files.");
+            lines.push("4. Re-downloaded every source and re-pinned its SHA-256 in `data/sources.lock.json`.");
+            lines.push("5. Rebuilt all files from those sources.");
+            lines.push("6. Ran `src/verify.mjs --strict` - **" + s.verification + "**.");
+            lines.push("7. Re-rendered the docs from the new manifest.");
+            lines.push("");
+            lines.push("## Reviewing this");
+            lines.push("");
+            lines.push("- The data diff is expected to be large; it is regenerated output, not edits.");
+            lines.push("- What is worth checking: the counts above, and that `data/sources.lock.json` points at the new version.");
+            lines.push("- `build & verify` runs on this PR and independently rebuilds from the pinned sources; if it is green, the committed bytes are reproducible.");
+            lines.push("");
+            lines.push("_Opened automatically by the weekly upstream check._");
+            fs.writeFileSync("pr-body.md", lines.join("\n") + "\n");
+          '
+
+      - name: Open the pull request
+        if: steps.decide.outputs.go == 'true' && inputs.dry_run != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET: ${{ steps.decide.outputs.target }}
+        run: |
+          set -euo pipefail
+          BRANCH="auto/unicode-$TARGET"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add -A
+          git commit -m "data: adopt Unicode $TARGET" -m "Regenerated by src/bump-version.mjs from the official UCD and Emoji sources. Verification: see the pull request body."
+          git push --force origin "$BRANCH"
+          if gh pr view "$BRANCH" >/dev/null 2>&1; then
+            echo "A pull request for $BRANCH already exists; the branch was updated and the PR will re-run CI."
+          else
+            gh pr create --title "data: adopt Unicode $TARGET" --body-file pr-body.md --base main --head "$BRANCH"
+          fi
+
+      - name: Nothing to do
+        if: steps.decide.outputs.go != 'true'
+        run: echo 'No newer released version was found; the pin is current.'

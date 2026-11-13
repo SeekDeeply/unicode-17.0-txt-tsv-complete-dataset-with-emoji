@@ -157,32 +157,44 @@ something new.
 
 ```text
 src/lib/sources.mjs              the only place a version number lives
+src/lib/upstream-release.mjs     what "the latest released version" means
 src/build.mjs                    fetch -> parse -> expand -> write -> checksum -> manifest
 src/verify.mjs                   re-derives expectations from the sources, checks the files
-src/check-upstream-version.mjs   polls unicode.org for a newer final release
+src/bump-version.mjs             adopts a new release end to end
+src/check-upstream-version.mjs   reports whether a newer release exists (never edits)
 src/render-docs.mjs              regenerates this README from the manifest
 ```
+
+Adopting a new Unicode release is one command:
+
+```bash
+npm run bump:dry    # preview: which version, which files, nothing written
+npm run bump -- --to 18.0.0     # adopt a specific release
+npm run adopt                    # adopt whatever the newest released version is
+```
+
+That command verifies the target is a *released* version, repins `sources.mjs`,
+git-renames the output directories, re-downloads every source, rebuilds, runs the strict
+verifier, and re-renders the docs. If verification fails it stops and tells you how to roll back.
 
 Three GitHub Actions workflows:
 
 - **build & verify** (push / pull request) - fetches the official sources in a clean checkout,
   rebuilds, and fails if the rebuild differs by a single byte from what is committed. That is
   the guarantee that the data is not hand-edited.
-- **check for new Unicode release** (weekly) - polls unicode.org and, when a newer *final*
-  release ships, opens one tracking issue with the exact commands. It deliberately ignores
-  draft versions: `/Public/19.0.0/` currently redirects to `/Public/draft/` and is not a release.
+- **auto-adopt new Unicode release** (weekly, Mondays 06:17 UTC) - the collection runs itself.
+  It asks unicode.org whether a newer *released* version exists and, if so, runs
+  `src/bump-version.mjs`, then **opens a pull request** with the regenerated dataset and a
+  before/after table. It does not push to `main`: a version bump rewrites every data file,
+  which is exactly the change a human should see before it lands. Merge when CI is green.
+  It ignores drafts — `/Public/19.0.0/` redirects to `/Public/draft/` and is not a release.
+  Run it on demand from the Actions tab with an explicit version and `dry_run` if you want a
+  preview without a pull request.
 - **publish release** (tag) - rebuilds, verifies, confirms the rebuild matches the commit,
   then attaches the bundle to a GitHub release.
 
-To adopt a new Unicode version:
-
-```bash
-# 1. edit src/lib/sources.mjs: UCD_VERSION / EMOJI_VERSION
-# 2. rename the output directories to the new version
-node src/build.mjs --force --update-lock   # download, rebuild, accept new upstream hashes
-node src/verify.mjs --strict
-node src/render-docs.mjs                   # docs follow the manifest automatically
-```
+So the loop is: the weekly job notices a release, does the whole migration, and leaves a PR.
+Nothing about the data is retyped by a person at any point.
 
 ---
 

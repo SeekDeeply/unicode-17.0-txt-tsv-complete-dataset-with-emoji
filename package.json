@@ -15,7 +15,10 @@
     "check": "node src/check-upstream-version.mjs",
     "docs": "node src/render-docs.mjs",
     "release-notes": "node src/release-notes.mjs",
-    "check:strict": "node src/verify.mjs --strict"
+    "check:strict": "node src/verify.mjs --strict",
+    "bump": "node src/bump-version.mjs",
+    "bump:dry": "node src/bump-version.mjs --latest --dry-run",
+    "adopt": "node src/bump-version.mjs --latest"
   },
   "license": "Apache-2.0"
 }

@@ -1,6 +1,28 @@
 # Changelog
 
-## Unreleased - dataset is now generated, not hand-maintained
+## Unreleased - releases are adopted automatically
+
+### Added
+
+- `src/bump-version.mjs` - adopts a new Unicode release in one command: verifies the
+  target is actually *released*, repins `src/lib/sources.mjs`, git-renames the output
+  directories, re-downloads every source, rebuilds, runs the strict verifier and
+  re-renders the docs. `--dry-run` prints the plan without writing.
+- `src/lib/upstream-release.mjs` - single definition of "the newest released version",
+  shared by the reporter and the upgrader so they cannot disagree. It rejects drafts
+  (a directory that redirects to `/Public/draft/`) and reads the Emoji version out of
+  the file actually served, because Emoji numbering lags the UCD one.
+- The weekly `check-upstream` workflow now **performs the migration and opens a pull
+  request** instead of only filing a tracking issue. It reports a before/after table
+  and leaves merging to a human, because a version bump rewrites every data file.
+
+### Changed
+
+- The repository slug in the README is no longer derived from the dataset version.
+  The URL contains "17.0" from when the repo was created; renaming it would break
+  every existing clone and link. Override with `DATASET_REPO` if it is ever moved.
+
+## Unreleased - dataset is generated from official sources, not hand-maintained
 
 Every file in this repository is rebuilt from the official UCD and Emoji sources
 by `src/build.mjs`, and `src/verify.mjs` proves the result is complete. See
