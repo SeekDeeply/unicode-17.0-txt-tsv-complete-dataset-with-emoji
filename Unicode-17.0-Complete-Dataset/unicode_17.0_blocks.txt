@@ -1,9 +1,9 @@
 ════════════════════════════════════════════════════════════════════════════════
-Unicode 18.0 Blocks
-Unicode 18.0 区块列表
+Unicode 17.0 Blocks
+Unicode 17.0 区块列表
 ════════════════════════════════════════════════════════════════════════════════
-Generated: 2026-11-13 10:04:39 UTC
-Blocks: 353
+Generated: 2026-11-13 11:02:53 UTC
+Blocks: 346
 ════════════════════════════════════════════════════════════════════════════════
 
 0000..007F; Basic Latin | 基本拉丁文字
@@ -260,7 +260,6 @@ FFF0..FFFF; Specials | 特殊字符
 11D00..11D5F; Masaram Gondi | 马萨拉姆贡迪文
 11D60..11DAF; Gunjala Gondi | 贡贾拉贡迪文
 11DB0..11DEF; Tolong Siki | 托隆斯基文
-11DF0..11DFF; Bengali Supplement | Bengali Supplement
 11EE0..11EFF; Makasar | 望加锡文
 11F00..11F5F; Kawi | 卡维文
 11FB0..11FBF; Lisu Supplement | 傈僳文补充
@@ -268,7 +267,6 @@ FFF0..FFFF; Specials | 特殊字符
 12000..123FF; Cuneiform | 楔形文字
 12400..1247F; Cuneiform Numbers and Punctuation | 楔形文字数字和标点
 12480..1254F; Early Dynastic Cuneiform | 早王朝楔形文字
-12550..1268F; Archaic Cuneiform Numerals | Archaic Cuneiform Numerals
 12F90..12FFF; Cypro-Minoan | 塞浦路斯-米诺斯文字
 13000..1342F; Egyptian Hieroglyphs | 埃及象形文字
 13430..1345F; Egyptian Hieroglyph Format Controls | 埃及象形文字格式控制符
@@ -290,8 +288,6 @@ FFF0..FFFF; Specials | 特殊字符
 18B00..18CFF; Khitan Small Script | 契丹小字
 18D00..18D7F; Tangut Supplement | 西夏文补充
 18D80..18DFF; Tangut Components Supplement | 西夏文字根补充
-18E00..1919F; Jurchen | Jurchen
-191A0..191DF; Jurchen Radicals | Jurchen Radicals
 1AFF0..1AFFF; Kana Extended-B | 假名扩展-B
 1B000..1B0FF; Kana Supplement | 假名补充
 1B100..1B12F; Kana Extended-A | 假名扩展-A
@@ -305,14 +301,12 @@ FFF0..FFFF; Specials | 特殊字符
 1D000..1D0FF; Byzantine Musical Symbols | 拜占庭音乐符号
 1D100..1D1FF; Musical Symbols | 音乐符号
 1D200..1D24F; Ancient Greek Musical Notation | 古希腊音乐记号
-1D250..1D28F; Musical Symbols Supplement | Musical Symbols Supplement
 1D2C0..1D2DF; Kaktovik Numerals | 卡克托维克数字
 1D2E0..1D2FF; Mayan Numerals | 玛雅数字
 1D300..1D35F; Tai Xuan Jing Symbols | 太玄经符号
 1D360..1D37F; Counting Rod Numerals | 算筹数字
 1D400..1D7FF; Mathematical Alphanumeric Symbols | 数学字母数字符号
 1D800..1DAAF; Sutton SignWriting | 萨顿手语书写符号
-1DB00..1DBFF; Miscellaneous Symbols and Arrows Extended | Miscellaneous Symbols and Arrows Extended
 1DF00..1DFFF; Latin Extended-G | 拉丁文字扩展-G
 1E000..1E02F; Glagolitic Supplement | 格拉哥里文字补充
 1E030..1E08F; Cyrillic Extended-D | 西里尔文字扩展-D
@@ -354,7 +348,6 @@ FFF0..FFFF; Specials | 特殊字符
 30000..3134F; CJK Unified Ideographs Extension G | 中日韩统一表意文字扩展G区
 31350..323AF; CJK Unified Ideographs Extension H | 中日韩统一表意文字扩展H区
 323B0..3347F; CJK Unified Ideographs Extension J | 中日韩统一表意文字扩展J区
-3D000..3FC3F; Seal | Seal
 E0000..E007F; Tags | 标签字符
 E0100..E01EF; Variation Selectors Supplement | 变体选择符补充
 F0000..FFFFF; Supplementary Private Use Area-A | 辅助私用区-A

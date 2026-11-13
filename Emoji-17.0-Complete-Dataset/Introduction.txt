@@ -1,13 +1,13 @@
 ==============================================================================
-                 Emoji 18.0 Complete Dataset
-                 Emoji 18.0 全量数据
+                 Emoji 17.0 Complete Dataset
+                 Emoji 17.0 全量数据
 ==============================================================================
 
-Generated    : 2026-11-13 10:04:39 UTC
-Emoji ver    : 18.0
+Generated    : 2026-11-13 11:02:53 UTC
+Emoji ver    : 17.0
 Source       : emoji-test.txt (official, all four qualification statuses)
-Sequences    : 5,244
-  fully-qualified      3,963
+Sequences    : 5,225
+  fully-qualified      3,944
   minimally-qualified  1,029
   unqualified          243
   component            9
@@ -21,9 +21,9 @@ Do not edit it by hand. 本文件由流水线自动生成，请勿手工编辑�
 Files / 文件说明
 ------------------------------------------------------------------------------
 
-1. emoji_18.0_full_machine.tsv
-   (558.4 KB, 5,259 lines)
-   All 5,244 sequences, 7 tab-separated columns:
+1. emoji_17.0_full_machine.tsv
+   (556.5 KB, 5,240 lines)
+   All 5,225 sequences, 7 tab-separated columns:
 
      code_points   space-separated hex code points, e.g. "0023 FE0F 20E3"
                    (this is column 1 so that no data row starts with a hash character)
@@ -34,26 +34,26 @@ Files / 文件说明
      group         emoji-test group (10)
      subgroup      emoji-test subgroup (100)
 
-2. emoji_18.0_full_human.txt
-   (562.1 KB, 15,982 lines)
+2. emoji_17.0_full_human.txt
+   (560.4 KB, 15,925 lines)
    All sequences, grouped by group and subgroup, each with status, version and name.
 
-3. emoji_18.0_single_machine.tsv
-   (94.5 KB, 1,424 lines)
-   The 1,409 sequences that are a single code point (no ZWJ, no variation
+3. emoji_17.0_single_machine.tsv
+   (93.9 KB, 1,415 lines)
+   The 1,400 sequences that are a single code point (no ZWJ, no variation
    selector, no modifier). Same 7 columns.
 
-4. emoji_18.0_single_human.txt
-   (101.9 KB, 4,473 lines)
+4. emoji_17.0_single_human.txt
+   (101.3 KB, 4,446 lines)
    The same single-code-point subset, readable.
 
-5. emoji_18.0_string.txt
+5. emoji_17.0_string.txt
    (5.5 KB)
-   The 1,409 single-code-point sequences concatenated into one line.
+   The 1,400 single-code-point sequences concatenated into one line.
 
-6. emoji_18.0_string_annotated.txt
-   (66.1 KB, 319 lines)
-   All 5,244 sequences in chunks of 50, one chunk per line, each preceded
+6. emoji_17.0_string_annotated.txt
+   (66.0 KB, 319 lines)
+   All 5,225 sequences in chunks of 50, one chunk per line, each preceded
    by a "# chunk N" comment - so the data can be read line-wise without loss.
 
 ------------------------------------------------------------------------------
