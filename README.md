@@ -184,12 +184,13 @@ Three GitHub Actions workflows:
   the guarantee that the data is not hand-edited.
 - **auto-adopt new Unicode release** (weekly, Mondays 06:17 UTC) - the collection runs itself.
   It asks unicode.org whether a newer *released* version exists and, if so, runs
-  `src/bump-version.mjs`, then **opens a pull request** with the regenerated dataset and a
-  before/after table. It does not push to `main`: a version bump rewrites every data file,
-  which is exactly the change a human should see before it lands. Merge when CI is green.
-  It ignores drafts — `/Public/19.0.0/` redirects to `/Public/draft/` and is not a release.
-  Run it on demand from the Actions tab with an explicit version and `dry_run` if you want a
-  preview without a pull request.
+  `src/bump-version.mjs` and **commits the result to `main`**. Nobody has to be
+  involved: the commit is only reached after the pipeline rebuilt every file from
+  freshly downloaded sources and `src/verify.mjs --strict` passed against them, so a dataset
+  that is not complete never gets committed. It ignores drafts — `/Public/19.0.0/` redirects
+  to `/Public/draft/` and is not a release.
+  Dispatch it manually to force a specific version, to preview with `dry_run`, or to use
+  `mode: pr` for a reviewable pull request instead of a direct commit.
 - **publish release** (tag) - rebuilds, verifies, confirms the rebuild matches the commit,
   then attaches the bundle to a GitHub release.
 
