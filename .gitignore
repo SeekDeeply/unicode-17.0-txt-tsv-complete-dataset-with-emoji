@@ -20,3 +20,9 @@ node_modules/
 # Written by src/bump-version.mjs; a report about a run, not data.
 data/bump-summary.json
 data/last-version-check.json
+
+# Core dumps: a crashed process can leave hundreds of MB here, and `git add -A`
+# will happily commit it. That happened once and the push was rejected for exceeding
+# the 100 MB file limit.
+core
+core.*
