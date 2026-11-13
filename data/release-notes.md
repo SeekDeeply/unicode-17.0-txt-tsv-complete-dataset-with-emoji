@@ -1,17 +1,17 @@
-## Unicode 18.0 + Emoji 18.0
+## Unicode 17.0 + Emoji 17.0
 
 | | |
 |---|---|
-| code points | 172,951 |
-| blocks | 353 |
+| code points | 159,944 |
+| blocks | 346 |
 | noncharacters | 66 |
-| emoji sequences | 5,244 |
-| fully-qualified | 3,963 |
+| emoji sequences | 5,225 |
+| fully-qualified | 3,944 |
 | minimally-qualified | 1,029 |
 | unqualified | 243 |
 | component | 9 |
 
-Build timestamp: 2026-11-13 11:05:27 UTC
+Build timestamp: 2026-11-13 14:27:59 UTC
 
 ### Verify
 
