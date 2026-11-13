@@ -10,9 +10,9 @@
  */
 
 /** Unicode version this dataset targets. Bumped by tools/check-version. */
-export const UCD_VERSION = '18.0.0';
-export const UNICODE_VERSION = '18.0';
-export const EMOJI_VERSION = '18.0';
+export const UCD_VERSION = '17.0.0';
+export const UNICODE_VERSION = '17.0';
+export const EMOJI_VERSION = '17.0';
 
 const UCD = `https://www.unicode.org/Public/${UCD_VERSION}/ucd`;
 const UCDROOT = `https://www.unicode.org/Public/${UCD_VERSION}`;

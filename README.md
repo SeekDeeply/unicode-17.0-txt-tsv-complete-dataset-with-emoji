@@ -1,8 +1,8 @@
-# Unicode 18.0 + Emoji 18.0 - Complete Dataset (TXT / TSV)
+# Unicode 17.0 + Emoji 17.0 - Complete Dataset (TXT / TSV)
 
 [![build & verify](https://github.com/SeekDeeply/unicode-17.0-txt-tsv-complete-dataset-with-emoji/actions/workflows/build.yml/badge.svg)](https://github.com/SeekDeeply/unicode-17.0-txt-tsv-complete-dataset-with-emoji/actions/workflows/build.yml)
-[![code points](https://img.shields.io/badge/code%20points-172,951-blue)](#unicode-18.0-dataset)
-[![emoji](https://img.shields.io/badge/emoji%20sequences-5,244-orange)](#emoji-18.0-dataset)
+[![code points](https://img.shields.io/badge/code%20points-159,944-blue)](#unicode-17.0-dataset)
+[![emoji](https://img.shields.io/badge/emoji%20sequences-5,225-orange)](#emoji-17.0-dataset)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
 Every byte in this repository is **generated from the official Unicode Character Database**
@@ -21,25 +21,25 @@ npm test           # unit tests for the parsers
 
 | | |
 |---|---|
-| **Code points** | 172,951 - every assigned character, every control, all 66 noncharacters, plus surrogate and private-use boundaries |
-| **Blocks** | 353 |
-| **Emoji sequences** | 5,244 - every qualification status, not only the recommended ones |
-| **Source** | UCD 18.0.0, Emoji 18.0 |
+| **Code points** | 159,944 - every assigned character, every control, all 66 noncharacters, plus surrogate and private-use boundaries |
+| **Blocks** | 346 |
+| **Emoji sequences** | 5,225 - every qualification status, not only the recommended ones |
+| **Source** | UCD 17.0.0, Emoji 17.0 |
 | **Reproducible** | yes - same sources in, byte-identical files out |
 
 ---
 
-## Unicode 18.0 dataset
+## Unicode 17.0 dataset
 
-`Unicode-18.0-Complete-Dataset/`
+`Unicode-17.0-Complete-Dataset/`
 
 | file | lines | size | use it for |
 |---|---:|---:|---|
-| `unicode_18.0_machine.tsv` | 172,968 | 19.04 MB | programmatic import - one row per code point, 9 tab-separated columns |
-| `unicode_18.0_human.txt` | 693,598 | 14.56 MB | reading and printing - grouped by block, one paragraph per character |
-| `unicode_18.0_string.txt` | 6 | 619.4 KB | string processing - all 172,951 characters concatenated into one line |
-| `unicode_18.0_string_blocked.txt` | 1,436 | 647.9 KB | per-block strings - one section per block |
-| `unicode_18.0_blocks.txt` | 361 | 18.4 KB | the block table, with English and Chinese names |
+| `unicode_17.0_machine.tsv` | 159,961 | 18.10 MB | programmatic import - one row per code point, 9 tab-separated columns |
+| `unicode_17.0_human.txt` | 641,535 | 13.47 MB | reading and printing - grouped by block, one paragraph per character |
+| `unicode_17.0_string.txt` | 6 | 568.7 KB | string processing - all 159,944 characters concatenated into one line |
+| `unicode_17.0_string_blocked.txt` | 1,408 | 596.5 KB | per-block strings - one section per block |
+| `unicode_17.0_blocks.txt` | 354 | 18.0 KB | the block table, with English and Chinese names |
 
 ### Coverage rule
 
@@ -71,7 +71,7 @@ type         assigned | control | noncharacter | surrogate | private-use
 
 ```bash
 # every data row has exactly 9 columns and occupies exactly one line
-awk -F'\t' '!/^#/ {print $1, $4, $9}' Unicode-18.0-Complete-Dataset/unicode_18.0_machine.tsv | head
+awk -F'\t' '!/^#/ {print $1, $4, $9}' Unicode-17.0-Complete-Dataset/unicode_17.0_machine.tsv | head
 ```
 
 > **Why a separate escaped column.** TAB and LINE FEED cannot appear literally in a TSV cell:
@@ -82,28 +82,28 @@ awk -F'\t' '!/^#/ {print $1, $4, $9}' Unicode-18.0-Complete-Dataset/unicode_18.0
 
 ---
 
-## Emoji 18.0 dataset
+## Emoji 17.0 dataset
 
-`Emoji-18.0-Complete-Dataset/`
+`Emoji-17.0-Complete-Dataset/`
 
 | file | lines | size | use it for |
 |---|---:|---:|---|
-| `emoji_18.0_full_machine.tsv` | 5,259 | 558.4 KB | all 5,244 sequences - programmatic |
-| `emoji_18.0_full_human.txt` | 15,982 | 562.1 KB | all sequences - readable, grouped |
-| `emoji_18.0_single_machine.tsv` | 1,424 | 94.5 KB | the 1,409 single-code-point sequences only |
-| `emoji_18.0_single_human.txt` | 4,473 | 101.9 KB | single-code-point sequences - readable |
-| `emoji_18.0_string.txt` | 5 | 5.5 KB | single-code-point sequences concatenated into one line |
-| `emoji_18.0_string_annotated.txt` | 319 | 66.1 KB | all sequences in commented chunks of 50, readable line-wise |
+| `emoji_17.0_full_machine.tsv` | 5,240 | 556.5 KB | all 5,225 sequences - programmatic |
+| `emoji_17.0_full_human.txt` | 15,925 | 560.4 KB | all sequences - readable, grouped |
+| `emoji_17.0_single_machine.tsv` | 1,415 | 93.9 KB | the 1,400 single-code-point sequences only |
+| `emoji_17.0_single_human.txt` | 4,446 | 101.3 KB | single-code-point sequences - readable |
+| `emoji_17.0_string.txt` | 5 | 5.5 KB | single-code-point sequences concatenated into one line |
+| `emoji_17.0_string_annotated.txt` | 319 | 66.0 KB | all sequences in commented chunks of 50, readable line-wise |
 
 ### Status breakdown
 
 | status | count | meaning |
 |---|---:|---|
-| fully-qualified | 3,963 | the recommended RGI emoji - what keyboards should offer |
+| fully-qualified | 3,944 | the recommended RGI emoji - what keyboards should offer |
 | minimally-qualified | 1,029 | missing a variation selector; renderable but not recommended |
 | unqualified | 243 | bare text symbols that have an emoji presentation |
 | component | 9 | skin tones and hair components - building blocks, not standalone emoji |
-| **total** | **5,244** | |
+| **total** | **5,225** | |
 
 All four statuses are included. `emoji-test.txt` is the sole source, and `npm run verify`
 proves the set is exactly equal to it - no sequence missing, none invented.
@@ -129,11 +129,11 @@ subgroup      emoji-test subgroup
 >
 > Putting the code points first makes every data row start with a hex digit, so a
 > naive filter loses nothing. The verifier asserts this: no data row begins with a
-> hash, and a leading-hash filter keeps all 5,244 rows.
+> hash, and a leading-hash filter keeps all 5,225 rows.
 
 ```bash
 # both keycap rows are present, in column 2
-grep -c 'keycap: #' Emoji-18.0-Complete-Dataset/emoji_18.0_full_machine.tsv
+grep -c 'keycap: #' Emoji-17.0-Complete-Dataset/emoji_17.0_full_machine.tsv
 ```
 
 ---
@@ -210,5 +210,5 @@ countries.
 
 ---
 
-Generated from UCD 18.0.0 / Emoji 18.0 at 2026-11-13 10:04:39 UTC. Every number above comes
+Generated from UCD 17.0.0 / Emoji 17.0 at 2026-11-13 10:57:07 UTC. Every number above comes
 from [data/manifest.json](data/manifest.json); run `npm run docs` to refresh it.
