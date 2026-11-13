@@ -1,0 +1,36 @@
+{
+  "from": {
+    "ucd": "17.0.0",
+    "unicode": "17.0",
+    "emoji": "17.0"
+  },
+  "to": {
+    "ucd": "18.0.0",
+    "unicode": "18.0",
+    "emoji": "18.0"
+  },
+  "generatedAt": "2026-11-13 04:37:30 UTC",
+  "verification": "passed",
+  "counts": {
+    "codePoints": {
+      "before": 159944,
+      "after": 172951,
+      "change": 13007
+    },
+    "blocks": {
+      "before": 346,
+      "after": 353,
+      "change": 7
+    },
+    "emojiSequences": {
+      "before": 5225,
+      "after": 5244,
+      "change": 19
+    },
+    "fullyQualified": {
+      "before": 3944,
+      "after": 3963,
+      "change": 19
+    }
+  }
+}
