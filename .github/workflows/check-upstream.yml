@@ -83,6 +83,16 @@ jobs:
           else
             echo "Pinned version is current; nothing to do."
           fi
+          # Normalise everything through step outputs.
+          #
+          # `inputs.dry_run` is a *boolean* input, and a boolean true does not equal the
+          # string 'true' in an `if:` expression - so `inputs.dry_run != 'true'` is true
+          # and the step runs when it should not. That is exactly how the first dry run
+          # wrote nothing and then failed trying to read the summary it never produced.
+          # Step outputs are always strings, so compare against those instead.
+          DRY_NORM="false"
+          if [ "${DRY:-false}" = "true" ]; then DRY_NORM="true"; fi
+          echo "dry=$DRY_NORM" >> "$GITHUB_OUTPUT"
           echo "target=$TARGET" >> "$GITHUB_OUTPUT"
           if [ -n "$TARGET" ]; then echo "go=true" >> "$GITHUB_OUTPUT"; else echo "go=false" >> "$GITHUB_OUTPUT"; fi
 
@@ -100,7 +110,7 @@ jobs:
           fi
 
       - name: Report what changed
-        if: steps.decide.outputs.go == 'true' && inputs.dry_run != 'true'
+        if: steps.decide.outputs.go == 'true' && steps.decide.outputs.dry == 'false'
         run: |
           set -euo pipefail
           node -e '
@@ -127,7 +137,7 @@ jobs:
           '
 
       - name: Build the pull request body
-        if: steps.decide.outputs.go == 'true' && inputs.dry_run != 'true'
+        if: steps.decide.outputs.go == 'true' && steps.decide.outputs.dry == 'false'
         run: |
           set -euo pipefail
           node -e '
@@ -168,7 +178,7 @@ jobs:
           '
 
       - name: Open the pull request
-        if: steps.decide.outputs.go == 'true' && inputs.dry_run != 'true'
+        if: steps.decide.outputs.go == 'true' && steps.decide.outputs.dry == 'false'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TARGET: ${{ steps.decide.outputs.target }}
