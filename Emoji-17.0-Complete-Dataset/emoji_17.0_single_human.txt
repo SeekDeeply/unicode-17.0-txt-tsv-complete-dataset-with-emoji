@@ -1,10 +1,10 @@
 ════════════════════════════════════════════════════════════════════════════════
-Emoji 18.0 Complete Dataset — Human-Readable Edition
-Emoji 18.0 全量数据（人类可读版）
+Emoji 17.0 Complete Dataset — Human-Readable Edition
+Emoji 17.0 全量数据（人类可读版）
 ════════════════════════════════════════════════════════════════════════════════
-Generated: 2026-11-13 10:04:39 UTC
+Generated: 2026-11-13 11:02:53 UTC
 Data source: emoji-test.txt (official, all four qualification statuses)
-Sequences: 1409   (✅ 3963  ⚠️ 1029  ❓ 243  🧩 9)
+Sequences: 1400   (✅ 3944  ⚠️ 1029  ❓ 243  🧩 9)
 Groups: 10   Subgroups: 100
 ════════════════════════════════════════════════════════════════════════════════
 
@@ -47,9 +47,6 @@ Groups: 10   Subgroups: 100
 🫠  1FAE0
       ✅ fully-qualified   E14.0
       📝 melting face
-🫫  1FAEB
-      ✅ fully-qualified   E18.0
-      📝 cracking face
 😉  1F609
       ✅ fully-qualified   E0.6
       📝 winking face
@@ -635,12 +632,6 @@ Groups: 10   Subgroups: 100
 👎  1F44E
       ✅ fully-qualified   E0.6
       📝 thumbs down
-🫹  1FAF9
-      ✅ fully-qualified   E18.0
-      📝 leftwards thumb sign
-🫺  1FAFA
-      ✅ fully-qualified   E18.0
-      📝 rightwards thumb sign
 ✊  270A
       ✅ fully-qualified   E0.6
       📝 raised fist
@@ -1439,9 +1430,6 @@ Groups: 10   Subgroups: 100
 🦋  1F98B
       ✅ fully-qualified   E3.0
       📝 butterfly
-🫌  1FACC
-      ✅ fully-qualified   E18.0
-      📝 monarch butterfly
 🐛  1F41B
       ✅ fully-qualified   E0.6
       📝 bug
@@ -1664,9 +1652,6 @@ Groups: 10   Subgroups: 100
 🥒  1F952
       ✅ fully-qualified   E3.0
       📝 cucumber
-🫝  1FADD
-      ✅ fully-qualified   E18.0
-      📝 pickle
 🥬  1F96C
       ✅ fully-qualified   E11.0
       📝 leafy green
@@ -2352,9 +2337,6 @@ Groups: 10   Subgroups: 100
       📝 construction
 
   📂 transport-water
-🛙  1F6D9
-      ✅ fully-qualified   E18.0
-      📝 lighthouse
 ⚓  2693
       ✅ fully-qualified   E0.6
       📝 anchor
@@ -2660,9 +2642,6 @@ Groups: 10   Subgroups: 100
 ☄  2604
       ❓ unqualified   E1.0
       📝 comet
-🪋  1FA8B
-      ✅ fully-qualified   E18.0
-      📝 meteor
 🔥  1F525
       ✅ fully-qualified   E0.6
       📝 fire
@@ -3453,9 +3432,6 @@ Groups: 10   Subgroups: 100
 📝  1F4DD
       ✅ fully-qualified   E0.6
       📝 memo
-🪌  1FA8C
-      ✅ fully-qualified   E18.0
-      📝 eraser
 
   📂 office
 💼  1F4BC
@@ -3549,9 +3525,6 @@ Groups: 10   Subgroups: 100
       📝 old key
 
   📂 tool
-🪍  1FA8D
-      ✅ fully-qualified   E18.0
-      📝 net with handle
 🔨  1F528
       ✅ fully-qualified   E0.6
       📝 hammer
