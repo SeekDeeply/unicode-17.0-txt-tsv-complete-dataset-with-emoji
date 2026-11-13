@@ -14,8 +14,12 @@ permissions:
   contents: read
 
 concurrency:
+  # Keyed by ref so two branches verify in parallel. cancel-in-progress is FALSE on
+  # purpose: cancelling a verification run reports "cancelled", which is neither a pass
+  # nor a failure - and with cancel-in-progress the second of two quick pushes silently
+  # loses its verification. A verification job must not be able to disappear; queue it.
   group: build-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   verify:
