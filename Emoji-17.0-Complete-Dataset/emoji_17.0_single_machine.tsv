@@ -1,9 +1,9 @@
-# Emoji 18.0 — single-code-point sequences only
-# Emoji version: 18.0
-# Generated: 2026-11-13 08:48:14 UTC
-# Rows: 1409
+# Emoji 17.0 — single-code-point sequences only
+# Emoji version: 17.0
+# Generated: 2026-11-13 09:55:40 UTC
+# Rows: 1400
 #
-# Single-code-point subset: 1409 rows.
+# Single-code-point subset: 1400 rows.
 #   1 code_points   space-separated hex code points — the primary key
 #   2 sequence      rendered emoji sequence
 #   3 status        fully-qualified | minimally-qualified | unqualified | component
@@ -24,7 +24,6 @@
 1F642	🙂	fully-qualified	E1.0	slightly smiling face	Smileys & Emotion	face-smiling
 1F643	🙃	fully-qualified	E1.0	upside-down face	Smileys & Emotion	face-smiling
 1FAE0	🫠	fully-qualified	E14.0	melting face	Smileys & Emotion	face-smiling
-1FAEB	🫫	fully-qualified	E18.0	cracking face	Smileys & Emotion	face-smiling
 1F609	😉	fully-qualified	E0.6	winking face	Smileys & Emotion	face-smiling
 1F60A	😊	fully-qualified	E0.6	smiling face with smiling eyes	Smileys & Emotion	face-smiling
 1F607	😇	fully-qualified	E1.0	smiling face with halo	Smileys & Emotion	face-smiling
@@ -206,8 +205,6 @@
 1FAF5	🫵	fully-qualified	E14.0	index pointing at the viewer	People & Body	hand-single-finger
 1F44D	👍	fully-qualified	E0.6	thumbs up	People & Body	hand-fingers-closed
 1F44E	👎	fully-qualified	E0.6	thumbs down	People & Body	hand-fingers-closed
-1FAF9	🫹	fully-qualified	E18.0	leftwards thumb sign	People & Body	hand-fingers-closed
-1FAFA	🫺	fully-qualified	E18.0	rightwards thumb sign	People & Body	hand-fingers-closed
 270A	✊	fully-qualified	E0.6	raised fist	People & Body	hand-fingers-closed
 1F44A	👊	fully-qualified	E0.6	oncoming fist	People & Body	hand-fingers-closed
 1F91B	🤛	fully-qualified	E3.0	left-facing fist	People & Body	hand-fingers-closed
@@ -458,7 +455,6 @@
 1F9AA	🦪	fully-qualified	E12.0	oyster	Animals & Nature	animal-marine
 1F40C	🐌	fully-qualified	E0.6	snail	Animals & Nature	animal-bug
 1F98B	🦋	fully-qualified	E3.0	butterfly	Animals & Nature	animal-bug
-1FACC	🫌	fully-qualified	E18.0	monarch butterfly	Animals & Nature	animal-bug
 1F41B	🐛	fully-qualified	E0.6	bug	Animals & Nature	animal-bug
 1F41C	🐜	fully-qualified	E0.6	ant	Animals & Nature	animal-bug
 1F41D	🐝	fully-qualified	E0.6	honeybee	Animals & Nature	animal-bug
@@ -529,7 +525,6 @@
 1F336	🌶	unqualified	E0.7	hot pepper	Food & Drink	food-vegetable
 1FAD1	🫑	fully-qualified	E13.0	bell pepper	Food & Drink	food-vegetable
 1F952	🥒	fully-qualified	E3.0	cucumber	Food & Drink	food-vegetable
-1FADD	🫝	fully-qualified	E18.0	pickle	Food & Drink	food-vegetable
 1F96C	🥬	fully-qualified	E11.0	leafy green	Food & Drink	food-vegetable
 1F966	🥦	fully-qualified	E5.0	broccoli	Food & Drink	food-vegetable
 1F9C4	🧄	fully-qualified	E12.0	garlic	Food & Drink	food-vegetable
@@ -749,7 +744,6 @@
 1F6A6	🚦	fully-qualified	E1.0	vertical traffic light	Travel & Places	transport-ground
 1F6D1	🛑	fully-qualified	E3.0	stop sign	Travel & Places	transport-ground
 1F6A7	🚧	fully-qualified	E0.6	construction	Travel & Places	transport-ground
-1F6D9	🛙	fully-qualified	E18.0	lighthouse	Travel & Places	transport-water
 2693	⚓	fully-qualified	E0.6	anchor	Travel & Places	transport-water
 1F6DF	🛟	fully-qualified	E14.0	ring buoy	Travel & Places	transport-water
 26F5	⛵	fully-qualified	E0.6	sailboat	Travel & Places	transport-water
@@ -849,7 +843,6 @@
 2603	☃	unqualified	E0.7	snowman	Travel & Places	sky & weather
 26C4	⛄	fully-qualified	E0.6	snowman without snow	Travel & Places	sky & weather
 2604	☄	unqualified	E1.0	comet	Travel & Places	sky & weather
-1FA8B	🪋	fully-qualified	E18.0	meteor	Travel & Places	sky & weather
 1F525	🔥	fully-qualified	E0.6	fire	Travel & Places	sky & weather
 1F4A7	💧	fully-qualified	E0.6	droplet	Travel & Places	sky & weather
 1F30A	🌊	fully-qualified	E0.6	water wave	Travel & Places	sky & weather
@@ -1100,7 +1093,6 @@
 1F58C	🖌	unqualified	E0.7	paintbrush	Objects	writing
 1F58D	🖍	unqualified	E0.7	crayon	Objects	writing
 1F4DD	📝	fully-qualified	E0.6	memo	Objects	writing
-1FA8C	🪌	fully-qualified	E18.0	eraser	Objects	writing
 1F4BC	💼	fully-qualified	E0.6	briefcase	Objects	office
 1F4C1	📁	fully-qualified	E0.6	file folder	Objects	office
 1F4C2	📂	fully-qualified	E0.6	open file folder	Objects	office
@@ -1130,7 +1122,6 @@
 1F510	🔐	fully-qualified	E0.6	locked with key	Objects	lock
 1F511	🔑	fully-qualified	E0.6	key	Objects	lock
 1F5DD	🗝	unqualified	E0.7	old key	Objects	lock
-1FA8D	🪍	fully-qualified	E18.0	net with handle	Objects	tool
 1F528	🔨	fully-qualified	E0.6	hammer	Objects	tool
 1FA93	🪓	fully-qualified	E12.0	axe	Objects	tool
 26CF	⛏	unqualified	E0.7	pick	Objects	tool

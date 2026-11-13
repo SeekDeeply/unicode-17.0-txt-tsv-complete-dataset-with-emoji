@@ -1,4 +1,4 @@
-Unicode 18.0 + Emoji 18.0 Complete Dataset
+Unicode 17.0 + Emoji 17.0 Complete Dataset
 Copyright the contributors of this repository.
 
 This product includes data derived from the Unicode Character Database.
@@ -9,17 +9,17 @@ This product includes data derived from the Unicode Character Database.
   and the Unicode License v3 (see LICENSE_UNICODE).
 
 Files derived from the UCD:
-  Emoji-18.0-Complete-Dataset/emoji_18.0_full_human.txt
-  Emoji-18.0-Complete-Dataset/emoji_18.0_full_machine.tsv
-  Emoji-18.0-Complete-Dataset/emoji_18.0_single_human.txt
-  Emoji-18.0-Complete-Dataset/emoji_18.0_single_machine.tsv
-  Emoji-18.0-Complete-Dataset/emoji_18.0_string.txt
-  Emoji-18.0-Complete-Dataset/emoji_18.0_string_annotated.txt
-  Unicode-18.0-Complete-Dataset/unicode_18.0_blocks.txt
-  Unicode-18.0-Complete-Dataset/unicode_18.0_human.txt
-  Unicode-18.0-Complete-Dataset/unicode_18.0_machine.tsv
-  Unicode-18.0-Complete-Dataset/unicode_18.0_string.txt
-  Unicode-18.0-Complete-Dataset/unicode_18.0_string_blocked.txt
+  Emoji-17.0-Complete-Dataset/emoji_17.0_full_human.txt
+  Emoji-17.0-Complete-Dataset/emoji_17.0_full_machine.tsv
+  Emoji-17.0-Complete-Dataset/emoji_17.0_single_human.txt
+  Emoji-17.0-Complete-Dataset/emoji_17.0_single_machine.tsv
+  Emoji-17.0-Complete-Dataset/emoji_17.0_string.txt
+  Emoji-17.0-Complete-Dataset/emoji_17.0_string_annotated.txt
+  Unicode-17.0-Complete-Dataset/unicode_17.0_blocks.txt
+  Unicode-17.0-Complete-Dataset/unicode_17.0_human.txt
+  Unicode-17.0-Complete-Dataset/unicode_17.0_machine.tsv
+  Unicode-17.0-Complete-Dataset/unicode_17.0_string.txt
+  Unicode-17.0-Complete-Dataset/unicode_17.0_string_blocked.txt
 
 Exact upstream sources and their SHA-256 hashes: data/sources.lock.json
 
