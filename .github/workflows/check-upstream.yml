@@ -60,14 +60,19 @@ jobs:
 
       - name: Check for a newer release
         id: check
-        run: node src/check-upstream-version.mjs --github | tee check.txt
+        # Transient workflow files live under .work/ (gitignored) so that `git add -A`
+        # in the landing step can never publish a scratch file into the dataset repo.
+        # That mistake happened once: check.txt and pr-body.md were committed.
+        run: |
+          mkdir -p .work
+          node src/check-upstream-version.mjs --github | tee .work/check.txt
 
       - name: Summarize the check
         run: |
           {
             echo '### Unicode release check'
             echo
-            grep -E '^(update|latest_ucd|latest_emoji|pinned_ucd|pinned_emoji)=' check.txt | sed 's/^/- /'
+            grep -E '^(update|latest_ucd|latest_emoji|pinned_ucd|pinned_emoji)=' .work/check.txt | sed 's/^/- /'
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Decide whether to adopt
@@ -146,6 +151,7 @@ jobs:
         if: steps.decide.outputs.go == 'true' && steps.decide.outputs.dry == 'false'
         run: |
           set -euo pipefail
+          mkdir -p .work
           node -e '
             const fs = require("fs");
             const s = JSON.parse(fs.readFileSync("data/bump-summary.json", "utf8"));
@@ -180,7 +186,7 @@ jobs:
             lines.push("- `build & verify` runs on this PR and independently rebuilds from the pinned sources; if it is green, the committed bytes are reproducible.");
             lines.push("");
             lines.push("_Opened automatically by the weekly upstream check._");
-            fs.writeFileSync("pr-body.md", lines.join("\n") + "\n");
+            fs.writeFileSync(".work/pr-body.md", lines.join("\n") + "\n");
           '
 
       - name: Land the change
@@ -230,7 +236,7 @@ jobs:
           # "Allow GitHub Actions to create and approve pull requests", and the same setting
           # gates issue creation. A workflow cannot grant it to itself, so a refusal is a
           # degraded mode, not a failure: the branch is pushed and the data is complete.
-          if PR_URL=$(gh pr create --title "data: adopt Unicode $TARGET" --body-file pr-body.md --base main --head "$BRANCH" 2>&1); then
+          if PR_URL=$(gh pr create --title "data: adopt Unicode $TARGET" --body-file .work/pr-body.md --base main --head "$BRANCH" 2>&1); then
             echo "Pull request created: $PR_URL"
             printf '### Pull request opened\n\n%s\n' "$PR_URL" >> "$GITHUB_STEP_SUMMARY"
             exit 0

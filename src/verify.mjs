@@ -20,10 +20,12 @@ import { parseRangeFile, parseUnicodeData, isCommentLine, SURROGATE_RANGE, PRIVA
 import { parseEmojiTest, countByStatus, EMOJI_STATUSES } from './lib/build-emoji.mjs';
 import { buildEmojiProperties } from './lib/emoji-properties.mjs';
 import { UNICODE_VERSION, EMOJI_VERSION } from './lib/sources.mjs';
+import { sourceCacheDir } from './lib/sync-sources.mjs';
 import { head, ok, warn, fail, info, log } from './lib/log.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const CACHE = path.join(ROOT, '.cache', 'sources');
+// Read the exact bytes the build read: the cache is version-scoped.
+const CACHE = sourceCacheDir(ROOT);
 const STRICT = process.argv.includes('--strict');
 
 let checks = 0;

@@ -13,3 +13,10 @@ node_modules/
 *.log
 .DS_Store
 .part-*
+# Scratch space for the auto-adopt workflow (run logs, generated PR bodies).
+# Never part of the dataset: `git add -A` in the landing step must not pick it up.
+.work/
+
+# Written by src/bump-version.mjs; a report about a run, not data.
+data/bump-summary.json
+data/last-version-check.json

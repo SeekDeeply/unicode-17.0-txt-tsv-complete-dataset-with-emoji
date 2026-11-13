@@ -6,6 +6,18 @@ import { SOURCES, UCD_VERSION } from './sources.mjs';
 import { info, log, ok, warn } from './log.mjs';
 
 /**
+
+ * Canonical location of the downloaded sources for the pinned version.
+ *
+ * Exported so the verifier reads the same bytes the build read. The path is
+ * version-scoped: the cache is keyed by filename, and the same filename holds
+ * different bytes in different releases.
+ */
+export function sourceCacheDir(root) {
+  return path.join(root, '.cache', 'sources', UCD_VERSION);
+}
+
+/**
  * Download every source into the cache and maintain data/sources.lock.json.
  *
  * --force        re-download even when the cache is valid
@@ -14,9 +26,21 @@ import { info, log, ok, warn } from './log.mjs';
  *                it just produced, so a partial/failed fetch cannot poison it)
  */
 export async function syncSources({ root, force = false, updateLock = false, offline = false } = {}) {
-  const cacheDir = path.join(root, '.cache', 'sources');
+  // The cache is persistent across runs, which is the point: a rebuild of unchanged
+  // sources must not re-download 14 MB. But it is keyed by FILENAME, and the same
+  // filename holds different bytes in different Unicode versions. So the cache has to
+  // be scoped by version, or moving the pin serves 17.0's UnicodeData.txt while the
+  // URL says 18.0 - which is exactly the "upstream content changed" alarm this build
+  // raises, with a useless message, on a perfectly legitimate version bump.
   const lockPath = path.join(root, 'data', 'sources.lock.json');
   const lock = fs.existsSync(lockPath) ? JSON.parse(fs.readFileSync(lockPath, 'utf8')) : { version: UCD_VERSION, files: {} };
+  // Always scope the cache by version, so two releases can never share a filename.
+  // The unversioned layout used earlier is simply abandoned: a stale file there would
+  // otherwise be served for a version it does not belong to.
+  const cacheDir = sourceCacheDir(root);
+  const versionsMatch = lock.version === UCD_VERSION;
+  // --force still means "re-download even though the cache is valid".
+  const effectiveForce = force;
   // buildDate is pinned in the lock so a rebuild of unchanged sources is byte-identical.
   // SOURCE_DATE_EPOCH wins when set (reproducible-builds convention).
   const pinnedBuildDate =
@@ -30,6 +54,9 @@ export async function syncSources({ root, force = false, updateLock = false, off
 
   if (offline) {
     info('offline mode: using whatever is already in the cache');
+  }
+  if (!versionsMatch) {
+    log(`version pin changed (${lock.version} -> ${UCD_VERSION}): using a separate cache directory`);
   }
 
   for (const src of SOURCES) {
@@ -54,7 +81,7 @@ export async function syncSources({ root, force = false, updateLock = false, off
           url,
           destPath: dest,
           sha256: undefined,
-          force: force && !offline,
+          force: effectiveForce && !offline,
           log: (m) => log(m),
         });
         break;
