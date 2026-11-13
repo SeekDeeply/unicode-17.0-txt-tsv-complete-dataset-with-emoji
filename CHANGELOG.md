@@ -12,9 +12,29 @@
   shared by the reporter and the upgrader so they cannot disagree. It rejects drafts
   (a directory that redirects to `/Public/draft/`) and reads the Emoji version out of
   the file actually served, because Emoji numbering lags the UCD one.
-- The weekly `check-upstream` workflow now **performs the migration and opens a pull
-  request** instead of only filing a tracking issue. It reports a before/after table
-  and leaves merging to a human, because a version bump rewrites every data file.
+- The weekly `check-upstream` workflow now **performs the migration** instead of only
+  filing a tracking issue: it rebuilds, verifies, and lands the result. Default landing
+  is a pull request (`mode: pr`); `mode: push` commits to `main` directly.
+- A failed adoption opens an issue with the run link, the target version and the
+  still-pinned version, and comments on the existing issue rather than filing a new one
+  every week. A scheduled job that goes red in a tab nobody watches is not monitoring.
+
+### Fixed
+
+- **Adoption commits were never verified.** A push made with `GITHUB_TOKEN` does not
+  start workflows - GitHub's recursion guard - so `build & verify` skipped every
+  automatic adoption. Three releases landed on `main` with no CI at all, while
+  neighbouring hand-pushed commits were green, which is how it went unnoticed. The
+  workflow now dispatches `build & verify` itself after pushing (`workflow_dispatch`
+  is an explicit exception to the guard), and `mode: pr` is the default because a
+  `pull_request` event is exempt by construction.
+- Re-adopting the version already pinned crashed the reporting step on a missing
+  `data/bump-summary.json`, turning a correct no-op into a red run. The integrator now
+  writes a summary with `noop: true` in that case.
+- The download cache was keyed by filename, so two releases shared a path and a
+  version bump served the old bytes under the new URL. It is now scoped by version.
+- `build.yml` had `cancel-in-progress: true`, so the second of two quick pushes lost
+  its verification silently. `cancelled` is neither a pass nor a failure; it queues now.
 
 ### Changed
 

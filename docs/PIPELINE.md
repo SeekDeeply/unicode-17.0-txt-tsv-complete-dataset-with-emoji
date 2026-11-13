@@ -189,4 +189,45 @@ directory name.
   migration and opens a PR; a human merges. Automating the work is a labour saving,
   automating the decision is not — a release can legitimately need a new block name
   translated, and that is a judgement call, not a build step.
+  (`mode: push` exists for repositories that cannot accept bot PRs, but it is opt-in.)
 
+## 11. The CI trap that made "automatic" look greener than it was
+
+A push made with `GITHUB_TOKEN` does **not** start any workflow. This is GitHub's
+recursion guard, and it is deliberate: without it a workflow that commits would
+retrigger itself forever.
+
+The consequence here was invisible for three releases. The adoption workflow pushed
+to `main`, `build & verify` never ran on those commits, and the Actions tab showed
+green because the *neighbouring* hand-pushed commits were green. Three data
+migrations landed with no reproducibility check at all, and every signal available
+from the UI said otherwise.
+
+What the guard does **not** cover: `workflow_dispatch` and `repository_dispatch` are
+explicit exceptions. So there are two honest ways to keep CI on bot commits, and this
+repository uses the first as the default:
+
+1. **Land via a pull request.** A `pull_request` event is not subject to the guard,
+   so CI runs on the adoption before it reaches `main`. This is why `mode: pr` is the
+   default — not tidiness, but verification.
+2. **Dispatch CI yourself.** After pushing, call the build workflow through the API.
+   `mode: push` does this, which needs `actions: write` in `permissions:`.
+
+Either way the lesson generalises: *a green check on an adjacent commit is not
+evidence about your commit.* Verify which SHA actually ran.
+
+The same idea shows up twice more in this pipeline. A `cancelled` run is neither a
+pass nor a failure, so `build.yml` must not use `cancel-in-progress` — a lost
+verification is indistinguishable from a passing one in a list view. And a failed
+adoption opens an issue, because a scheduled job that goes red in a tab nobody
+watches is not monitoring.
+
+### A note on token scopes
+
+`GITHUB_TOKEN` is read-only by default; every write scope must be requested in
+`permissions:`. The error for a missing scope is `Resource not accessible by
+integration`, which reads like a repository-settings problem and is not — declaring
+`issues: write` was all that stood between this workflow and creating an issue.
+Genuinely setting-gated is *pull-request* creation by Actions
+(`GitHub Actions is not permitted to create or approve pull requests`); a user token
+over the API can open a PR fine, which is the workaround if the setting stays off.
