@@ -25,6 +25,13 @@ jobs:
   verify:
     name: rebuild and verify
     runs-on: ubuntu-latest
+    # A pull_request run caused by github-actions[bot] is parked in action_required and
+    # waits for an approval that never comes, so it would sit in the run list as a
+    # permanent red X while verifying nothing. The adoption workflow already dispatches
+    # this same job against the branch with workflow_dispatch, which is exempt from that
+    # gate, so skipping the bot's PR run loses no coverage - it only removes noise that
+    # trains people to ignore a failing check.
+    if: github.event_name != 'pull_request' || github.actor != 'github-actions[bot]'
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
